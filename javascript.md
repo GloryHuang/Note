@@ -9,7 +9,6 @@
 在Firefox中是event.target，而在Opera中则两者都支持。
 
 
-
 ```
 
 
