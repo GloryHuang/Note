@@ -11,7 +11,7 @@
   var event = event || window.event;
 
   var aaa = event.target ? event.target : event.srcElement;
-
+  //判断元素的id名字是否一致
   if (aaa.id == "btn-save") {
 
   console.log('123');
