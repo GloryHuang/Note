@@ -9,7 +9,7 @@
 
   //给相应的父元素添加事件
   main.onclick = function() {
-
+  
   var event = event || window.event;
 
   //srcElement/target：事件源，就是发生事件的元素；
