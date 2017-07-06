@@ -2,7 +2,7 @@
 
 ***
 ```js
-  ---//js版本    
+  -------//js版本    
 
   //获取事件的父元素
   var main = document.getElementsByClassName("main")[0];
