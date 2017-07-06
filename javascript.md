@@ -1,6 +1,6 @@
 ## 事件委托
 
-有关 event 和 window.event在IE/Opera中，是window.event，
+有关 event 和 window.event在IE/Opera中，是window.event
 而在Firefox中，是event而事件的对象，
 在IE中是window.event.srcElement，
 在Firefox中是event.target，而在Opera中则两者都支持。 
