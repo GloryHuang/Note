@@ -12,6 +12,8 @@
 
   var event = event || window.event;
 
+  //srcElement/target：事件源，就是发生事件的元素；
+  // FF下是target，IE下是srcElement
   var aaa = event.target ? event.target : event.srcElement;
 
   //判断元素的id名字是否一致
