@@ -5,4 +5,5 @@
 * [HTML](html.md)
     * [meta](meta.md)
 * [Javascript](javascript.md)
+* [JavaScript](javascript.md)
 
