@@ -24,10 +24,25 @@
 ```
 
 
-```jq
+```js
     
 
  -------//jq版本
+    
+ $(document).on('click', '.modal-footer', function() {
+
+     event = event || window.event;
+
+     var el = event.target ? event.target : event.srcElement;
+
+     if (el.id == "btn-save") {
+
+     console.log('321');
+
+     }
+ });
+
+
 
     
 
