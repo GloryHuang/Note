@@ -15,6 +15,5 @@
     vertical-align:middle设置的是垂直居中对齐。
 
 ####4.transform:translate(x,y)
-
         这个是css3中的新属性，如果子级元素没有设置宽和高值的话可以用这个方法来实现。这在我们做自适应页面
     的时候可以用到。
