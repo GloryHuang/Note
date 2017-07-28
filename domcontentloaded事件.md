@@ -1,3 +1,8 @@
+######DOMContentLoaded事件
+
+
+
+
 ```js
      /*
         * html5新增了一个DOMContentLoaded事件，兼容IE9，
@@ -20,7 +25,7 @@
 
 ```
 
-#####DOMContentLoaded事件兼容写法
+######DOMContentLoaded事件兼容写法
 
 ```js
           /*
