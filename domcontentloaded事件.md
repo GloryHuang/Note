@@ -18,7 +18,26 @@
             console.log( spans, 'DOMContentLoaded');
         } );
 
+```
 
+#####DOMContentLoaded事件兼容写法
+```JS
+          /*
+        * 在IE8中，所有的元素都有一个onreadystatechange事件，
+        * 可以利用它代替DOMContentLoaded事件。
+        * */
 
+        window.onload = function() {
+            var spans = document.querySelectorAll( 'span' );
+            console.log( spans, 'onload' );
+        };
+
+        // IE8模拟DOMContentLoaded事件的方式
+        document.attachEvent( 'onreadystatechange', function() {
+            if ( document.readyState === 'complete' ) {
+                var spans = document.querySelectorAll( 'span' );
+                console.log( spans, 'DOMContentLoaded');
+            }
+        } );
 
 ```
