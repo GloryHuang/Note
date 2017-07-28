@@ -3,8 +3,9 @@
 * [Introduction](README.md)
 * [First Chapter](chapter1.md)
 * [兼容性问题](兼容性问题、.md)
-    * CSS兼容性问题
-    * JAVASCRIPT兼容性问题
+    * [CSS兼容性问题](css兼容性问题.md)
+    * [JAVASCRIPT兼容性问题](javascript兼容性问题.md)
+        * [事件兼容性](事件兼容性.md)
 * [HTML](html.md)
     * [meta](meta.md)
 * [CSS](css.md)
