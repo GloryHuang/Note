@@ -10,6 +10,7 @@
         * [事件兼容性处理](事件兼容性.md)
         * [给一个元素绑定多种事件](给一个元素绑定多种事件.md)
         * [DOMContentLoaded事件](domcontentloaded事件.md)
+        * [兼容方法获取元素样式](兼容方法获取元素样式.md)
 * [HTML](html.md)
     * [meta](meta.md)
 * [CSS](css.md)
