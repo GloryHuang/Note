@@ -21,6 +21,7 @@
 ```
 
 #####DOMContentLoaded事件兼容写法
+
 ```js
           /*
         * 在IE8中，所有的元素都有一个onreadystatechange事件，
