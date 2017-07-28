@@ -21,7 +21,7 @@
 ```
 
 #####DOMContentLoaded事件兼容写法
-```JS
+```js
           /*
         * 在IE8中，所有的元素都有一个onreadystatechange事件，
         * 可以利用它代替DOMContentLoaded事件。
