@@ -17,6 +17,8 @@
 * [CSS](css.md)
     * [margin和panding的百分比设置](margin和panding的百分比设置.md)
     * div元素水平居中的方法
+* [Javascript](javascript.md)
+    * [正则表达式](正则表达式.md)
 * [工具函数](工具函数.md)
     * [缓动框架封装\(单个属性\)](sss.md)
     * [缓动框架封装\(多个属性\)](缓动框架封装多个属性.md)
