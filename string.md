@@ -23,7 +23,7 @@
 ```
 
 ```js
-##### 2.String
+##### 2.String()
     var age = 18; 
 
     console.log(String(age)); //结果 "18"
