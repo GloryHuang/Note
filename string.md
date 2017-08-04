@@ -54,6 +54,9 @@
  
 
 ###装换成数值类型
+    三个把值转换成数值类型的函数：
+    Number()、 parseInt()、 parseFloat()
+
 
 
 
