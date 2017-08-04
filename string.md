@@ -68,5 +68,11 @@ Number()、 parseInt()、 parseFloat()
 Number\(\)可以把任意值转换成数值，如果要转换的
 字符串中有一个不是数值的字符，返回NaN
 
-
+#####2.
+    parseInt()把字符串转换成整数
+    var num1 = parseInt("12.3abc");  //返回12，如果第一个字符是数字会解析知道遇到非数字结束
+    var num2 = parseInt("abc123");  //返回NaN，如果第    一个    字符不是数字或者符号就返回NaN
+    var num3 = parseInt("");        //空字符串返回    NaN，Number("")返回0
+    var num5 = parseInt("10");      //返回10
+    var num4 = parseInt("0xA");     //返回10
 
