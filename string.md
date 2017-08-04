@@ -21,6 +21,7 @@
 
 ```
 
+```
 ##### 2.String
     var age = 18; 
 
@@ -30,10 +31,16 @@
 
     console.log(String(result)); //结果 "true"
 
-    console.log(String(undefined)); //结果"undefined"
+    console.log(String(undefined)); 
+    //结果"undefined"
 
     •String()函数存在的意义：有些值没有toString()，
 这个时候可以使用String()。比如：undefined和null
+
+```
+
+##### 2.String
+
 
 
 
