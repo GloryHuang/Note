@@ -8,11 +8,11 @@
     console.log(ageString);  // 结果 "18"
     var result = true;
     var resultString = result.toString();
-    console.log(resultString);// 结果 "true"
+    console.log(resultString);//结果"true"
    数值类型的toString()，可以携带一个参数，输出对应进值
 
     var num = 10;
-    console.log(num.toString());  //"10" 默认是10进制
+    console.log(num.toString()); //"10" 默认是10进制
     console.log(num.toString(10));//"10"
     console.log(num.toString(8)); //"12"
     console.log(num.toString(16));//"a"
