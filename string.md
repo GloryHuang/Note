@@ -1,9 +1,10 @@
 ### 转换成字符串的方法
 
-##### 1.toString
-```
+##### 1.toString()
+
+```js
     var age = 18;
-    
+
     var ageString = age.toString();
     console.log(ageString);  // 结果 "18"
     var result = true;
@@ -21,7 +22,7 @@
 
 ```
 
-```
+```js
 ##### 2.String
     var age = 18; 
 
@@ -41,25 +42,32 @@
 
 ##### 3.拼接字符串
 
-    •例如1： var age = 18; 
+```js
+•例如1： var age = 18; 
 
-    var str = age + "岁";
+var str = age + "岁";
 
-    console.log(str);
+console.log(str);
 
-    •例如2：
+•例如2：
 
-    var str = "" + 18; //结果是"18"
+var str = "" + 18; //结果是"18"
+```
 
- 
+
 
-###装换成数值类型
-    三个把值转换成数值类型的函数：
-    Number()、 parseInt()、 parseFloat()
+### 装换成数值类型
 
+```js
+三个把值转换成数值类型的函数：
+Number()、 parseInt()、 parseFloat()
+```
 
+##### 1.number\(\)
 
+```
+Number()可以把任意值转换成数值，如果要转换的
+```
 
-
-
+字符串中有一个不是数值的字符，返回NaN
 
