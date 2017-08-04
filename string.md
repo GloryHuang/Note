@@ -107,5 +107,5 @@ parseFloat不支持第二个参数，只能解析10进制数
     if (message) {     //会自动把message转换成false
 	//todo...
     }
-转换为false的值：false、""、0和NaN、null、undefined
+    转换为false的值：false、""、0和NaN、null、undefined
 
