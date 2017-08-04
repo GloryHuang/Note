@@ -55,7 +55,7 @@ var str = "" + 18; //结果是"18"
 
 
 
-### 装换成数值类型
+### 转换成数值类型
 
 ```js
 三个把值转换成数值类型的函数：
@@ -64,15 +64,17 @@ Number()、 parseInt()、 parseFloat()
 
 ##### 1.number\(\)
 
-    Number\(\)可以把任意值转换成数值，如果要转换的字符串中有一个不是数值的字符，返回NaN
-    例如：
-    var num1 = Number\(true\); \/\/true返回1  false返回0
-    var num2 = Number\(undefined\); \/\/返回NaN
-    var num3 = Number\("hello"\);  \/\/返回NaN
-    var num4 = Number\("   "\); \/\/如果是空字符串返回0
-    var num5 = Number\(123\); \/\/返回123，如果是数字，简单返回
-    var num6 = Number\("123abc"\);  \/\/NaN
-    var num7 = Number\("abc123"\);  \/\/NaN
+```
+Number\(\)可以把任意值转换成数值，如果要转换的字符串中有一个不是数值的字符，返回NaN
+例如：
+var num1 = Number\(true\); \/\/true返回1  false返回0
+var num2 = Number\(undefined\); \/\/返回NaN
+var num3 = Number\("hello"\);  \/\/返回NaN
+var num4 = Number\("   "\); \/\/如果是空字符串返回0
+var num5 = Number\(123\); \/\/返回123，如果是数字，简单返回
+var num6 = Number\("123abc"\);  \/\/NaN
+var num7 = Number\("abc123"\);  \/\/NaN
+```
 
 ##### 2.parseInt\(\)
 
