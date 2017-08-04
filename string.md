@@ -109,9 +109,11 @@ var message;
 if (message) {     //会自动把message转换成false
 //todo...
 }
+
 转换为false的值：false、""、0和NaN、null、undefined
+
  //转换为true 非空字符串 非0数字 true 任何对象 
 
-//转换成false 空字符串 0 false null undefined
+ //转换成false 空字符串 0 false null undefined
 ```
 
