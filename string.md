@@ -35,8 +35,7 @@
     console.log(String(undefined)); 
     //结果"undefined"
 
-    •String()函数存在的意义：有些值没有toString()，
-这个时候可以使用String()。比如：undefined和null
+    •String()函数存在的意义：有些值没有toString()，这个时候可以使用String()。比如：undefined和null
 
 ```
 
