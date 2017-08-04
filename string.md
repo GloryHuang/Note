@@ -98,4 +98,14 @@ parseFloat不支持第二个参数，只能解析10进制数
 ```
 
 ###转换成布尔类型
+    Boolean()函数
+    例如：
+     var b = Boolean("123");   //返回yes
+    流程控制语句会把后面的值隐式转换成布尔类型
+    例如：
+    var message;
+    if (message) {     //会自动把message转换成false
+	//todo...
+    }
+转换为false的值：false、""、0和NaN、null、undefined
 
