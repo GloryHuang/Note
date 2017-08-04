@@ -97,19 +97,21 @@ parseFloat不支持第二个参数，只能解析10进制数
 如果解析的内容里只有整数，解析成整数
 ```
 
-###转换成布尔类型
-    Boolean()函数
-    例如：
-     var b = Boolean("123");   //返回yes
-    流程控制语句会把后面的值隐式转换成布尔类型
-    例如：
-    var message;
-    if (message) {     //会自动把message转换成false
-	//todo...
-    }
-    转换为false的值：false、""、0和NaN、null、undefined
-     //转换为true 非空字符串 非0数字 true 任何对象 
+### 转换成布尔类型
 
-    //转换成false 空字符串 0 false null undefined
+```js
+Boolean()函数
+例如：
+ var b = Boolean("123");   //返回yes
+流程控制语句会把后面的值隐式转换成布尔类型
+例如：
+var message;
+if (message) {     //会自动把message转换成false
+//todo...
+}
+转换为false的值：false、""、0和NaN、null、undefined
+ //转换为true 非空字符串 非0数字 true 任何对象 
 
+//转换成false 空字符串 0 false null undefined
+```
 
