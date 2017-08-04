@@ -1,6 +1,6 @@
 ### 转换成字符串的方法
 
-##### 1.toString()
+##### 1.toString\(\)
 
 ```js
     var age = 18;
@@ -65,7 +65,8 @@ Number()、 parseInt()、 parseFloat()
 
 ##### 1.number\(\)
 
-
-Number()可以把任意值转换成数值，如果要转换的
+Number\(\)可以把任意值转换成数值，如果要转换的
 字符串中有一个不是数值的字符，返回NaN
+
+
 
