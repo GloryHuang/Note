@@ -87,11 +87,13 @@ var num5 = parseInt("10");      //返回10
 var num4 = parseInt("0xA");     //返回10
 ```
 
-#####3.parseFloat()
-    parseFloat()把字符串转换成浮点数
-    parseFloat()和parseInt非常相似，不同之处在与
-    parseFloat会解析第一个. 遇到第二个.或者非数字结束
-    parseFloat不支持第二个参数，只能解析10进制数
-    如果解析的内容里只有整数，解析成整数
+##### 3.parseFloat\(\)
 
+```js
+parseFloat()把字符串转换成浮点数
+parseFloat()和parseInt非常相似，不同之处在与
+parseFloat会解析第一个. 遇到第二个.或者非数字结束
+parseFloat不支持第二个参数，只能解析10进制数
+如果解析的内容里只有整数，解析成整数
+```
 
