@@ -64,7 +64,7 @@ Number()、 parseInt()、 parseFloat()
 
 ##### 1.number\(\)
 
-```
+```js
 Number\(\)可以把任意值转换成数值，如果要转换的字符串中有一个不是数值的字符，返回NaN
 例如：
 var num1 = Number\(true\); \/\/true返回1  false返回0
@@ -86,4 +86,4 @@ var num3 = parseInt("");        //空字符串返回    NaN，Number("")返回0
 var num5 = parseInt("10");      //返回10
 var num4 = parseInt("0xA");     //返回10
 ```
-
+。
