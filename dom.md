@@ -58,5 +58,19 @@ DOM操作:
       注释          8
       文档          9
 
+###访问子节点的第一和最后项
+    一、firstChild 属性返回‘childNodes’数组的第一个子节点。如果选定的节点没有子节点，则该属性返回 NULL。
 
+    语法：
+
+    node.firstChild
+    说明：与elementNode.childNodes[0]是同样的效果。 
+
+    二、 lastChild 属性返回‘childNodes’数组的最后一个子节点。如果选定的节点没有子节点，则该属性返回 NULL。
+
+    语法：
+
+    node.lastChild说明：与elementNode.childNodes[elementNode.childNodes.length-1]是同样的效果。 
+
+    注意: 上一节中，我们知道Internet Explorer 会忽略节点之间生成的空白文本节点，而其它浏览器不会。我们可以通过检测节点类型，过滤子节点。 (以后章节讲解)
 
