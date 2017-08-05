@@ -107,5 +107,19 @@
        body.appendChild(btn);  
  
         效果：在HTML文档中，创建一个文本框，使用setAttribute设置属性值。 当点击这个文本框时，会弹出对话框“This is a text!”。
+   
+
+#####6.createTextNode()创建文本节点
+    createTextNode() 方法创建新的文本节点，返回新创建的 Text 节点。
+
+    语法：
+
+    document.createTextNode(data)
+    参数：
+
+    data : 字符串值，可规定此节点的文本。
+
+    我们来创建一个<div>元素并向其中添加一条消息，代码如下：
     
+   ![](http://img.mukewang.com/53951c200001d32d07130554.jpg)
     
