@@ -47,3 +47,16 @@ function validB(){
 
     对象属性:
    ![](/assets/5354d2810001a47706210213.jpg)
+
+###屏幕分辨率的高和宽
+    
+    window.screen 对象包含有关用户屏幕的信息。
+    1. screen.height 返回屏幕分辨率的高
+    2. screen.width 返回屏幕分辨率的宽
+    注意:
+    1.单位以像素计。
+    2. window.screen 对象在编写时可以不使用 window 这个前缀。
+    我们来获取屏幕的高和宽，代码如下:
+
+    document.write( "屏幕宽度："+screen.width+"px<br />" );
+    document.write( "屏幕高度："+screen.height+"px<br />" );
