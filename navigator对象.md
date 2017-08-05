@@ -8,6 +8,7 @@ Navigator 对象包含有关浏览器的信息，通常用于检测浏览器与�
 
 查看浏览器的名称和版本，代码如下:
 
+
 <script type="text/javascript">
    var browser=navigator.appName;
    var b_version=navigator.appVersion;
