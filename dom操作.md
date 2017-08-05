@@ -40,6 +40,7 @@
     注意: otest.insertBefore(newnode,node); 也可以改为:  otest.insertBefore(newnode,otest.childNodes[0]); 
 
 
+
 #####3.removeChild()删除节点
     removeChild() 方法从子节点列表中删除某个节点。如删除成功，此方法可返回被删除的节点，如失败，则返回 NULL。
 
