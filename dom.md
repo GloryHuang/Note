@@ -9,3 +9,8 @@
     2. 文本节点:向用户展示的内容，如<li>...</li>中的JavaScript、DOM、CSS等文本。
 
     3. 属性节点:元素属性，如<a>标签的链接属性href="http://www.imooc.com"。
+
+    
+节点属性:
+    ![](/assets/5375c953000117ee05240129.jpg)
+
