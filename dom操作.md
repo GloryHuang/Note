@@ -98,14 +98,14 @@
 
     我们也可以使用setAttribute来设置属性，代码如下：
 
-   var body= document.body;             
-   var btn = document.createElement("input");  
-   btn.setAttribute("type", "text");  
-   btn.setAttribute("name", "q");  
-   btn.setAttribute("value", "使用setAttribute");  
-   btn.setAttribute("onclick", "javascript:alert('This is a text!');");       
-   body.appendChild(btn);  
+       var body= document.body;             
+       var btn = document.createElement("input");  
+       btn.setAttribute("type", "text");  
+       btn.setAttribute("name", "q");  
+       btn.setAttribute("value", "使用setAttribute");  
+       btn.setAttribute("onclick", "javascript:alert('This is a text!');");       
+       body.appendChild(btn);  
  
-    效果：在HTML文档中，创建一个文本框，使用setAttribute设置属性值。 当点击这个文本框时，会弹出对话框“This is a text!”。
+        效果：在HTML文档中，创建一个文本框，使用setAttribute设置属性值。 当点击这个文本框时，会弹出对话框“This is a text!”。
     
     
