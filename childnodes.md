@@ -8,4 +8,6 @@
 
     elementNode.childNodes
 
+    注意:
     
+    如果选定的节点没有子节点，则该属性返回不包含节点的 NodeList。
