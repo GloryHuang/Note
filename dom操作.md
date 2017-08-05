@@ -56,7 +56,7 @@
    ![](http://img.mukewang.com/5399744d000153a306060342.jpg)
     
 
-####4.replaceChild()替换元素节点
+#####4.replaceChild()替换元素节点
 
     replaceChild 实现子节点(对象)的替换。返回被替换对象的引用。 
 
@@ -72,3 +72,5 @@
     
    ![](http://img.mukewang.com/539557d70001c3ee07190429.jpg)
     
+
+#####5.createElement()创建元素节点
