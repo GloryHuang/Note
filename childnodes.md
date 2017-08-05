@@ -30,3 +30,5 @@
     1. IE全系列、firefox、chrome、opera、safari兼容问题
 
     2. 节点之间的空白符，在firefox、chrome、opera、safari浏览器是文本节点，所以IE是3，其它浏览器是7，如下图所示:
+
+![](/assets/538d2b8a000163e303430127.jpg)
