@@ -74,3 +74,7 @@
     
 
 #####5.createElement()创建元素节点
+
+    createElement()方法可创建元素节点。此方法可返回一个 Element 对象。
+    
+    
