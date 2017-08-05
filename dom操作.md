@@ -36,4 +36,5 @@
     This is a new p
     JavaScript
     HTML
+
     注意: otest.insertBefore(newnode,node); 也可以改为:  otest.insertBefore(newnode,otest.childNodes[0]); 
