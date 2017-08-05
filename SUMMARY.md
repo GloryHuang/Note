@@ -26,6 +26,7 @@
     * [其他问题](其他问题.md)
     * [Localhost对象](localhost对象.md)
     * [Navigator对象](navigator对象.md)
+    * [DOM](dom.md)
 * [工具函数](工具函数.md)
     * [缓动框架封装\(单个属性\)](sss.md)
     * [缓动框架封装\(多个属性\)](缓动框架封装多个属性.md)
