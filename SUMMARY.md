@@ -13,6 +13,7 @@
         * [DOMContentLoaded事件](domcontentloaded事件.md)
         * [兼容方法获取元素样式](兼容方法获取元素样式.md)
         * [childNodes兼容性](childnodes.md)
+        * [获取浏览器宽高兼容性](获取浏览器宽高兼容性.md)
 * [HTML](html.md)
     * [meta](meta.md)
 * [CSS](css.md)
