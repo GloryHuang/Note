@@ -12,6 +12,7 @@
         * [给一个元素绑定多种事件](给一个元素绑定多种事件.md)
         * [DOMContentLoaded事件](domcontentloaded事件.md)
         * [兼容方法获取元素样式](兼容方法获取元素样式.md)
+        * [childNodes兼容性](childnodes.md)
 * [HTML](html.md)
     * [meta](meta.md)
 * [CSS](css.md)
