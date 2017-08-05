@@ -55,4 +55,18 @@
     
    ![](http://img.mukewang.com/5399744d000153a306060342.jpg)
     
+
+####4.replaceChild()替换元素节点
+
+    replaceChild 实现子节点(对象)的替换。返回被替换对象的引用。 
+
+    语法：
+
+    node.replaceChild (newnode,oldnew ) 
+    参数：
+
+    newnode : 必需，用于替换 oldnew 的对象。 
+    oldnew : 必需，被 newnode 替换的对象。
+
+    我们来看看下面的代码:
     
