@@ -76,5 +76,36 @@
 #####5.createElement()创建元素节点
 
     createElement()方法可创建元素节点。此方法可返回一个 Element 对象。
+
+    语法：
+
+    document.createElement(tagName)
+    参数:
+
+    tagName：字符串值，这个字符串用来指明创建元素的类型。
+
+    注意：要与appendChild() 或 insertBefore()方法联合使用，将元素显示在页面中。
+
+    我们来创建一个按钮，代码如下：
+
+      var body = document.body; 
+      var input = document.createElement("input");  
+      input.type = "button";  
+      input.value = "创建一个按钮";  
+      body.appendChild(input); 
+ 
+    效果：在HTML文档中，创建一个按钮。
+
+    我们也可以使用setAttribute来设置属性，代码如下：
+
+   var body= document.body;             
+   var btn = document.createElement("input");  
+   btn.setAttribute("type", "text");  
+   btn.setAttribute("name", "q");  
+   btn.setAttribute("value", "使用setAttribute");  
+   btn.setAttribute("onclick", "javascript:alert('This is a text!');");       
+   body.appendChild(btn);  
+ 
+    效果：在HTML文档中，创建一个文本框，使用setAttribute设置属性值。 当点击这个文本框时，会弹出对话框“This is a text!”。
     
     
