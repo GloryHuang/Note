@@ -31,4 +31,9 @@
     
   ![](http://img.mukewang.com/5395318100010c6806960431.jpg)
 
+  运行结果:
 
+    This is a new p
+    JavaScript
+    HTML
+    注意: otest.insertBefore(newnode,node); 也可以改为:  otest.insertBefore(newnode,otest.childNodes[0]); 
