@@ -31,4 +31,14 @@
 
     2. 节点之间的空白符，在firefox、chrome、opera、safari浏览器是文本节点，所以IE是3，其它浏览器是7，如下图所示:
 
-![](/assets/538d2b8a000163e303430127.jpg)
+   ![](/assets/538d2b8a000163e303430127.jpg)
+
+    如果把代码改成这样:
+
+    <ul><li>javascript</li><li>jQuery</li><li>PHP</li></ul>
+
+    运行结果:（IE和其它浏览器结果是一样的）
+
+      UL子节点个数:3
+      节点类型:1
+
