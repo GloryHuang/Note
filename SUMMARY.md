@@ -28,6 +28,7 @@
     * [Localhost对象](localhost对象.md)
     * [Navigator对象](navigator对象.md)
     * [DOM](dom.md)
+    * [DOM操作](dom操作.md)
 * [工具函数](工具函数.md)
     * [缓动框架封装\(单个属性\)](sss.md)
     * [缓动框架封装\(多个属性\)](缓动框架封装多个属性.md)
