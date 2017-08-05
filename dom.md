@@ -25,52 +25,62 @@ HTML文档可以说由节点构成的集合，DOM节点有:
 DOM操作:
    ![](/assets/538d29da000152db05360278.jpg)
 
+### 节点属性
 
-###节点属性
+```
+在文档对象模型 (DOM) 中，每个节点都是一个对象。DOM 节点有三个重要的属性 ：
 
-    在文档对象模型 (DOM) 中，每个节点都是一个对象。DOM 节点有三个重要的属性 ：
+1. nodeName : 节点的名称
 
-    1. nodeName : 节点的名称
+2. nodeValue ：节点的值
 
-    2. nodeValue ：节点的值
+3. nodeType ：节点的类型
 
-    3. nodeType ：节点的类型
+一、nodeName 属性: 节点的名称，是只读的。
 
-    一、nodeName 属性: 节点的名称，是只读的。
+1. 元素节点的 nodeName 与标签名相同
+2. 属性节点的 nodeName 是属性的名称
+3. 文本节点的 nodeName 永远是 #text
+4. 文档节点的 nodeName 永远是 #document
 
-    1. 元素节点的 nodeName 与标签名相同
-    2. 属性节点的 nodeName 是属性的名称
-    3. 文本节点的 nodeName 永远是 #text
-    4. 文档节点的 nodeName 永远是 #document
+二、nodeValue 属性：节点的值
 
-    二、nodeValue 属性：节点的值
+1. 元素节点的 nodeValue 是 undefined 或 null
+2. 文本节点的 nodeValue 是文本自身
+3. 属性节点的 nodeValue 是属性的值
 
-    1. 元素节点的 nodeValue 是 undefined 或 null
-    2. 文本节点的 nodeValue 是文本自身
-    3. 属性节点的 nodeValue 是属性的值
+三、nodeType 属性: 节点的类型，是只读的。以下常用的几种结点类型:
 
-    三、nodeType 属性: 节点的类型，是只读的。以下常用的几种结点类型:
+元素类型    节点类型
+  元素          1
+  属性          2
+  文本          3
+  注释          8
+  文档          9
+```
 
-    元素类型    节点类型
-      元素          1
-      属性          2
-      文本          3
-      注释          8
-      文档          9
+### 访问子节点的第一和最后项
 
-###访问子节点的第一和最后项
-    一、firstChild 属性返回‘childNodes’数组的第一个子节点。如果选定的节点没有子节点，则该属性返回 NULL。
+```
+一、firstChild 属性返回‘childNodes’数组的第一个子节点。如果选定的节点没有子节点，则该属性返回 NULL。
 
-    语法：
+语法：
 
-    node.firstChild
-    说明：与elementNode.childNodes[0]是同样的效果。 
+node.firstChild
+说明：与elementNode.childNodes[0]是同样的效果。 
 
-    二、 lastChild 属性返回‘childNodes’数组的最后一个子节点。如果选定的节点没有子节点，则该属性返回 NULL。
+二、 lastChild 属性返回‘childNodes’数组的最后一个子节点。如果选定的节点没有子节点，则该属性返回 NULL。
 
-    语法：
+语法：
 
-    node.lastChild说明：与elementNode.childNodes[elementNode.childNodes.length-1]是同样的效果。 
+node.lastChild
+```
 
-    注意: 上一节中，我们知道Internet Explorer 会忽略节点之间生成的空白文本节点，而其它浏览器不会。我们可以通过检测节点类型，过滤子节点。 (以后章节讲解)
+说明：与elementNode.childNodes\[elementNode.childNodes.length-1\]是同样的效果。
+
+```
+注意: 上一节中，我们知道Internet Explorer 会忽略节点之间生成的空白文本节点，而其它浏览器不会。我们可以通过检测节点类型，过滤子节点。 (以后章节讲解)
+```
+
+
 
