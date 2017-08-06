@@ -1,15 +1,16 @@
-function stopBubble\(e\){
-
-     if \(e && e.stopPropagation\){
-
-```
-    e.stopPropagation()
-
-else
-
-    window.event.cancelBubble=true
-}
-return false
+```js
+ function stopBubble(e){
+ 
+ if(e && e.stopPropagation){
+ 
+   e.stopPropagation()
+   
+  }else{
+   
+   window.event.cancelBubble=true
+  
+  }
+  return false
 ```
 
 
