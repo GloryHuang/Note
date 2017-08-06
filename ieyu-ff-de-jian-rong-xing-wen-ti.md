@@ -17,22 +17,22 @@ IE用srcElement获取事件源，而FF用target获取事件源；
 \(3\) 添加，去除事件  
 IE：
 
-```
-element.attachEvent\(“onclick”, function\)
+```js
+element.attachEvent(“onclick”, function(){})
 ```
 
-```
-element.detachEvent\(“onclick”, function\)
+```js
+element.detachEvent(“onclick”, function(){})
 ```
 
 FF：
 
-```
-element.addEventListener\(“click”,function,true\)
+```js
+element.addEventListener(“click”,function,true)
 ```
 
-```
-element.removeEventListener\(“click”, function, true\)
+```js
+element.removeEventListener(“click”, function, true)
 ```
 
 \(4\) 获取标签的自定义属性  
