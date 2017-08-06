@@ -1,16 +1,16 @@
-function stopBubble\(e\)
+function stopBubble\(e\){
 
-{
+if \(e && e.stopPropagation\){
 
-    if \(e && e.stopPropagation\)
+```
+    e.stopPropagation()
 
-        e.stopPropagation\(\)
+else
 
-    else
-
-        window.event.cancelBubble=true
-
+    window.event.cancelBubble=true
 }
-
 return false
+```
+
+
 
