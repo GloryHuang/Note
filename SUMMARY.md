@@ -15,6 +15,7 @@
     * [childNodes兼容性](childnodes.md)
     * [获取浏览器宽高兼容性](获取浏览器宽高兼容性.md)
     * [IE与FF的兼容性问题](ieyu-ff-de-jian-rong-xing-wen-ti.md)
+    * [如何阻止事件冒泡和默认事件](ru-he-zu-zhi-shi-jian-mao-pao-he-mo-ren-shi-jian.md)
 * [HTML](html.md)
   * [meta](meta.md)
 * [CSS](css.md)
