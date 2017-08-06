@@ -17,7 +17,9 @@ IE用srcElement获取事件源，而FF用target获取事件源；
 \(3\) 添加，去除事件  
 IE：
 
-         element.attachEvent\(“onclick”, function\)
+```
+   element.attachEvent\(“onclick”, function\)
+```
 
 ```
    element.detachEvent\(“onclick”, function\)
@@ -25,7 +27,9 @@ IE：
 
 FF：
 
-          element.addEventListener\(“click”,function,true\)
+```
+    element.addEventListener\(“click”,function,true\)
+```
 
 ```
     element.removeEventListener\(“click”, function, true\)
