@@ -15,14 +15,21 @@ IE用srcElement获取事件源，而FF用target获取事件源；
 例如：var target = e.target \|\| e.srcElement;
 
 \(3\) 添加，去除事件  
-IE：element.attachEvent\(“onclick”, function\)
+IE：
 
-       element.detachEvent\(“onclick”, function\)
+         element.attachEvent\(“onclick”, function\)
 
-  
-FF：element.addEventListener\(“click”,function,true\)     
+```
+   element.detachEvent\(“onclick”, function\)
+```
 
-        element.removeEventListener\(“click”, function, true\)
+FF：
+
+          element.addEventListener\(“click”,function,true\)
+
+```
+    element.removeEventListener\(“click”, function, true\)
+```
 
 \(4\) 获取标签的自定义属性  
 IE：div1.value或div1\[“value”\]  
