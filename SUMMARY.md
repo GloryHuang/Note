@@ -5,6 +5,8 @@
   * [如何解析JSON](如何解析json.md)
   * [事件委托](javascript.md)
 * [First Chapter](chapter1.md)
+* [Git](git.md)
+  * [Git的发展史](git/gitde-fa-zhan-shi.md)
 * [兼容性问题](兼容性问题、.md)
   * [CSS兼容性问题](css兼容性问题.md)
   * [JAVASCRIPT兼容性问题](javascript兼容性问题.md)
