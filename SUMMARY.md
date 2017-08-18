@@ -5,6 +5,8 @@
   * [如何解析JSON](如何解析json.md)
   * [事件委托](javascript.md)
 * [First Chapter](chapter1.md)
+* [NodeJS模块化开发](nodejsmo-kuai-hua-kai-fa.md)
+  * [模块系统](nodejsmo-kuai-hua-kai-fa/mo-kuai-xi-tong.md)
 * [Git](git.md)
   * [Git的发展史](git/gitde-fa-zhan-shi.md)
 * [兼容性问题](兼容性问题、.md)
