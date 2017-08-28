@@ -53,7 +53,7 @@
     }
 }
 
-3、 二路归并
+3、二路归并
     function merge(left, right) {
     var result = [],
         il = 0,
