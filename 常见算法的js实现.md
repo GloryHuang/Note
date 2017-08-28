@@ -279,8 +279,8 @@
             if (key == arr[mid]) {
                 return mid;
             } else if (key > arr[mid]) {
-            return binary_search2(arr, mid + 1, high, key);
+                return binary_search2(arr, mid + 1, high, key);
             } else if (key < arr[mid]) {
-            return binary_search2(arr, low, mid - 1, key);
+                return binary_search2(arr, low, mid - 1, key);
         }
      }
