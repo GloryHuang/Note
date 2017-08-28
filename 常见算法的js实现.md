@@ -234,8 +234,7 @@ function getMaxProfit(arr) {
 
 2、 生成菲波那切数列
 强行递归实现
-function
-getfib(n) {
+function getfib(n) {
     if (n == 0) return
     0;
     if (n == 1) return
