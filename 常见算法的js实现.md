@@ -205,6 +205,7 @@ function getMaxProfit(arr) {
     return
     max - min;
 }
+
 ####其他常见算法
 // 1、 阶乘
 // 非递归实现
