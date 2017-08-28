@@ -294,7 +294,7 @@ function binary_search(arr, key) {
     }
     return -1;
 }
- 递归实现
+递归实现
 function
 binary_search2(arr, low, high, key) {
     if (low > high) return -1;
