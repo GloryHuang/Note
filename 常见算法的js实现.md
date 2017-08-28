@@ -120,45 +120,42 @@
         }
         return arr.join("");
     }
-// 3、 生成指定长度随机字符串
-function
-randomString(n) {
-    var str = 'abcdefghijklmnopqrstuvwxyz0123456789';
-    var tmp = '';
-    for (var i = 0; i < n; i
-        ++) {
-        tmp += str.
-        charAt(Math.round(Math.random() * str.length));
-    }
-    return
-    tmp;
-}
-// 4、 统计字符串中次数最多字母
-function
-findMaxDuplicateChar(str) {
-    if (str.length == 1) {
-        return
-        str;
-    }
-    var charObj = {};
-    for (var i = 0; i < str.length; i
-        ++) {
-        if (!charObj[str.charAt(i)]) {
-            charObj[str.charAt(i)] = 1;
-        } else {
-            charObj[str.charAt(i)] += 1;
+
+3、 生成指定长度随机字符串
+
+    function randomString(n) {
+        var str = 'abcdefghijklmnopqrstuvwxyz0123456789';
+        var tmp = '';
+        for (var i = 0; i < n; i++) {
+            tmp += str.
+            charAt(Math.round(Math.random() * str.length));
         }
+        return tmp;
     }
-    var maxChar = '',
-        maxValue = 1;
-    for (var k in charObj) {
-        if (charObj[k] >= maxValue) {
-            maxChar = k;
-            maxValue = charObj[k];
+
+ 4、 统计字符串中次数最多字母
+
+    function findMaxDuplicateChar(str) {
+        if (str.length == 1) {
+            return str;
+            }
+            var charObj = {};
+            for (var i = 0; i < str.length; i++) {
+                if (!charObj[str.charAt(i)]) {
+                    charObj[str.charAt(i)] = 1;
+                } else {
+                    charObj[str.charAt(i)] += 1;
+            }
         }
+            var maxChar = '',maxValue = 1;
+            for (var k in charObj) {
+            if (charObj[k] >= maxValue) {
+                maxChar = k;
+                maxValue = charObj[k];
+            }
+        }
+        return maxChar + '：' + maxValue;
     }
-    return maxChar + '：' + maxValue;
-}
 
 ####数组操作
 1、 数组去重
