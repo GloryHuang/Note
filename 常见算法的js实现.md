@@ -182,13 +182,13 @@ findMaxDuplicateChar(str) {
 1、 数组去重
 
     function unique(arr) {
-    var obj = {}
-    var result = []
-    for (var i in arr) {
-        if (!obj[arr[i]]) {
-            obj[arr[i]] = true;
-            result.
-            push(arr[i]);
+        var obj = {}
+        var result = []
+        for (var i in arr) {
+            if (!obj[arr[i]]) {
+                obj[arr[i]] = true;
+                result.
+                push(arr[i]);
         }
     }
     return
