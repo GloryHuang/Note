@@ -179,7 +179,7 @@ findMaxDuplicateChar(str) {
 }
 
 ####数组操作
-// 1、 数组去重
+1、 数组去重
 function
 unique(arr) {
     var obj = {}
