@@ -226,7 +226,7 @@ function factorialize(num) {
 
 递归实现
 
-```
+```js
 function factorialize(num) {
     var result = 1;
     if (num < 0) 
