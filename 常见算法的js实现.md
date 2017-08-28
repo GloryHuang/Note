@@ -54,7 +54,7 @@
 }
 
 3、二路归并
-    function merge(left, right) {
+        function merge(left, right) {
     var result = [],
         il = 0,
         ir = 0;
