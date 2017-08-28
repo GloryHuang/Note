@@ -180,8 +180,8 @@ findMaxDuplicateChar(str) {
 
 ####数组操作
 1、 数组去重
-function
-unique(arr) {
+
+    function unique(arr) {
     var obj = {}
     var result = []
     for (var i in arr) {
