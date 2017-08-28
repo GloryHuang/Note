@@ -86,8 +86,7 @@
 字符串操作
 1、判断回文字符串
 
-function
-palindrome(str) {
+function palindrome(str) {
     // \W匹配任何非单词字符。等价于“[^A-Za-z0-9_]”。
     var re = /[\W_]/
     g;
