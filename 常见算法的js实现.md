@@ -297,13 +297,11 @@ function fibo(len) {
 递归实现
 
     function binary_search2(arr, low, high, key) {
-    if (low > high) return -1;
-    var mid = parseInt((low + high) / 2);
-    if (key == arr[mid]) {
-        return
-        mid;
-    } else
-    if (key > arr[mid]) {
+        if (low > high) return -1;
+        var mid = parseInt((low + high) / 2);
+        if (key == arr[mid]) {
+            return mid;
+        } else if (key > arr[mid]) {
         return
         binary_search2(arr, mid + 1, high, key);
     } else
