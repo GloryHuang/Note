@@ -148,7 +148,7 @@ function randomString(n) {
 
 4、 统计字符串中次数最多字母
 
-```
+```js
 function findMaxDuplicateChar(str) {
     if (str.length == 1) {
             return str;
