@@ -104,7 +104,7 @@
         for (var i = str.length - 1; i >= 0; i--) 
             tmp += str[i];
         return tmp
-}
+    }
 
 思路二： 转化成array操作
 
