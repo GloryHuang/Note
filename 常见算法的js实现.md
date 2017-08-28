@@ -295,8 +295,7 @@ function binary_search(arr, key) {
     return -1;
 }
 递归实现
-function
-binary_search2(arr, low, high, key) {
+    function binary_search2(arr, low, high, key) {
     if (low > high) return -1;
     var mid = parseInt((low + high) / 2);
     if (key == arr[mid]) {
