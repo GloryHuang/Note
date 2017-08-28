@@ -96,14 +96,14 @@
 }
 
 2、 翻转字符串
+
 思路一： 反向遍历字符串
-function
-reverseString(str) {
-    var tmp = '';
-    for (var i = str.length - 1; i >= 0; i
-        --) tmp += str[i];
-    return
-    tmp
+
+    function reverseString(str) {
+        var tmp = '';
+        for (var i = str.length - 1; i >= 0; i--) 
+            tmp += str[i];
+        return tmp
 }
 
 思路二： 转化成array操作
