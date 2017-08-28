@@ -2,7 +2,7 @@
 
 // 排序算法
 
-// 1、 冒泡排序
+1、 冒泡排序
 
     function bubbleSort(arr) {
      var i = 0,
