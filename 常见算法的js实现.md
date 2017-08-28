@@ -2,9 +2,8 @@
 
 // 排序算法
 // 1、 冒泡排序
-function
-bubbleSort(arr) {
-    var i = 0,
+    function bubbleSort(arr) {
+     var i = 0,
         j = 0;
     for (i = 1; i < arr.length; i
         ++) {
