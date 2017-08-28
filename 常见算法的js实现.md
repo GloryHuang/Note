@@ -242,7 +242,7 @@ function factorialize(num) {
 
 强行递归实现
 
-```
+```js
 function getfib(n) {
     if (n == 0) 
         return 0;
