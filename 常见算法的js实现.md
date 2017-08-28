@@ -192,7 +192,8 @@ findMaxDuplicateChar(str) {
     }
     return result;
 }
-// 2、 数组中最大差值
+
+2、 数组中最大差值
 function
 getMaxProfit(arr) {
     var min = arr[0],
