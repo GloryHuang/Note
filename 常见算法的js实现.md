@@ -51,6 +51,7 @@
         quickSort(arr, i + 1, r);
     }
 }
+
 3、 二路归并
     function merge(left, right) {
     var result = [],
