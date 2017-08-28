@@ -44,12 +44,12 @@
             //这里用j--，被换过来的必然比x大，赋值后直接让j自减，不用再比较，可以提高效率
                 arr[j
                     --] = arr[i];
+            }
+            arr[i] = x;
+            quickSort(arr, l, i - 1);
+            quickSort(arr, i + 1, r);
         }
-        arr[i] = x;
-        quickSort(arr, l, i - 1);
-        quickSort(arr, i + 1, r);
     }
-}
 
 3、二路归并
     function merge(left, right) {
