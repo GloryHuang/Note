@@ -306,4 +306,4 @@ function fibo(len) {
         } else if (key < arr[mid]) {
         return binary_search2(arr, low, mid - 1, key);
     }
-}
+ }
