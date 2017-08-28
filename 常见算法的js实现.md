@@ -109,24 +109,17 @@
 思路二： 转化成array操作
 
     function reverseString(str) {
-    var arr = str.
-    split("");
-    var i = 0,
-        j = arr.
-        length - 1;
-    while (i < j) {
-        tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
-        i
-        ++;
-        j
-        --;
+        var arr = str.split("");
+        var i = 0,j = arr.length - 1;
+        while (i < j) {
+            tmp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tmp;
+            i++;
+            j--;
+        }
+        return arr.join("");
     }
-    return
-    arr.
-    join("");
-}
 // 3、 生成指定长度随机字符串
 function
 randomString(n) {
