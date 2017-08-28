@@ -177,7 +177,8 @@ findMaxDuplicateChar(str) {
     return
     maxChar + '：' + maxValue;
 }
-// 数组操作
+
+###数组操作
 // 1、 数组去重
 function
 unique(arr) {
