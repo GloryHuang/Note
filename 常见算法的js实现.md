@@ -202,14 +202,16 @@
     }
 
 递归实现
+
     function factorialize(num) {
-    var result = 1;
-    if (num < 0) return -1;
-    if (num == 0 || num == 1) return
-    1;
-    if (num > 1) return
-    num * factorialize(num - 1);
-}
+        var result = 1;
+        if (num < 0) 
+               return -1;
+        if (num == 0 || num == 1) 
+                return 1;
+            if (num > 1) 
+                    return num * factorialize(num - 1);
+    }
 
 2、 生成菲波那切数列
 强行递归实现
