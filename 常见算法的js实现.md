@@ -81,7 +81,9 @@
     }
     return
     result;
-}字符串操作
+}
+
+字符串操作
 1、判断回文字符串
 
 function
