@@ -174,8 +174,7 @@ findMaxDuplicateChar(str) {
             maxValue = charObj[k];
         }
     }
-    return
-    maxChar + '：' + maxValue;
+    return maxChar + '：' + maxValue;
 }
 
 ####数组操作
