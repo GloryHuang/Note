@@ -276,6 +276,7 @@ function fibo(len) {
 3、 二分查找
 
 非递归实现
+
 function binary_search(arr, key) {
     var low = 0,
         high = arr.
