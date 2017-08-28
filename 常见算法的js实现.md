@@ -176,7 +176,7 @@ function findMaxDuplicateChar(str) {
 
 1、 数组去重
 
-```
+```js
 function unique(arr) {
     var obj = {}
     var result = []
