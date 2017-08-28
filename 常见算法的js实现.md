@@ -289,10 +289,10 @@ function fibo(len) {
                 low = mid + 1;
             } else if (key < arr[mid]) {
                 high = mid - 1;
+            }
         }
+        return -1;
     }
-    return -1;
-}
 
 递归实现
 
