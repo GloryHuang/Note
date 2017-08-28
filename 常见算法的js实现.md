@@ -93,7 +93,7 @@
                return false;
             //递归
         return palindrome(lowRegStr.slice(1, lowRegStr.length - 1));
-}
+    }
 
 2、 翻转字符串
 
