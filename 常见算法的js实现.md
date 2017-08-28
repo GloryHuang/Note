@@ -117,7 +117,7 @@ function reverseString(str) {
 
 思路二： 转化成array操作
 
-```
+```js
 function reverseString(str) {
     var arr = str.split("");
     var i = 0,j = arr.length - 1;
