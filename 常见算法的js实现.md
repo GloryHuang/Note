@@ -278,7 +278,7 @@ function fibo(len) {
 非递归实现
 
     function binary_search(arr, key) {
-    var low = 0,
+        var low = 0,
         high = arr.
         length - 1;
     while (low <= high) {
