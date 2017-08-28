@@ -231,8 +231,9 @@ function getMaxProfit(arr) {
     if (num > 1) return
     num * factorialize(num - 1);
 }
-// 2、 生成菲波那切数列
-// 强行递归实现
+
+2、 生成菲波那切数列
+强行递归实现
 function
 getfib(n) {
     if (n == 0) return
