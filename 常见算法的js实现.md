@@ -62,15 +62,15 @@
                 result.push(left[il++]);
                 } else {
                     result.push(right[ir++]);
-                        }
                 }
-                    while (left[il]) {
-                        result.push(left[il++]);
-                        }
-                        while (right[ir]) {
-                            result.push(right[ir++]);
-                                }
-                        return result;
+              }
+        while (left[il]) {
+            result.push(left[il++]);
+            }
+        while (right[ir]) {
+            result.push(right[ir++]);
+            }
+            return result;
         }
 
 
