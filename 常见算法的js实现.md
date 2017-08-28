@@ -269,8 +269,7 @@ function fibo(len) {
         i
         ++;
     }
-    return
-    fibarr;
+    return fibarr;
 }
 
 3、 二分查找
