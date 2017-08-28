@@ -106,7 +106,7 @@ function palindrome(str) {
 
 思路一： 反向遍历字符串
 
-```
+```js
 function reverseString(str) {
     var tmp = '';
     for (var i = str.length - 1; i >= 0; i--) 
