@@ -115,9 +115,10 @@ reverseString(str) {
     return
     tmp
 }
-// 思路二： 转化成array操作
-function
-reverseString(str) {
+
+思路二： 转化成array操作
+
+    function reverseString(str) {
     var arr = str.
     split("");
     var i = 0,
