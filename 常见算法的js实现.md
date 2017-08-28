@@ -57,7 +57,7 @@ if (l < r) {
 
 3、二路归并
 
-```
+```js
 function merge(left, right) {
     var result = [],
         il = 0,
