@@ -211,7 +211,7 @@ function getMaxProfit(arr) {
 
 非递归实现
 
-```
+```js
 function factorialize(num) {
     var result = 1;
     if (num < 0) return -1;
