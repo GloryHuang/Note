@@ -283,7 +283,7 @@ function getFibonacci(n) {
 
 非递归实现
 
-```
+```js
 function binary_search(arr, key) {
     var low = 0,
     high = arr.
