@@ -6,10 +6,8 @@
 
 ```js
 function bubbleSort(arr) {
- var i = 0,
-    j = 0;
-for (i = 1; i < arr.length; i
-    ++) {
+     var i = 0,j = 0;
+        for (i = 1; i < arr.length; i++) {
     for (j = 0; j <= arr.length - i; j
         ++) {
         var temp = 0;
