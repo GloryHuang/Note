@@ -214,15 +214,17 @@
     }
 
 2、 生成菲波那切数列
+
 强行递归实现
-function getfib(n) {
-    if (n == 0) return
-    0;
-    if (n == 1) return
-    1;
-    if (n > 1) return
-    getfib(n - 1) + getfib(n - 2);
-}
+
+    function getfib(n) {
+        if (n == 0) 
+            return 0;
+        if (n == 1) 
+            return 1;
+        if (n > 1) 
+            return getfib(n - 1) + getfib(n - 2);
+    }
 
 function fibo(len) {
     var fibo = [];
