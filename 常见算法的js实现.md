@@ -101,7 +101,9 @@ palindrome(str) {
     return
     palindrome(lowRegStr.slice(1, lowRegStr.length - 1));
 }
+
 // 2、 翻转字符串
+
 // 思路一： 反向遍历字符串
 function
 reverseString(str) {
