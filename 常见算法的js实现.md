@@ -27,8 +27,7 @@
 
 2、快速排序
 
-function
-quickSort(arr, l, r) {
+    function quickSort(arr, l, r) {
     if (l < r) {
         var i = l,
             j = r,
