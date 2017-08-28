@@ -137,7 +137,7 @@
 
     function findMaxDuplicateChar(str) {
         if (str.length == 1) {
-            return str;
+                return str;
             }
             var charObj = {};
             for (var i = 0; i < str.length; i++) {
