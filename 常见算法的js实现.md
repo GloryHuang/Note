@@ -18,12 +18,11 @@
                 temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
+                }
             }
         }
+    return arr;
     }
-    return
-    arr;
-}
 
 
 2、快速排序
