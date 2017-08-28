@@ -134,7 +134,7 @@ function reverseString(str) {
 
 3、 生成指定长度随机字符串
 
-```
+```js
 function randomString(n) {
     var str = 'abcdefghijklmnopqrstuvwxyz0123456789';
     var tmp = '';
