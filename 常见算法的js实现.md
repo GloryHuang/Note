@@ -207,10 +207,9 @@ function getMaxProfit(arr) {
 }
 
 ####其他常见算法
-// 1、 阶乘
-// 非递归实现
-function
-factorialize(num) {
+1、 阶乘
+非递归实现
+    function factorialize(num) {
     var result = 1;
     if (num < 0) return -1;
     if (num == 0 || num == 1) return
@@ -222,7 +221,7 @@ factorialize(num) {
     return
     result;
 }
-// 递归实现
+递归实现
 function
 factorialize(num) {
     var result = 1;
