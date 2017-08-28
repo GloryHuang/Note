@@ -253,9 +253,9 @@ function fibo(len) {
     return
     fibo;
 }
-// 简约非递归实现
-function
-getFibonacci(n) {
+
+简约非递归实现
+    function getFibonacci(n) {
     var fibarr = [];
     var i = 0;
     while (i < n) {
