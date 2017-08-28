@@ -263,7 +263,7 @@ function fibo(len) {
 
 简约非递归实现
 
-```
+```js
 function getFibonacci(n) {
     var fibarr = [];
     var i = 0;
