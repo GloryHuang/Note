@@ -28,7 +28,7 @@ for (i = 1; i < arr.length; i
 
 2、快速排序
 
-```
+```js
 function quickSort(arr, l, r) {
 if (l < r) {
     var i = l,
