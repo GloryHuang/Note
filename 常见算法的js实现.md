@@ -226,16 +226,13 @@
             return getfib(n - 1) + getfib(n - 2);
     }
 
-function fibo(len) {
-    var fibo = [];
-    for (var i = 0; i < len; i
-        ++) {
-        fibo.
-        push(getfib(i));
+    function fibo(len) {
+        var fibo = [];
+        for (var i = 0; i < len; i++) {
+            fibo.push(getfib(i));
+            }
+            return fibo;
     }
-    return
-    fibo;
-}
 
 简约非递归实现
     function getFibonacci(n) {
