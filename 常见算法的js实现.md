@@ -194,8 +194,7 @@ findMaxDuplicateChar(str) {
 }
 
 2、 数组中最大差值
-function
-getMaxProfit(arr) {
+function getMaxProfit(arr) {
     var min = arr[0],
         max = arr[0];
     for (var i = 0; i < arr.length; i
