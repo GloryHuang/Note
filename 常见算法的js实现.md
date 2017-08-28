@@ -191,8 +191,7 @@ findMaxDuplicateChar(str) {
                 push(arr[i]);
         }
     }
-    return
-    result;
+    returnresult;
 }
 // 2、 数组中最大差值
 function
