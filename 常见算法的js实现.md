@@ -243,8 +243,7 @@ function getfib(n) {
     getfib(n - 1) + getfib(n - 2);
 }
 
-function
-fibo(len) {
+function fibo(len) {
     var fibo = [];
     for (var i = 0; i < len; i
         ++) {
