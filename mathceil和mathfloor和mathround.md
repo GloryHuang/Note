@@ -58,37 +58,37 @@
 
     
 
-    console.log(Math.ceil(16));
+    console.log(Math.floor(16));
 
     //16
 
-    console.log(Math.ceil(16.1));
+    console.log(Math.floor(16.1));
 
     //16
 
-    console.log(Math.ceil(16.5));
+    console.log(Math.floor(16.5));
 
     //16
 
-    console.log(Math.ceil(16.8));
+    console.log(Math.floor(16.8));
 
     //16
 
 ####负数的时候 向下取整
 
-    console.log(Math.ceil(-16));
+    console.log(Math.floor(-16));
 
     //-16
 
-    console.log(Math.ceil(16.1));
+    console.log(Math.floor(16.1));
 
     //-17
 
-    console.log(Math.ceil(16.5));
+    console.log(Math.floor(16.5));
 
     //-17
 
-    console.log(Math.ceil(-16.8));
+    console.log(Math.floor(-16.8));
 
     //-17
 
