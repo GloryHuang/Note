@@ -46,7 +46,51 @@
 
 
 
+####Math.floor(地板函数)
 
+    Math.ceil向上取整
+
+    
+
+####整数的时候 向上取整
+
+    
+
+    
+
+    console.log(Math.ceil(16));
+
+    //16
+
+    console.log(Math.ceil(16.1));
+
+    //17
+
+    console.log(Math.ceil(16.5));
+
+    //17
+
+    console.log(Math.ceil(16.8));
+
+    //17
+
+####负数的时候 等于它自己
+
+    console.log(Math.ceil(-16));
+
+    //-16
+
+    console.log(Math.ceil(16.1));
+
+    //-16
+
+    console.log(Math.ceil(16.5));
+
+    //-16
+
+    console.log(Math.ceil(-16.8));
+
+    //-16
 
 
 
