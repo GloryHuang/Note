@@ -113,5 +113,21 @@
 
     //17
 
-    
+  
+####负数的时候 
 
+    console.log(Math.round(-16));
+
+    //16
+
+    console.log(Math.round(-16.1));
+
+    //16
+
+    console.log(Math.round(-16.5));
+
+    //16
+
+    console.log(Math.round(-16.8));
+
+    //-17
