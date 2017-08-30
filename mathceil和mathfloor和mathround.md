@@ -25,5 +25,23 @@
     //17
 
 
+####负数的时候
+
+    console.log(Math.ceil(-16));
+
+    //16
+
+    console.log(Math.ceil(16.1));
+
+    //17
+
+    console.log(Math.ceil(16.5));
+
+    //17
+
+    console.log(Math.ceil(16.8));
+
+    //17
+    
 
 
