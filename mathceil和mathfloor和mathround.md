@@ -12,15 +12,15 @@
 
     //16
 
-   console.log(Math.ceil(16.1));
+    console.log(Math.ceil(16.1));
 
-   //17
+    //17
 
-   console.log(Math.ceil(16.5));
+    console.log(Math.ceil(16.5));
 
-   //17
+    //17
 
-   console.log(Math.ceil(16.8));
+    console.log(Math.ceil(16.8));
 
     //17
 
