@@ -48,7 +48,7 @@
 
 ####Math.floor(地板函数)
 
-    Math.ceil向上取整
+    Math.floor向下取整
 
     
 
