@@ -1,135 +1,140 @@
-###Math.ceil和Math.floor和Math.round
+### Math.ceil和Math.floor和Math.round
 
-####Math.ceil(天花板函数)
+#### Math.ceil\(天花板函数\)
 
-    Math.ceil向上取整
-    
-####整数的时候 向上取整
-    
-    
+```
+Math.ceil向上取整
+```
 
-    console.log(Math.ceil(16));
+#### 整数的时候 向上取整
 
-    //16
+```js
+console.log(Math.ceil(16));
 
-    console.log(Math.ceil(16.1));
+//16
 
-    //17
+console.log(Math.ceil(16.1));
 
-    console.log(Math.ceil(16.5));
+//17
 
-    //17
+console.log(Math.ceil(16.5));
 
-    console.log(Math.ceil(16.8));
+//17
 
-    //17
+console.log(Math.ceil(16.8));
 
+//17
+```
 
-####负数的时候 等于它自己
+#### 负数的时候 等于它自己
 
-    console.log(Math.ceil(-16));
+```
+console.log(Math.ceil(-16));
 
-    //-16
+//-16
 
-    console.log(Math.ceil(16.1));
+console.log(Math.ceil(16.1));
 
-    //-16
+//-16
 
-    console.log(Math.ceil(16.5));
+console.log(Math.ceil(16.5));
 
-    //-16
+//-16
 
-    console.log(Math.ceil(-16.8));
+console.log(Math.ceil(-16.8));
 
-    //-16
-    
+//-16
+```
 
+#### Math.floor\(地板函数\)
 
+```
+Math.floor向下取整
+```
 
-####Math.floor(地板函数)
+#### 整数的时候 等于它自己
 
-    Math.floor向下取整
+```
+console.log(Math.floor(16));
 
-    
+//16
 
-####整数的时候 等于它自己
+console.log(Math.floor(16.1));
 
-    
+//16
 
-    
+console.log(Math.floor(16.5));
 
-    console.log(Math.floor(16));
+//16
 
-    //16
+console.log(Math.floor(16.8));
 
-    console.log(Math.floor(16.1));
+//16
+```
 
-    //16
+#### 负数的时候 向下取整
 
-    console.log(Math.floor(16.5));
+```
+console.log(Math.floor(-16));
 
-    //16
+//-16
 
-    console.log(Math.floor(16.8));
+console.log(Math.floor(16.1));
 
-    //16
+//-17
 
-####负数的时候 向下取整
+console.log(Math.floor(16.5));
 
-    console.log(Math.floor(-16));
+//-17
 
-    //-16
+console.log(Math.floor(-16.8));
 
-    console.log(Math.floor(16.1));
+//-17
+```
 
-    //-17
+#### Math.round取整\(四舍五入\)
 
-    console.log(Math.floor(16.5));
+```
+Math.round();    //四舍五入    
+```
 
-    //-17
+#### 整数的时候 四舍五入
 
-    console.log(Math.floor(-16.8));
+```
+console.log(Math.round(16));
 
-    //-17
+//16
 
+console.log(Math.round(16.1));
 
-####Math.round取整(四舍五入)
+//16
 
-    Math.round();    //四舍五入    
+console.log(Math.round(16.5));
 
-####整数的时候 四舍五入
+//17
 
-    console.log(Math.round(16));
+console.log(Math.round(-16.8));
 
-    //16
+//17
+```
 
-    console.log(Math.round(16.1));
+#### 负数的时候 大于5减
 
-    //16
+```
+console.log(Math.round(-16));
 
-    console.log(Math.round(16.5));
+//16
 
-    //17
+console.log(Math.round(-16.1));
 
-    console.log(Math.round(-16.8));
+//16
 
-    //17
+console.log(Math.round(-16.5));
 
-  
-####负数的时候 大于5减
+//16
 
-    console.log(Math.round(-16));
+console.log(Math.round(-16.8));
 
-    //16
+//-17
+```
 
-    console.log(Math.round(-16.1));
-
-    //16
-
-    console.log(Math.round(-16.5));
-
-    //16
-
-    console.log(Math.round(-16.8));
-
-    //-17
