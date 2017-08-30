@@ -7,8 +7,8 @@
     整数的时候 向上取整
     
     
-
-console.log(Math.ceil(16));
+    
+    console.log(Math.ceil(16));
 
    //16
 
