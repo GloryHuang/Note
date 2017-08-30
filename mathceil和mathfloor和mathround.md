@@ -74,7 +74,7 @@
 
     //16
 
-####负数的时候 等于它自己
+####负数的时候 向下
 
     console.log(Math.ceil(-16));
 
@@ -82,15 +82,15 @@
 
     console.log(Math.ceil(16.1));
 
-    //-16
+    //-17
 
     console.log(Math.ceil(16.5));
 
-    //-16
+    //-17
 
     console.log(Math.ceil(-16.8));
 
-    //-16
+    //-17
 
 
 
