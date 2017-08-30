@@ -12,7 +12,11 @@
 
    //16
 
-   console.log(Math.ceil(16.12));
+   console.log(Math.ceil(16.1));
+
+   //17
+
+   console.log(Math.ceil(16.5));
 
    //17
 
