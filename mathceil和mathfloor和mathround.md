@@ -64,15 +64,15 @@
 
     console.log(Math.ceil(16.1));
 
-    //17
+    //16
 
     console.log(Math.ceil(16.5));
 
-    //17
+    //16
 
     console.log(Math.ceil(16.8));
 
-    //17
+    //16
 
 ####负数的时候 等于它自己
 
