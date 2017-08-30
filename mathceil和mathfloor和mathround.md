@@ -94,3 +94,20 @@
 
 
 ####Math.round取整(四舍五入)
+
+    console.log(Math.round(16));
+
+    //16
+
+    console.log(Math.floor(16.1));
+
+    //16
+
+    console.log(Math.floor(16.5));
+
+    //17
+
+    console.log(Math.floor(-16.8));
+
+    //17
+
