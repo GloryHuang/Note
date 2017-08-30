@@ -8,7 +8,7 @@
     
     
 
-   console.log(Math.ceil(16));
+console.log(Math.ceil(16));
 
    //16
 
@@ -19,6 +19,10 @@
    console.log(Math.ceil(16.5));
 
    //17
+
+   console.log(Math.ceil(16.8));
+
+    //17
 
 
 
