@@ -3,7 +3,7 @@
 #### Math.ceil\(天花板函数\)
 
 ```js
-Math.ceil向上取整
+M      ath.ceil向上取整
 ```
 
 #### 整数的时候 向上取整
@@ -13,7 +13,7 @@ console.log(Math.ceil(16));
 
 //16
 
-console.log(Math.ceil(16.1));
+console.log(Math.ceil(1 6.1));
 
 //17
 
@@ -113,7 +113,7 @@ console.log(Math.round(16.5));
 
 //17
 
-console.log(Math.round(-16.8));
+console.log(Math.round(-16.8));       
 
 //17
 ```
