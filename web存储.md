@@ -9,3 +9,8 @@
     1）设置读取方便。
     2）容量较大，sessionStroage约为5M、 localstorage约为20M
     3）只能存储字符串,可以将对象JSON.stringify()编码后存储
+
+    
+
+####window.sessionStoage
+    1.生命周期为关闭浏览器窗口
