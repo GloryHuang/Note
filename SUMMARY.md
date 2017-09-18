@@ -9,6 +9,7 @@
     * [面试题](棉四件套.md)
     * [闭包](面试题.md)
     * [Math.ceil和Math.floor和Math.round](mathceil和mathfloor和mathround.md)
+    * [Web存储](web存储.md)
 * [常见算法的JS实现](常见算法的js实现.md)
     * [常见算法的JS实现](常见算法的js实现.md)
 * [NodeJS模块化开发](nodejsmo-kuai-hua-kai-fa.md)
