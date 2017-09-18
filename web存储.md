@@ -27,3 +27,4 @@
     getItem(key);    读取存储内容
     removeItem(key);   删除键值为key的存储内容
     clear(); 清空所有存储的内容
+    key(n)以索引值来获取内容
