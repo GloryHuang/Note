@@ -7,3 +7,4 @@
     2.sessionStorage和localstorage
     
     设置读取方便。
+    容量较大，sessionStroage约为5M、 localstorage约为20M
