@@ -23,4 +23,6 @@
 
 
 #####方法详解
+    setItem(key,value);    设置存储内容
+    getItem(key);    读取存储内容
 
