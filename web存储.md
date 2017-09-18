@@ -26,4 +26,4 @@
     setItem(key,value);    设置存储内容
     getItem(key);    读取存储内容
     removeItem(key);   删除键值为key的存储内容
-
+    clear(); 清空所有存储的内容
