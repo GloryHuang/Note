@@ -15,3 +15,6 @@
 ####window.sessionStoage
     1.生命周期为关闭浏览器窗口
     2.在同一个窗口下数据可以共享
+
+####window.localStorage
+    
