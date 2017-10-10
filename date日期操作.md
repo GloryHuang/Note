@@ -1,5 +1,51 @@
 ####日期操作
 
+
+
+    Date-引用类型，JavaScript中的内置对象
+    获取当前时间
+    var date = new Date();   //UTC的时间
+
+    //返回数字，时间的毫秒形式
+    var date = Date.now();   //HTML5，IE9+
+    var date = +new Date();  //不支持now方法的时候
+
+
+    var date = new Date(2005,10,1); 
+    可以接受三种参数
+    2005，10，1日期的每一部分
+    "2005-10-1"  字符串的日期格式
+    表示日期的毫秒形式1128096000000
+     var date = Date.parse("2005-10-1");
+    把字符串或2005，10，1日期的每一部分转换成日期的毫秒形式，如果字符串的格式不是时间的正确格式返回NaN
+
+
+    
+    toString()
+    valueOf()   -- 返回时间对象对应的毫秒数字，因此可以直接使用 >  < 判断两个时期的大小
+
+    toDateString()
+    toTimeString()
+    toLocaleDateString()
+    toLocaleTimeString()
+    不同的浏览器，各种toString()返回的结果不一致
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //第一种
     // var date1 = new Date();
     // console.log(date1);
