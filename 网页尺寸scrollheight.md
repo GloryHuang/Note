@@ -78,6 +78,6 @@ offsetHeight = clientHeight + 滚动条 + 边框。
         // document.title=window.pageYOffset;
 
         //主流写法
-             document.title=window.pageYOffset||document.body.scrollTop||document.documentElement.scrollTop;
+        document.title=window.pageYOffset||document.body.scrollTop||document.documentElement.scrollTop;
 
 
