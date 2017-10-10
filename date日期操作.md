@@ -31,6 +31,15 @@
     不同的浏览器，各种toString()返回的结果不一致
 
 
+    getTime()  返回毫秒数和valueOf()结果一样
+    getMilliseconds() 
+    getSeconds()  返回0-59
+    getMinutes()  返回0-59
+    getHours()   返回0-23
+    getDay()     返回星期几 0周日   6周6
+    getDate()    返回当前月的第几天
+    getMonth()   返回月份，从0开始
+    getFullYear()   返回4位的年份  如 2016
 
 
 
