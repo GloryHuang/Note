@@ -3,7 +3,7 @@
 #### Math.ceil\(天花板函数\)
 
 ```js
-M      ath.ceil向上取整
+Math.ceil向上取整
 ```
 
 #### 整数的时候 向上取整
