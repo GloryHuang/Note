@@ -41,20 +41,6 @@
     getMonth()   返回月份，从0开始
     getFullYear()   返回4位的年份  如 2016
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //第一种
     // var date1 = new Date();
     // console.log(date1);
@@ -106,3 +92,31 @@
     // console.log(date22);
     console.log(date33);
     // console.log(date44);
+
+
+
+#####倒计时程序
+    
+     function getTimeString(d) {
+            //如果date不是日期对象，返回
+            if (!date instanceof Date) {
+                return;
+            }
+
+            var year,month,date,hour,minute,second;
+            year = d.getFullYear();
+            month = d.getMonth() + 1;
+            date = d.getDate();
+            hour = d.getHours();
+            minute = d.getMinutes();
+            second = d.getSeconds();
+		month = month < 10? "0" + month : month;
+            date = date < 10?"0"+date:date;
+            hour = hour < 10?"0"+hour:hour;
+            minute = minute < 10?"0"+minute:minute;
+            second = second < 10?"0"+second:second;
+            return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
+        }
+
+
+
