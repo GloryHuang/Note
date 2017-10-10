@@ -55,3 +55,29 @@ offsetHeight = clientHeight + 滚动条 + 边框。
     1. 区分大小写
 
     2. offsetParent：布局中设置postion属性(Relative、Absolute、fixed)的父容器，从最近的父节点开始，一层层向上找，直到HTML的body。
+
+
+
+######网页尺寸scrollTop
+
+
+
+
+#####scrollTop的兼容写法
+
+        //没有dtd约束的(火狐浏览器不显示)
+        // document.title = document.body.scrollTop;
+        //有dtd约束的(兼容火狐浏览器)
+        // document.title = document.documentElement.scrollTop;
+
+        //兼容写法(三种)
+        // document.title=document.body.scrollTop||document.documentElement.scrollTop;
+
+        // document.title = document.body.scrollTop + document.documentElement.scrollTop;
+
+        // document.title=window.pageYOffset;
+
+        //主流写法
+             document.title=window.pageYOffset||document.body.scrollTop||document.documentElement.scrollTop;
+
+
