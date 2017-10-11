@@ -53,6 +53,7 @@
     * [JavaScript高级第二天](javascript高级第二天.md)
     * [JavaScript高级第三天](javascript高级第三天.md)
     * [JavaScript高级第四天](javascript高级第四天.md)
+    * [JavaScript高级第五天](javascript高级第五天.md)
 * [工具函数](工具函数.md)
     * [缓动框架封装\(单个属性\)](sss.md)
     * [缓动框架封装\(多个属性\)](缓动框架封装多个属性.md)
