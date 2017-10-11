@@ -48,6 +48,7 @@
     * [Date日期操作](date日期操作.md)
     * [数组操作](数组操作.md)
     * [Math.ceil和Math.floor和Math.round](mathceil和mathfloor和mathround.md)
+* [JavaScript高级](javascript高级.md)
 * [工具函数](工具函数.md)
     * [缓动框架封装\(单个属性\)](sss.md)
     * [缓动框架封装\(多个属性\)](缓动框架封装多个属性.md)
