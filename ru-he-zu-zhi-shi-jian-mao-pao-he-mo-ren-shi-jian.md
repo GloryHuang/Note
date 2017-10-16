@@ -3,7 +3,7 @@
 ```js
  function stopBubble(e){
 
- if(e && e.stopPropagation){
+     if(e && e.stopPropagation){
 
        e.stopPropagation()
 
