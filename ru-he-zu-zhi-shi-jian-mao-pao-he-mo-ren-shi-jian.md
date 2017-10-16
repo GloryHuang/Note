@@ -20,8 +20,6 @@
 
 #####法二
 
-
-
     function preventDefa(e){ 
       if(window.event){ 
         //IE中阻止函数器默认动作的方式  
