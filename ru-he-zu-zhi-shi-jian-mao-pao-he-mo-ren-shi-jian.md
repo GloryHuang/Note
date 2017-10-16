@@ -5,14 +5,14 @@
 
      if(e && e.stopPropagation){
 
-       e.stopPropagation()
+           e.stopPropagation()
 
-  }else{
+      }else{
 
-       window.event.cancelBubble=true
+           window.event.cancelBubble=true
 
-  }
-  return false
+      }
+      return false
 ```
 
 
