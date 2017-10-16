@@ -88,7 +88,7 @@ FF：可用div1.getAttribute\(“value”\)
 IE：input.type只读  
 FF：input.type可读写  
 
-例如：[js](http://lib.csdn.net/base/javascript)修改input的type属性有些限制。当input元素还未插入文档流之前，是可以修改它的值的，在ie和ff下都没问题。但如果input已经存在于页面，其type属性在ie下就成了只读属性了，不可以修改。在ff下仍是可读写属性。
+例如：修改input的type属性有些限制。当input元素还未插入文档流之前，是可以修改它的值的，在ie和ff下都没问题。但如果input已经存在于页面，其type属性在ie下就成了只读属性了，不可以修改。在ff下仍是可读写属性。
 
 (6) innerText textContent outerHTML 
 
