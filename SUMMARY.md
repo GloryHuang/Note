@@ -55,6 +55,9 @@
     * [JavaScript高级第四天](javascript高级第四天.md)
     * [JavaScript高级第五天](javascript高级第五天.md)
     * [JavaScript高级第六天](javascript高级第六天.md)
+* [HTTP协议](http协议.md)
+    * Http状态码
+    * [Post与Get方式的异同](post与get方式的异同.md)
 * [工具函数](工具函数.md)
     * [缓动框架封装\(单个属性\)](sss.md)
     * [缓动框架封装\(多个属性\)](缓动框架封装多个属性.md)
