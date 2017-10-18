@@ -44,9 +44,10 @@
 ####querystring与parse
 
     //将对象解析成url地址的形式(把对象解析成字符串)
-    ##querystring.stringify({name:'loock',course:['jade','node'],fomr:''});
+    querystring.stringify({name:'loock',course:['jade','node'],fomr:''});
 
-
+    //第二个参数,url地址参数之间用什么符号分隔
+    querystring.stringify({name:'loock',course:['jade','node'],fomr:''},',');
     
 
     
