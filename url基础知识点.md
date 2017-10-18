@@ -43,8 +43,11 @@
 
 ####querystring与parse
 
-    //讲对象解析成url地址的形式(把对象解析成字符串)
+    //将对象解析成url地址的形式(把对象解析成字符串)
     ##querystring.stringify({name:'loock',course:['jade','node'],fomr:''});
+
+
+    
 
     
 
