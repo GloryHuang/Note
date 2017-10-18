@@ -74,5 +74,20 @@
      querystring.parse()//第四个参数,传入的参数个数最多1000个,MaxKey设为0没有限制
 
 
+######字符串的转译与反转译
+####quertstring.escape和quertstring.unescape
+
+    转译:
+
+    querystring.escape('<哈哈>');
+    '%3C%E5%93%88%E5%93%88%3E'
+
+
+    反转译:
+    querystring.unescape('%3C%E5%93%88%E5%93%88%3E');
+    '<哈哈>'
+
+
+
 
 
