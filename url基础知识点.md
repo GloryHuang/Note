@@ -12,9 +12,10 @@
     href：代表未解析的url地址
             参数可选参数1设置为true,对象中query解析出，
             可选参数2设置为true,对象中host正确解析,pathname正确解!!!协议protocal未明确。
-    
-    1）url.format(urlObj): 将对象解析成定位符（也就是URL）
-    2）url.resolve(from, to):将一个基本URL和指定超链接目标URL合并
+  
+    url.parse(urlString,bool,bool): 将定位符解析成对象,
+    url.format(urlObj): 将对象解析成定位符（也就是URL）
+    url.resolve(from, to):将一个基本URL和指定超链接目标URL合并
 
 
 ####绝对URI
