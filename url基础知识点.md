@@ -46,8 +46,23 @@
     //将对象解析成url地址的形式(把对象解析成字符串)
     querystring.stringify({name:'loock',course:['jade','node'],fomr:''});
 
+    //解析之后的地址为：
+    'name=loock&course=jade&course=node&fomr='
+
+
+    'name=loock,course=jade,course=node,fomr='
+
+
+
+
     //第二个参数,url地址参数之间用什么符号分隔
     querystring.stringify({name:'loock',course:['jade','node'],fomr:''},',');
+
+
+    //第三个符号,url地址中的等号用什么符号替换
+     querystring.stringify({name:'loock',course:['jade','node'],fomr:''},',',':')
+    
+    'name:loock,course:jade,course:node,fomr:'
     
 
     
