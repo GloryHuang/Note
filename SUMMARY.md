@@ -13,6 +13,7 @@
     * [常见算法的JS实现](常见算法的js实现.md)
 * [NodeJS模块化开发](nodejsmo-kuai-hua-kai-fa.md)
     * [模块系统](nodejsmo-kuai-hua-kai-fa/mo-kuai-xi-tong.md)
+    * Http模块
 * [Git](git.md)
     * [Git的发展史](git/gitde-fa-zhan-shi.md)
 * [兼容性问题](兼容性问题、.md)
