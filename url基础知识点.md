@@ -69,7 +69,7 @@
     //将url地址解析成对象的形式(把字符串解析解析成对象)
     querystring.parse('name=loock&course=jade&course=node&fomr=');
     
-    
+    ![](/assets/QQ图片20171018154914.png)
     
      querystring.parse()//第四个参数,传入的参数个数最多1000个,MaxKey设为0没有限制
 
