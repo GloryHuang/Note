@@ -63,6 +63,11 @@
      querystring.stringify({name:'loock',course:['jade','node'],fomr:''},',',':')
     
     'name:loock,course:jade,course:node,fomr:'
+
+
+
+    //将url地址解析成对象的形式(把字符串解析解析成对象)
+    querystring.parse('name=loock&course=jade&course=node&fomr=');
     
 
     
