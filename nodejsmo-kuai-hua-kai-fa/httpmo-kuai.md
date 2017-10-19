@@ -12,4 +12,6 @@
         -t 测试的时间
         -p post数据文件1.如果没有安装Apache的话，首先要安装Apache
 
-  
+      
+       在git bash中运行 要改为
+           ./ab -n1000 -c10 http://localhost:2015/
