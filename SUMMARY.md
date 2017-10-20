@@ -14,6 +14,7 @@
 * [NodeJS模块化开发](nodejsmo-kuai-hua-kai-fa.md)
   * [模块系统](nodejsmo-kuai-hua-kai-fa/mo-kuai-xi-tong.md)
   * [Http模块](nodejsmo-kuai-hua-kai-fa/httpmo-kuai.md)
+  * [Event事件模块](nodejsmo-kuai-hua-kai-fa/eventshi-jian-mo-kuai.md)
 * [Git](git.md)
   * [Git的发展史](git/gitde-fa-zhan-shi.md)
 * [兼容性问题](兼容性问题、.md)
