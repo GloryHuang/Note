@@ -5,9 +5,9 @@
 
 #####构建工具
 
-+ gulp
-- babel
-* webpack
++ gulp(任务自动化)
+- babel(编译工具)
+* webpack(编译工具)
 - npm
 
 
