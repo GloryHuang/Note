@@ -44,7 +44,7 @@
 
 ###正则扩展
 
-    新增s、y修饰符
+    新增y,u修饰符
     
     let regex = new RegExp('xyz', 'i');
     let regex2 = new RegExp(/xyz/i);
