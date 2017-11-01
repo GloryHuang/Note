@@ -39,7 +39,22 @@
 
 ###解构赋值
    
-    1.声明没有赋值,没有配对成功返回undefind.
+    声明没有赋值,没有配对成功返回undefind.
 
 
 ###正则扩展
+    
+    let regex = new RegExp('xyz', 'i');
+    let regex2 = new RegExp(/xyz/i);
+
+
+    console.log(regex.test('xyz123'), regex2.test('xyz123'));
+
+    let regex3 = new RegExp(/xyz/ig, 'i');
+
+
+    console.log(regex3.flags);
+    输出i
+    
+    i：ES6中以此方式生成构造函数,第二个参数的修饰符会覆盖第一个参数表达式的修饰符
+    
