@@ -80,3 +80,8 @@
 ####u修饰符(Unicode的缩写)
     
     如果表达式里放的是Unicode编码想要被识别就必须要用修饰符u
+    
+     //a的Unicode编码是\u61
+    //根据Unicode编码进行正则匹配
+    console.log(/\u{61}/.test('a')); //返回 false
+    console.log(/\u{61}/u.test('a')); //返回 true
