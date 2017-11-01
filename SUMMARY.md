@@ -58,7 +58,7 @@
   * [JavaScript高级第五天](javascript高级第五天.md)
   * [JavaScript高级第六天](javascript高级第六天.md)
   * [作用域与上下文](作用域与上下文.md)
-* ES6
+* [ES6](es6.md)
   * [ES6基本](es6ji-ben.md)
 * [HTTP协议](http协议.md)
   * [http状态码](http协议.md)
