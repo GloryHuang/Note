@@ -62,7 +62,7 @@
     
     
     flags  获取正则对象的修饰符  igm
-    sticky 查看是否开启粘黏模式
+    sticky 查看是否开启粘黏模式  开启了 true
     
     g和y修饰符：
     
