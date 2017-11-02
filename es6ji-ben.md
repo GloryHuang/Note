@@ -91,4 +91,4 @@
     console.log(/\u{61}/u.test('a')); //返回 true
     
     
-##
+##String字符串操作
