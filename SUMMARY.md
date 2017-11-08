@@ -70,5 +70,6 @@
   * [缓动框架封装\(单个属性\)](sss.md)
   * [缓动框架封装\(多个属性\)](缓动框架封装多个属性.md)
   * [缓动动画封装](缓动动画封装.md)
+  * [ES6常用工具](es6chang-yong-gong-ju.md)
 * [常见框架](chang-jian-kuang-jia.md)
 
