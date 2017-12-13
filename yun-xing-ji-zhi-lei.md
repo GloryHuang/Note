@@ -19,5 +19,16 @@
     
 ####如何理解JS的单线程
 
+    同一时间只能做一件事
 
 ####什么是任务队列
+
+![](/assets/QQ截图20171213190215.png)
+
+####异步任务:
+    setTimeout和setinterval
+    DOM事件
+    ES6中的Promise
+    
+
+
