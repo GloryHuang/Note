@@ -11,6 +11,4 @@
     <meta http-equiv="x-dns-prefetch-control"content="on">
     <link rel="dns-prefetch" href="//host_name_to_prefetch.com">
     
-    
-
     页面中的所有的a标签,在高级的浏览器中是默认的打开了DNS预解析的这是浏览器的功能,但是如果这个页面是HTTPS协议开头的,很多浏览器是默认关闭DNS预解析的。
