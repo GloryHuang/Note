@@ -8,6 +8,7 @@
   * [Web存储](web存储.md)
   * [页面布局类](ye-mian-bu-ju-lei.md)
   * [盒模型](he-mo-xing.md)
+  * [渲染机制类](xuan-ran-ji-zhi-lei.md)
   * [页面性能类](ye-mian-xing-neng-lei.md)
 * [常见问题](常见问题.md)
   * [如何解析JSON](如何解析json.md)
