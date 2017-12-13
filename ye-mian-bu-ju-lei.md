@@ -41,3 +41,68 @@
         </article>
     </section>
 ```
+
+#### 绝对定位解决方案
+```js
+     <!-- 绝对定位解决方案 -->
+    <section class="layout absolute">
+        <style>
+        .layout.absolute .left-center-right>div {
+            position: absolute;
+        }
+
+        .layout.absolute .left {
+            left: 0;
+            width: 300px;
+            background-color: red;
+        }
+
+        .layout.absolute .center {
+            left: 300px;
+            right: 300px;
+            background-color: yellow;
+    
+        }
+
+        .layout.absolute .right {
+            right: 0;
+            width: 300px;
+            background-color: blue;
+        }
+        </style>
+        <article class="left-center-right">
+            <div class="left"></div>
+            <div class="center">
+                <h1>绝对定位解决方案</h1> 1.这是三栏布局中间部分 1.这是三栏布局中间部分
+                <p>增加高度</p>
+                <p>增加高度</p>
+                <p>增加高度</p>
+                <p>增加高度</p>
+                <p>增加高度</p>
+            </div>
+            <div class="right"></div>
+        </article>
+    </section>
+
+```
+
+####
+
+```js
+
+```
+
+
+
+####
+
+```js
+
+```
+
+
+####
+
+```js
+
+```
