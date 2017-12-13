@@ -1,15 +1,15 @@
 # Summary
 
 * [Introduction](README.md)
-* [常见问题](常见问题.md)
-  * [如何解析JSON](如何解析json.md)
-  * [事件委托](javascript.md)
 * [First Chapter](chapter1.md)
 * [面试题](面试题.md)
   * [面试题](棉四件套.md)
   * [闭包](面试题.md)
   * [Web存储](web存储.md)
   * [页面布局类](ye-mian-bu-ju-lei.md)
+* [常见问题](常见问题.md)
+  * [如何解析JSON](如何解析json.md)
+  * [事件委托](javascript.md)
 * [常见算法的JS实现](常见算法的js实现.md)
   * [常见算法的JS实现](常见算法的js实现.md)
 * [NodeJS模块化开发](nodejsmo-kuai-hua-kai-fa.md)
