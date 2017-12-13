@@ -18,8 +18,9 @@
 
 ####CSS是如何设置这种模型
 
-    box-sizing:content-box;
-    box-sizing:border-box;
+    浏览器默认的是content-box
+    box-sizing:content-box;(标准模型)
+    box-sizing:border-box;(IE模型)
     
 
 ####JS如何设置获取盒模型对应的宽和高
