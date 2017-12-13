@@ -28,6 +28,7 @@
     dom.style.width/height(只能取内联样式)
     dom.currentStyle.width/height(拿到渲染以后的宽高)(仅IE支持)
     window.getComputedStyle(dom).width/height(兼容FF和Chrome)(通用性更好一些)
+    dom.getBoundingClientRect().width/height
     
 
 
