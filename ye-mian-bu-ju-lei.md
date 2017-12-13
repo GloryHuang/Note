@@ -132,15 +132,88 @@
 
 
 
-####
+####表格布局解决方案
 
 ```js
+     <!-- 表格布局解决方案 -->
+    <section class="layout table">
+        <style>
+        .layout.table .left-center-right {
+            width: 100%;
+            display: table;
+            height: 100px;
+        }
 
+        .layout.table .left-center-right>div {
+            display: table-cell;
+        }
+
+        .layout.table .left {
+            width: 300px;
+            background-color: red;
+        }
+
+        .layout.table .center {
+            background-color: yellow;
+        }
+
+        .layout.table .right {
+            width: 300px;
+            background-color: blue;
+        }
+        </style>
+        <article class="left-center-right">
+            <div class="left"></div>
+            <div class="center">
+                <h1>table解决方案</h1> 1.这是三栏布局中间部分 1.这是三栏布局中间部分
+                <p>增加高度</p>
+                <p>增加高度</p>
+                <p>增加高度</p>
+                <p>增加高度</p>
+                <p>增加高度</p>
+            </div>
+            <div class="right"></div>
+        </article>
+    </section>
 ```
 
 
-####
+####网格布局解决方案
 
 ```js
+     <!-- 网格布局解决方案 -->
+    <section class="layout grid">
+        <style>
+        .layout.grid .left-center-right {
+            display: grid;
+            width: 100%;
+            grid-template-rows: 100px;
+            grid-template-columns: 300px auto 300px;
+        }
 
+        .layout.grid .left {
+            background-color: red;
+        }
+
+        .layout.grid .center {
+            background-color: yellow;
+        }
+
+        .layout.grid .right {
+            background-color: blue;
+        }
+        </style>
+        <article class="left-center-right">
+            <div class="left"></div>
+            <div class="center">
+                <h1>网格布局解决方案</h1> 1.这是三栏布局中间部分 1.这是三栏布局中间部分
+                <p>增加高度</p>
+                <p>增加高度</p>
+                <p>增加高度</p>
+                <p>增加高度</p>
+                <p>增加高度</p>
+            </div>
+            <div class="right"></div>
+        </article>
+    </section>
 ```
