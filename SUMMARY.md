@@ -7,6 +7,7 @@
   * [闭包](面试题.md)
   * [Web存储](web存储.md)
   * [页面布局类](ye-mian-bu-ju-lei.md)
+  * [盒模型](he-mo-xing.md)
 * [常见问题](常见问题.md)
   * [如何解析JSON](如何解析json.md)
   * [事件委托](javascript.md)
