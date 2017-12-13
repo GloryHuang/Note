@@ -217,3 +217,24 @@
         </article>
     </section>
 ```
+
+
+###总结:
+    
+    * float:
+        浮动脱离文档流,要处理好浮动
+        兼容性好
+    * position:
+        布局脱离了文档流,下面的子元素也脱离了文档流,可使用性比较差
+        快捷,不容易出问题
+    * display:flex:
+        IE8不支持flex
+        解决了上述布局方式的不足出现的,比较完美的,移动端基本上是flex布局
+    * display:table:
+        table操作比较繁琐,对SEO不友好
+        兼容性非常好,如果flex解决不了可以考虑使用表格布局
+    * display:grid:
+    
+    
+        
+        
