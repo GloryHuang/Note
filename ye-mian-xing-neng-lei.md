@@ -44,9 +44,7 @@
              
      * 协商缓存
          
-          * Last-Modifled if-Modifile-Slince 
-          Last-Modifiled:Wed,26 Jan 2017 00:35:11 GMT
-          Etag 
-          if-None-Match 
+          Last-Modifled if-Modifile-Slince  Last-Modifiled:Wed,26 Jan 2017 00:35:11 GMT
+          Etag  if-None-Match 
         
         
