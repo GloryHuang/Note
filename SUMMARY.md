@@ -10,6 +10,7 @@
   * [盒模型](he-mo-xing.md)
   * [渲染机制类](xuan-ran-ji-zhi-lei.md)
   * [页面性能类](ye-mian-xing-neng-lei.md)
+  * [运行机制类](yun-xing-ji-zhi-lei.md)
 * [常见问题](常见问题.md)
   * [如何解析JSON](如何解析json.md)
   * [事件委托](javascript.md)
