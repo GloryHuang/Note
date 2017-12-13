@@ -86,10 +86,48 @@
 
 ```
 
-####
+####flexbox解决方案 
 
 ```js
+     <!-- flexbox解决方案 -->
+    <section class="layout flexbox">
+        <style>
+        .layout.flexbox {
+            margin-top: 140px;
+        }
 
+        .layout.flexbox .left-center-right {
+            display: flex;
+        }
+
+        .layout.flexbox .left {
+            width: 300px;
+            background-color: red;
+        }
+
+        .layout.flexbox .center {
+            flex: 1;
+            background-color: yellow;
+        }
+
+        .layout.flexbox .right {
+            width: 300px;
+            background-color: blue;
+        }
+        </style>
+        <article class="left-center-right">
+            <div class="left"></div>
+            <div class="center">
+                <h1>flexbox解决方案</h1> 1.这是三栏布局中间部分 1.这是三栏布局中间部分
+                <p>增加高度</p>
+                <p>增加高度</p>
+                <p>增加高度</p>
+                <p>增加高度</p>
+                <p>增加高度</p>
+            </div>
+            <div class="right"></div>
+        </article>
+    </section>
 ```
 
 
