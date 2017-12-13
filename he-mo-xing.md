@@ -26,7 +26,7 @@
 ####JS如何设置获取盒模型对应的宽和高
 
     dom.style.width/height(只能取内联样式)
-    dom.currentStyle.width/height
+    dom.currentStyle.width/height(拿到渲染以后的宽高)(仅IE支持)
     
 
 
