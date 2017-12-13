@@ -33,4 +33,8 @@
 
     1.采用Ajax通信的方式上报
     2.利用Image对象上报(所以的监控体系都是这个)
-
+```js
+    <script>
+	      (new Image()).src="http://baidu.com/test?r=gesk";
+    </script>
+```
