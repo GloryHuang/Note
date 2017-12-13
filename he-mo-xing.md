@@ -34,6 +34,6 @@
 
 ####实例题(根据盒模型解释边距重叠)
 
-    ovflow:hidden;
+    ovflow:hidden;(创建了一个BFC)
 
 ####BFC(边距重叠解决方案)
