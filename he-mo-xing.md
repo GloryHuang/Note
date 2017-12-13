@@ -29,7 +29,7 @@
     dom.currentStyle.width/height(拿到渲染以后的宽高)(仅IE支持)
     window.getComputedStyle(dom).width/height(兼容FF和Chrome)(通用性更好一些)
     dom.getBoundingClientRect().width/height
-    
+    四个元素left top heiht width
 
 
 ####实例题(根据盒模型解释边距重叠)
