@@ -34,9 +34,11 @@
 
     * 缓存的类型
         
-         * 强缓存
+         * 强缓存(在此时间之前,不会和服务器通信,直接从浏览器缓存里拿出来用)
              Expires Expires：Thu,21 Jan 2017 23:39:02 GMT
-             Cache-Control:Cache-Control:max-age=3600
+             Cache-Control:Cache-Control:max-age=3600 (相对时间)
+             
+             拿到资源后在3600秒之内,如果有就不再请求,直接从浏览器里拿
      * 协商缓存
          
           * Last-Modifled if-Modifile-Slince Last-Modifiled:Wed,26 Jan 2017 00:35:11 GMT
