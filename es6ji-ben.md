@@ -43,12 +43,12 @@
     
     
 ```js
-{
-    let a, b, rest;
-    [a, b] = [1, 2];
-    console.log(a, b)
-    //1,2
-}
+    {
+        let a, b, rest;
+        [a, b] = [1, 2];
+        console.log(a, b)
+        //1,2
+    }
 ```
 
 
