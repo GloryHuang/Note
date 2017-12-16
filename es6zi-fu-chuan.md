@@ -1,4 +1,6 @@
-####ES6字符串操作
+###ES6字符串操作
+
+####字符串操作
 
     //字符串操作
     
@@ -16,7 +18,7 @@
     //charCodeAt() 方法可返回指定位置的字符的 Unicode 编码
     //ES6提供了codePointAt方法，能够正确处理4个字节储存的字符，返回一个字符的码点。
     //codePointAt方法是测试一个字符由两个字节还是由四个字节组成的最简单方法。
-//
+    //
     {
         let s = '𠮷';
 
@@ -34,7 +36,7 @@
         console.log('code1', s1.codePointAt(1));
         console.log('code2', s1.codePointAt(2));
 
-}
+    }
 
 
     //fromCharCode() 可接受一个指定的 Unicode 值，然后返回一个字符串。
@@ -42,6 +44,8 @@
         console.log('fromCharCode',String.fromCharCode('0x20bb7'));
         console.log('fromCharCode',String.fromCodePoint('0x20bb7'));
     }
+
+####遍历字符串
 
 
     //遍历字符串
@@ -107,4 +111,4 @@
         for (let i = 0; i <= 10; i++) {
             console.log(i.toString().padStart(2,'0'));
     }
-}
+    
