@@ -2,6 +2,7 @@
 
 ####字符串操作
 
+```js
     //字符串操作
     
     {
@@ -44,6 +45,7 @@
         console.log('fromCharCode',String.fromCharCode('0x20bb7'));
         console.log('fromCharCode',String.fromCodePoint('0x20bb7'));
     }
+```
 
 ####遍历字符串
 
