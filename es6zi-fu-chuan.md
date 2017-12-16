@@ -48,21 +48,29 @@
 ####遍历字符串
 
 
-    //遍历字符串
+* 遍历字符串
 
+```js
     {
         let str = '\u{20bb7}abc';
         //ES5遍历不出字节长度大于2的字符(否则会乱码)
         for (let i = 0; i < str.length; i++) {
             // console.log('ES5',str[i]);
         }
-        
+```
+
+* ES6遍历当前字符串(不乱码)
+
+```js 
     //ES6遍历当前字符串(不乱码)
     for (let code of str) {
             console.log('ES6', code);
         }
     }
 
+```
+
+####查看是否有包含查找的字符串
 
     //查看是否有包含查找的字符串
     //starsWith() 查看字符是否以查询的字段开头
@@ -78,12 +86,15 @@
         console.log('ends', str.endsWith('g'));
     }
 
+####复制字符串
 
     //复制字符串
     {
         let str = 'abc';
         console.log('Strng', str.repeat(2));
     }
+
+####字符串模板
 
     //字符串模板
     {
@@ -95,7 +106,7 @@
 
 
 
-
+####补白
     //补白的作用
     {
         //指定长度,长度如果不足用设置的‘值’补偿
@@ -112,3 +123,9 @@
             console.log(i.toString().padStart(2,'0'));
     }
     
+####raw转译斜杠(添加\斜杠)
+    //raw转译斜杠(添加\斜杠)
+    {
+	console.log(String.raw`Hi\n${1+2}`);
+	console.log(`Hi\n${1+2}`);
+    }
