@@ -68,6 +68,7 @@
   * [ES6基本](es6ji-ben.md)
   * [ES6字符串操作](es6zi-fu-chuan.md)
   * [ES6正则扩展](es6zheng-ze-kuo-zhan.md)
+  * [数值扩展](shu-zhi-kuo-zhan.md)
 * [HTTP协议](http协议.md)
   * [http状态码](http协议.md)
   * [Post与Get方式的异同](post与get方式的异同.md)
