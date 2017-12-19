@@ -329,5 +329,31 @@ function binary_search2(arr, low, high, key) {
     
 ```
 
+    * 2.常规循环：
+    
+```js
+
+    function sum(arr) {
+        var s = 0;
+        for (var i=arr.length-1; i>=0; i--) {
+            s += arr[i];
+        }
+        return s;
+    }
+
+```
+
+    * 3.函数式编程 map-reduce：
+    
+ ```js
+     
+     function sum(arr) {
+            return arr.reduce(function(prev, curr, idx, arr){
+            return prev + curr;
+        });
+    }
+ 
+ ``` 
+
 
 
