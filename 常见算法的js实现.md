@@ -125,7 +125,7 @@ function reverseString(str) {
 }
 ```
 
-3、 生成指定长度随机字符串
+    * 3、 生成指定长度随机字符串
 
 ```js
 function randomString(n) {
@@ -138,7 +138,7 @@ function randomString(n) {
 }
 ```
 
-4、 统计字符串中次数最多字母
+    * 4、 统计字符串中次数最多字母
 
 ```js
 function findMaxDuplicateChar(str) {
@@ -166,7 +166,7 @@ function findMaxDuplicateChar(str) {
 
 #### 数组操作
 
-1、 数组去重
+    * 1、 数组去重
 
 ```js
 function unique(arr) {
@@ -184,7 +184,7 @@ return result;
 
 }
 
-2、 数组中最大差值
+    * 2、 数组中最大差值
 
 ```js
 function getMaxProfit(arr) {
@@ -199,7 +199,7 @@ function getMaxProfit(arr) {
 
 #### 其他常见算法
 
-1、 阶乘
+    * 1、 阶乘
 
 非递归实现
 
@@ -230,7 +230,7 @@ function factorialize(num) {
 }
 ```
 
-2、 生成菲波那切数列
+    * 2、 生成菲波那切数列
 
 强行递归实现
 
@@ -271,7 +271,7 @@ function getFibonacci(n) {
 }
 ```
 
-3、 二分查找
+    * 3、 二分查找
 
 非递归实现
 
@@ -294,7 +294,7 @@ function binary_search(arr, key) {
 }
 ```
 
-递归实现
+    * 递归实现
 
 ```js
 function binary_search2(arr, low, high, key) {
@@ -309,5 +309,25 @@ function binary_search2(arr, low, high, key) {
     }
  }
 ```
+
+####数组求和
+
+    * 1.不考虑算法复杂度，用递归做：
+    
+```js
+
+    function sum(arr) {
+        var len = arr.length;
+        if(len == 0){
+            return 0;
+    } else if (len == 1){
+        return arr[0];
+    } else {
+        return arr[0] + sum(arr.slice(1));
+    }
+}
+    
+```
+
 
 
