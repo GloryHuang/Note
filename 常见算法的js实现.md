@@ -97,7 +97,7 @@ function palindrome(str) {
 
     * 2、 翻转字符串
 
-        * 思路一： 反向遍历字符串
+思路一： 反向遍历字符串
 
 ```js
 function reverseString(str) {
@@ -108,7 +108,7 @@ function reverseString(str) {
 }
 ```
 
-       * 思路二： 转化成array操作
+  思路二： 转化成array操作
 
 ```js
 function reverseString(str) {
