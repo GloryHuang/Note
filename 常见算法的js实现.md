@@ -108,7 +108,7 @@ function reverseString(str) {
 }
 ```
 
-       * 思路二： 转化成array操作
+        * 思路二： 转化成array操作
 
 ```js
 function reverseString(str) {
