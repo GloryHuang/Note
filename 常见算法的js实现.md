@@ -345,8 +345,15 @@ function binary_search2(arr, low, high, key) {
 
     * 3.函数式编程 map-reduce：
     
+    reduce 为数组中的每一个元素依次执行回调函数，不包括数组中被删除或从未被赋值的元素，接受四个参数：
+
+        * previousValu 上一次值
+        * currentValue 当前值
+        * currentIndex 当前值的索引
+        * array 数组
+    
  ```js
-     
+      
      function sum(arr) {
             return arr.reduce(function(prev, curr, idx, arr){
             return prev + curr;
@@ -356,6 +363,7 @@ function binary_search2(arr, low, high, key) {
  ``` 
 
     * 4.forEach遍历：
+    
 ```js
 
     function sum(arr) {
