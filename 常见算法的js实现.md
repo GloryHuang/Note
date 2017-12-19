@@ -1,8 +1,8 @@
-#### 常见算法的JS实现
+### 常见算法的JS实现
 
-排序算法
+####排序算法
 
-1、 冒泡排序
+    * 1、 冒泡排序
 
 ```js
 function bubbleSort(arr) {
@@ -23,7 +23,7 @@ function bubbleSort(arr) {
 }
 ```
 
-2、快速排序
+    * 2、快速排序
 
 ```js
 function quickSort(arr, l, r) {
@@ -48,7 +48,7 @@ function quickSort(arr, l, r) {
 }
 ```
 
-3、二路归并
+    * 3、二路归并
 
 ```js
 function merge(left, right) {
@@ -72,9 +72,9 @@ function merge(left, right) {
     }
 ```
 
-字符串操作
+####字符串操作
 
-1、判断回文字符串
+    * 1、判断回文字符串
 
 ```js
 function palindrome(str) {
@@ -95,9 +95,9 @@ function palindrome(str) {
 }
 ```
 
-2、 翻转字符串
+    * 2、 翻转字符串
 
-思路一： 反向遍历字符串
+        * 思路一： 反向遍历字符串
 
 ```js
 function reverseString(str) {
@@ -108,7 +108,7 @@ function reverseString(str) {
 }
 ```
 
-思路二： 转化成array操作
+       * 思路二： 转化成array操作
 
 ```js
 function reverseString(str) {
@@ -309,4 +309,5 @@ function binary_search2(arr, low, high, key) {
     }
  }
 ```
+
 
