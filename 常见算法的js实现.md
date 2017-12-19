@@ -372,7 +372,9 @@ function binary_search2(arr, low, high, key) {
     * 5 eval：
     
 ```js
+
     function sum(arr) {
         return eval(arr.join("+"));
     }
+    
 ```
