@@ -355,5 +355,24 @@ function binary_search2(arr, low, high, key) {
  
  ``` 
 
+    * 4.forEach遍历：
+```js
 
+    function sum(arr) {
+        var s = 0;
+        arr.forEach(function(val, idx, arr) {
+            s += val;
+        }, 0);
+  
+        return s;
+    }
 
+```
+
+    * 5 eval：
+    
+```js
+    function sum(arr) {
+        return eval(arr.join("+"));
+    }
+```
