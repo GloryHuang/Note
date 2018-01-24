@@ -17,6 +17,7 @@
 ```
 
 ####iterato遍历
+```js
 //先遍历start,再遍历end
 {
     let obj = {
@@ -49,9 +50,10 @@
         console.log(key);
     }
 }
+```
 
-
-
+####for....of
+```js
 //for...of循环的过程就是不断调用iterator接口来实现循环
 {
     let arr = ['hello', 'world'];
@@ -59,3 +61,4 @@
         console.log('value', value);
     }
 }
+```
