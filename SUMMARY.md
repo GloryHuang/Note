@@ -75,6 +75,7 @@
   * [ES6对象扩展](es6dui-xiang-kuo-zhan.md)
   * [ES6数据类型扩展](es6shu-ju-lei-xing-kuo-zhan.md)
   * [ES6数据结构](es6shu-ju-jie-gou.md)
+  * [ES6数据结构对比](es6shu-ju-jie-gou-dui-bi.md)
 * [HTTP协议](http协议.md)
   * [http状态码](http协议.md)
   * [Post与Get方式的异同](post与get方式的异同.md)
