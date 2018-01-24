@@ -20,7 +20,7 @@
 
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-####以上代码创建一个“视口”，
+####以上代码创建一个“视口”
 
 
 
