@@ -12,7 +12,27 @@
     //Set集合中的元素不能重复,必须是唯一的
     //Map的Key可以是任意的数据类型
 
-####Set
+###Set
+
+    * Sst add   添加元素
+    * Set delete移除元素
+    * Set clear 清空元素
+    * Set has 判断集合中有没有这个元素
+
+```js
+
+    {
+
+        let arr = ['add', 'delete', 'clear', 'has'];
+        let list = new Set(arr);
+        console.log('has', list.has('add'));
+        console.log('has', list.delete('add'), list);
+        list.clear();
+        console.log(list);
+        console.log('---------');
+    }
+
+```
 
 
 ####Set增加元素用add()方法
@@ -73,7 +93,8 @@
 
 
 
-
+####Set遍历
+```js
 //Set遍历
 {
     let arr = ['add', 'delete', 'clear', 'has'];
@@ -106,15 +127,19 @@
 
 }
 
+```
 
-//WeakSet
-//WeakSet和Set支持数据类型不一样
-//WeakSet的元素必须是对象(不能是数值,boolean,字符串)
-//WeakSet不进行垃圾回收检测
-//WeakSet没有clear方法(仅有add、has、delete方法)
-//WeakSet没有Set属性
-//WeakSet不能遍历
 
+###WeakSet
+
+    * WeakSet和Set支持数据类型不一样
+    * WeakSet的元素必须是对象(不能是数值,boolean,字符串)
+    * WeakSet不进行垃圾回收检测
+    * WeakSet没有clear方法(仅有add、has、delete方法)
+    * WeakSet没有Set属性
+    * WeakSet不能遍历
+
+```js
 {
     let weaklist = new WeakSet();
 
@@ -128,19 +153,24 @@
 
     console.log('weaklist', weaklist);
 }
+```
 
 
+###Map
 
 
-//Map
-//Map添加元素用set(),Set添加元素用add();
-//Map的key值(键值)可以是任意数据类型
-//Map获取值用get()
-//Map获取长度size
-//Map删除元素delete()
-//Map清空元素clear()
-//遍历方式和Set一致
+    * Map添加元素用set(),Set添加元素用add();
+    * Map的key值(键值)可以是任意数据类型
+    * Map获取值用get()
+    * Map获取长度size
+    * Map删除元素delete()
+    * Map清空元素clear()
+    * 遍历方式和Set一致
 
+
+####Map第一种定义方法(不带参数)
+
+```js
 //第一种定义方法(不带参数)
 {
     let map = new Map();
@@ -154,8 +184,10 @@
     console.log('map', map, map.get(arr));
 }
 
+```
+####Map第二种定义方法(带参数)
 
-
+```js
 {
     let map = new Map([
         ['a', '213'],
@@ -165,18 +197,17 @@
     console.log('size', map.size);
     console.log('delete', map.delete('a'), map);
 }
+```
+
+###WeakMap
+
+    * WeakMap接受的key值只能是对象
+    * WeakMap没有clear
+    * WeakMap不能遍历
+    * 与WeakSet类似
 
 
-
-//WeakMap
-
-//WeakMap接受的key值只能是对象
-//WeakMap没有clear
-//WeakMap不能遍历
-//与WeakSet类似
-
-
-
+```js
 {
     let weakmap = new WeakMap();
 
@@ -186,5 +217,5 @@
     console.log('weakmap', weakmap.get(o));
 }
 
-
+```
 
