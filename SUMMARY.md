@@ -82,6 +82,7 @@
   * [iterator和for..of.....循环](iteratorhe-for-of-xun-huan.md)
   * [Generator异步编程的解决方式](generatoryi-bu-bian-cheng-de-jie-jue-fang-shi.md)
   * [Decorator 修饰器](decorator-xiu-shi-qi.md)
+  * [Module模块化](modulemo-kuai-hua.md)
 * [HTTP协议](http协议.md)
   * [http状态码](http协议.md)
   * [Post与Get方式的异同](post与get方式的异同.md)
