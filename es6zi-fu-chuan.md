@@ -70,7 +70,7 @@
 ```
 
 ####查看是否有包含查找的字符串
-
+```js
     //查看是否有包含查找的字符串
     //starsWith() 查看字符是否以查询的字段开头
     //endWith()	  查看字符是否以查询的字段结尾
@@ -84,17 +84,17 @@
         console.log('ends', str.endsWith('ing'));
         console.log('ends', str.endsWith('g'));
     }
-
+```
 ####复制字符串
-
+```js
     //复制字符串
     {
         let str = 'abc';
         console.log('Strng', str.repeat(2));
     }
-
+```
 ####字符串模板
-
+```js
     //字符串模板
     {
         let name = 'list';
@@ -102,10 +102,11 @@
         let m = `I am a ${name},${info}`;
         console.log(m);
     }
-
+```
 
 
 ####补白
+```js
     //补白的作用
     {
         //指定长度,长度如果不足用设置的‘值’补偿
@@ -121,7 +122,7 @@
         for (let i = 0; i <= 10; i++) {
             console.log(i.toString().padStart(2,'0'));
     }
-    
+ ```   
 ####raw转译斜杠(添加\斜杠)
     //raw转译斜杠(添加\斜杠)
     {
