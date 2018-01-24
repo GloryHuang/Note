@@ -72,6 +72,7 @@
   * [ES6数值扩展](shu-zhi-kuo-zhan.md)
   * [ES6数组扩展](es6shu-zu-kuo-zhan.md)
   * [ES6函数扩展](es6han-shu-can-shu.md)
+  * [ES6对象扩展](es6dui-xiang-kuo-zhan.md)
 * [HTTP协议](http协议.md)
   * [http状态码](http协议.md)
   * [Post与Get方式的异同](post与get方式的异同.md)
