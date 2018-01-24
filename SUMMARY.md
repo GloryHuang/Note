@@ -79,6 +79,7 @@
   * [Proxy 和 Reflect](proxy-he-reflect.md)
   * [ES6类的操作](es6lei-de-cao-zuo.md)
   * [Promise异步编程的解决方案](promiseyi-bu-bian-cheng-de-jie-jue-fang-an.md)
+  * [iterator和for..of.....循环](iteratorhe-for-of-xun-huan.md)
 * [HTTP协议](http协议.md)
   * [http状态码](http协议.md)
   * [Post与Get方式的异同](post与get方式的异同.md)
