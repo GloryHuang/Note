@@ -96,13 +96,5 @@
     {
         console.log('number', [1, 2, NaN].includes(1));
         console.log('number', [1, 2, NaN].includes(NaN));
-    }//Array.of方法用于将一组值，转换为数组。Array.of总是返回参数值组成的数组。如果没有参数，就返回一个空数组。
-    {
-        let arr = Array.of(3, 4, 7, 9, 11);
-        console.log('arr=', arr);
-
-        let empty = Array.of();
-        console.log('empty=', empty);
-
     }
 
