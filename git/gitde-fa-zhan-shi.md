@@ -11,5 +11,5 @@ github 是网站托管,是基于git。
 分布式：拥有版本库即可(git)
 ```
 
-![](http://img.mukewang.com/59759b6f0001e85612800720.jpg)
+![](/assets/59759b6f0001e85612800720.jpg)
 
