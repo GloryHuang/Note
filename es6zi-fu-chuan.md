@@ -129,8 +129,11 @@
     }
  ```   
 ####raw转译斜杠(添加\斜杠)
+
+```js
     //raw转译斜杠(添加\斜杠)
     {
 	console.log(String.raw`Hi\n${1+2}`);
 	console.log(`Hi\n${1+2}`);
     }
+```
