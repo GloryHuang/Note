@@ -1,3 +1,13 @@
-# My Awesome Book
+# NOTE
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+日常记录
+
+##关于（About）
+
+Email:g1ory2612@foxmail.com
+
+
+
+<hr>
+<p align="center">G1ory</p>
+

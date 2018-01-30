@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [First Chapter](chapter1.md)
 * [面试题](面试题.md)
   * [面试题](棉四件套.md)
   * [闭包](面试题.md)
