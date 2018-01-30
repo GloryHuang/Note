@@ -2,7 +2,7 @@
 
 ####排序算法
 
-    * 1、 冒泡排序
+* 1、 冒泡排序
 
 ```js
 function bubbleSort(arr) {
@@ -23,7 +23,7 @@ function bubbleSort(arr) {
 }
 ```
 
-    * 2、快速排序
+* 2、快速排序
 
 ```js
 function quickSort(arr, l, r) {
@@ -48,7 +48,7 @@ function quickSort(arr, l, r) {
 }
 ```
 
-    * 3、二路归并
+* 3、二路归并
 
 ```js
 function merge(left, right) {
@@ -74,7 +74,7 @@ function merge(left, right) {
 
 ####字符串操作
 
-    * 1、判断回文字符串
+* 1、判断回文字符串
 
 ```js
 function palindrome(str) {
@@ -95,7 +95,7 @@ function palindrome(str) {
 }
 ```
 
-    * 2、 翻转字符串
+* 2、 翻转字符串
 
 思路一： 反向遍历字符串
 
@@ -125,7 +125,7 @@ function reverseString(str) {
 }
 ```
 
-    * 3、 生成指定长度随机字符串
+* 3、 生成指定长度随机字符串
 
 ```js
 function randomString(n) {
@@ -138,7 +138,7 @@ function randomString(n) {
 }
 ```
 
-    * 4、 统计字符串中次数最多字母
+* 4、 统计字符串中次数最多字母
 
 ```js
 function findMaxDuplicateChar(str) {
@@ -166,7 +166,7 @@ function findMaxDuplicateChar(str) {
 
 #### 数组操作
 
-    * 1、 数组去重
+* 1、 数组去重
 
 ```js
 function unique(arr) {
@@ -184,7 +184,7 @@ return result;
 
 }
 
-    * 2、 数组中最大差值
+* 2、 数组中最大差值
 
 ```js
 function getMaxProfit(arr) {
@@ -199,7 +199,7 @@ function getMaxProfit(arr) {
 
 #### 其他常见算法
 
-    * 1、 阶乘
+* 1、 阶乘
 
 非递归实现
 
@@ -230,7 +230,7 @@ function factorialize(num) {
 }
 ```
 
-    * 2、 生成菲波那切数列
+* 2、 生成菲波那切数列
 
 强行递归实现
 
@@ -271,7 +271,7 @@ function getFibonacci(n) {
 }
 ```
 
-    * 3、 二分查找
+* 3、 二分查找
 
 非递归实现
 
@@ -294,7 +294,7 @@ function binary_search(arr, key) {
 }
 ```
 
-    * 递归实现
+* 递归实现
 
 ```js
 function binary_search2(arr, low, high, key) {
@@ -362,7 +362,7 @@ function binary_search2(arr, low, high, key) {
  
  ``` 
 
-    * 4.forEach遍历：
+* 4.forEach遍历：
     
 ```js
 
@@ -377,7 +377,7 @@ function binary_search2(arr, low, high, key) {
 
 ```
 
-    * 5 eval：
+* 5 eval：
     
 ```js
 
