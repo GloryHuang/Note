@@ -3,7 +3,7 @@
 
 ####DOM事件的级别(DOM标准定义的级别)
 
-    * DOM0 element.onclik function(){}
+    * DOM0 element.onclik=function(){}
     * DOM2 element.addEventListener('click',function(){},false)
     * DOM3 element.addEventListener*('keyup',function(){},false)
 
