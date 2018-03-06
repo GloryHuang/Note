@@ -47,6 +47,60 @@
                             子级元素
                                 目标元素
     
+```js
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="ev">
+        <style>
+            #ev{
+                width:300px;
+                height:100px;
+                background:red;
+                color: #fff;
+                text-align: center;
+                line-height: 100px;
+
+            }
+        </style>
+        目标元素
+    </div>
+    <script>
+        var ev=document.getElementById("ev");
+        window.addEventListener('click',function(){
+            console.log('window capture')
+        },true);
+        document.addEventListener('click',function(){
+            console.log('docuemnt capture')
+        },true)
+        document.documentElement.addEventListener('click',function(){
+            console.log('html capture')
+        },true)
+        document.body.addEventListener('click',function(){
+            console.log('body capture')
+        },true)
+        ev.addEventListener('click',function(){
+            console.log('ev capture')
+        },true)
+    </script>
+</body>
+</html>
+
+结果：
+window capture
+docuemnt capture
+html capture
+body capture
+ev capture
+
+
+
+```
 
 ####Event对象的常见应用
 
