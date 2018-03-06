@@ -53,10 +53,10 @@
 
 * event.preventDefalut()                阻止默认行为
 * event.stoppropagation()               阻止冒泡行为
-* event.stoplmmediatePropagation()      
-* event.currentTarget()
-* event.target
+* event.stoplmmediatePropagation()      事件响应优先级
+* event.currentTarget()                 
+* event.target                          当前被点击的元素
     
-    
+###### * event.target在IE中是event.srcElement
 
 ####自定义事件
