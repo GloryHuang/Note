@@ -71,8 +71,8 @@
     
     ev.dispatchEvent(eve);//触发
 
-* CustomeEvent
-   
 ```
+*  CustomeEvent
 
-  
+区别：用Event和CustomeEvent都是用来做自定义事件的,唯一的区别是
+  CustomeEvent除了可以指定事件名,后面还可以跟一个Object来做指令参数。
