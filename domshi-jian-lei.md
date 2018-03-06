@@ -1,14 +1,13 @@
 ###DOM事件类
 
 
-####DOM事件的级别
+####DOM事件的级别(DOM标准定义的级别)
 
+    * DOM0 element.onclik function(){}
+    * DOM2 element.addEventListener('click',function(){},false)
+    * DOM3 element.addEventListener*('keyup',function(){},false)
 
 ####DOM事件事件模型
-
-
-####DOM事件模型(指的就是冒泡和捕获)
-
 
 
 ####DOM事件流
