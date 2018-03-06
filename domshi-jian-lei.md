@@ -66,6 +66,8 @@
         console.log('custome');
     });
     
-    ev.dispatchEvent(eve);
+    ev.dispatchEvent(eve);//触发
 
+
+    CustomeEvent
 ```
