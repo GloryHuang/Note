@@ -38,9 +38,25 @@
 
 ####描述DOM事件捕获的具体流程
 
+    window
+        document
+            html
+                body
+                    ...
+                        父级元素
+                            子级元素
+                                目标元素
+    
 
 ####Event对象的常见应用
 
 
+* event.preventDefalut()                阻止默认行为
+* event.stoppropagation()               阻止冒泡行为
+* event.stoplmmediatePropagation()      
+* event.currentTarget()
+* event.target
+    
+    
 
 ####自定义事件
