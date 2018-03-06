@@ -60,6 +60,9 @@
 ###### * event.target在IE中是event.srcElement
 
 ####自定义事件
+
+* Event
+
 ```js
     var eve=new Event('custome');
     ev.addEventListener('custome',function(){
@@ -68,6 +71,8 @@
     
     ev.dispatchEvent(eve);//触发
 
-
-    CustomeEvent
+* CustomeEvent
+   
 ```
+
+  
