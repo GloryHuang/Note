@@ -107,7 +107,7 @@ ev capture
 
 * event.preventDefalut()                阻止默认行为
 * event.stoppropagation()               阻止冒泡行为
-* event.stoplmmediatePropagation()      事件响应优先级
+* event.stoplmmediatePropagation()      事件响应优先级(按钮绑定了两个click事件A、B，希望点击A之后加上这句话，就可以阻止B的执行。)
 * event.currentTarget()                 当前绑定的事件
 * event.target                          当前被点击的元素
     
