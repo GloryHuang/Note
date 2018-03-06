@@ -64,7 +64,12 @@
 * 301 Moved Permanently:所请求的页面已经转移至新的URL
 * 302 Found:所请求的页面已经临时转移至新的URL
 * 304 Not Modified:客户端有缓冲的文档并发出了一个条件性的请求,服务器告诉客户,原来缓冲的文档还可以继续使用
-
+* 400 Bad Requset:客户端请求有语法错误,不能被服务器所理解
+* 401 Unauthorized:请求未经授权,这个代码必须和WWW-Authenticate报头域一起使用
+* 403 Forbidden:对被请求的页面的访问被禁止
+* 404 NOT Found:请求资源不存在
+* 500 Interal Server Error:服务器发生不可预期的错误原来缓冲的文档还可以继续使用
+* 503 Server Unavailable:请求未完成,服务器临时过载或者宕机,一段时间后可能恢复正常
 
 ####什么是持久连接
 
