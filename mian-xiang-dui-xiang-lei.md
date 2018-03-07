@@ -35,9 +35,9 @@
      * 借助构造函数实现继承
      
 ```js
-     asdas 
-
-
+     function Parent1(){
+          this.name='parent1';
+     }
 ```
      
 
