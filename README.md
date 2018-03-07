@@ -4,7 +4,10 @@
 
 ##关于（About）
 
-Email:g1ory2612@foxmail.com
+Email: g1ory2612@foxmail.com
+
+WeChat: h358665354
+
 
 
 
