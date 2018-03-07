@@ -50,10 +50,20 @@
      
      console.log(new Child1(),new Child1().say());
      
-     
-     
 ```
+     * 借助原型链实现继承
      
+```js
+     function Parent2(){
+          this.name='parent2';
+     }
+     
+     function Child2(){
+          this.type='child2';
+     }
+     
+     Child2.prototype=new Parent2();
+```
 
 
 * 继承的几种方式   
