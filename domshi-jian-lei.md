@@ -14,27 +14,27 @@
 
 ####DOM事件事件模型
     
-    * 捕获
-    
-        从上到下
+* 捕获
+
+    从上到下
         
-    * 冒泡
+* 冒泡
     
-        从当前元素目标元素往上
+    从当前元素目标元素往上
         
 ####DOM事件流
 
    一个完整的事件流分了3个阶段
     
-    * 捕获
-    * 目标阶段
-    * 冒泡
+* 捕获
+* 目标阶段
+* 冒泡
     
 事件流：
      浏览器在对当前页面与用户进行交互的时候,比如说点击鼠标左键,这个左键是这么传到这个页面上的？是怎么响应的？
     
     
- ###### ** 事件通过捕获到达目标元素,从目标元素再上传到window对象
+ ######事件通过捕获到达目标元素,从目标元素再上传到window对象
 
 ####描述DOM事件捕获的具体流程
 
@@ -115,7 +115,7 @@ ev capture
 * event.currentTarget()                 当前绑定的事件
 * event.target                          当前被点击的元素
     
-###### * event.target在IE中是event.srcElement
+#####event.target在IE中是event.srcElement
 
 ####自定义事件
 
@@ -132,5 +132,5 @@ ev capture
 ```
 *  CustomeEvent
 
-区别：用Event和CustomeEvent都是用来做自定义事件的,唯一的区别是
+    * 区别：用Event和CustomeEvent都是用来做自定义事件的,唯一的区别是
   CustomeEvent除了可以指定事件名,后面还可以跟一个Object来做指令参数。
