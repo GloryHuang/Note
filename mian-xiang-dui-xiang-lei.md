@@ -6,6 +6,7 @@
 * 类的声明
 
  * 在ES5中声明
+ 
 ```js
      function Animal(){
         this.name='name';
@@ -15,7 +16,7 @@
  * 在ES6中声明
     
 ```js
-      class Animal2{
+    class Animal2{
            construtor(){
                 this.name=name;
            }
