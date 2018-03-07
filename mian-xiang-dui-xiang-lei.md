@@ -110,14 +110,38 @@
           this.type='child3';
      }
 
-     Child3.prototype=new Parent3();
+     Child3.prototype=new Parent3();//Parent3初始化了2次
      var s3=new Child3();
      var s4=new Child4();
      s3.play.push(4);
      console.log(s3.play,s4.play);
-     
+     console.log(s3.constructor);//指向Parent3构造函数
      
 ```
 
+* 组合继承的优化1
+
+```js
+  
+     function Parent4(){
+         this.name="parent4";
+         this.play=[1,2,3];
+     }
+     function Child4(){
+         Parent4.call(this);
+         this.type='child4';
+     }
+     Child4.prototype=Parent4.prototype;
+     //Child4.prototype.contructor=Child4;//无法区分父类的实例的原型对象
+     var s5=new Child4();
+     var s6=new Child4();
+     console.log(s5,s6);
+
+     console.log(s5 instanceof Child4);//true
+     console.log(s5 instanceof Parent4);//true  继承的本质就是原型链
+     console.log(s5.constructor);//指向Parent4的构造函数,无法区分实例是由父类创建的，还是子类创建的  **这是缺点**
+
+ 
+```
  
     
