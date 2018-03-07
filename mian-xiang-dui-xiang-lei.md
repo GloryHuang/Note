@@ -96,7 +96,27 @@
 ![](/assets/20171028132954306.png)
 ![](/assets/20171028133711941.png)
 
-* 
+* 组合方式
+
+```js
+     
+     function parent3(){
+        this.name='parent3';
+        this.play=[1,2,3];
+     }
+     
+     function Child3(){
+          Parent3.call(this);
+          this.type='child3';
+     }
+
+     Child3.prototype=new Parent3();
+     var s3=new Child3();
+     var s4=new Child4();
+     console.log(s3,s4);
+     
+     
+```
 
  
     
