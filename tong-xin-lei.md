@@ -26,6 +26,7 @@
 * XMLHttpRequest对象的工作流程
 
 * 兼容性处理
+(XMLHttpRequest只有高级浏览器中支持，低版本中要用xmlhttp=new ActiveXObject(“Microsoft.XMLHTTP”);)
 
 * 事件的触发条件
 
