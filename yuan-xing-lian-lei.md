@@ -12,7 +12,7 @@
 
     * var M=function(){this.name='o2'};
     * var o2=new M();
-    
+      
 * Object.creat()创建   
  
     * var P={name:'o3'};
