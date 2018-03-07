@@ -32,7 +32,7 @@ C、meta description网页描述：高度概括网页的内容
      
      * 重要内容不要用 JS 输出（搜索引擎看不懂 JS）
      
-     *尽量少使用 iframe 框架（搜索引擎不喜欢）
+     * 尽量少使用 iframe 框架（搜索引擎不喜欢）
      
      * 谨慎使用 display:none（搜索引擎会过滤掉其内容，设置 z-index 代替）
      
