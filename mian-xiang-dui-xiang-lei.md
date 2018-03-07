@@ -113,7 +113,8 @@
      Child3.prototype=new Parent3();
      var s3=new Child3();
      var s4=new Child4();
-     console.log(s3,s4);
+     s3.play.push(4);
+     console.log(s3.play,s4.play);
      
      
 ```
