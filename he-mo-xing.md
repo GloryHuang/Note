@@ -43,16 +43,34 @@
 ####实例题(根据盒模型解释边距重叠)
 
     ovflow:hidden;(创建了一个BFC)
-    重叠
+   
 
 ####BFC(边距重叠解决方案)
 
 * BFC的基本概念
+    
+    * 块级格式化上下文
+    
 
-* BFC的原理
+* BFC的原理(BFC的渲染规则)
+    
+    * BFC元素垂直方向的边距发生重叠 
+    
+    * BFC的区域不会与浮动元素的box重叠(清除浮动)
+    
+    * BFC是页面上一个独立的容器，内外的元素不会相互影响 
+    
+    * 计算BFC的高度时，浮动元素也参与计算
+    
 
 * 如何创建BFC
 
-
+    * float值不为none 
+    
+    * position为absolute或fixed 
+    
+    * display为inline-block，table-cell，table-caption，flex；
+    
+    * overflow不为visible
     
     
