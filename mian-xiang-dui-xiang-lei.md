@@ -51,7 +51,7 @@
      console.log(new Child1(),new Child1().say());
      
 ```
-          * 借助原型链实现继承
+     * 借助原型链实现继承
      
 ```js
      function Parent2(){
