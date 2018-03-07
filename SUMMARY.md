@@ -13,7 +13,7 @@
   * [运行机制类](yun-xing-ji-zhi-lei.md)
   * [页面性能类](ye-mian-xing-neng-lei.md)
   * [错误监控类](cuo-wu-jian-kong-lei.md)
-  * 原型链类
+  * [常见面试题](chang-jian-mian-shi-ti.md)
 * [常见问题](常见问题.md)
   * [如何解析JSON](如何解析json.md)
   * [事件委托](javascript.md)
