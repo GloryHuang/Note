@@ -35,16 +35,17 @@
 
 ####跨域通信的几种方式
 
-* JSONP
+* JSONP(利用Script标签的异步加载来实现的)
 ![](/assets/QQ图片20180307170052.png)
 
 * Hash(hash改变页面不刷新,url中?后search改变页面是会刷新的,所以search不能做跨域通信)
 
 
+
 * postMessage(H5中新增加的处理跨域通信的方式)
 
-* WebSocket
+* WebSocket(不受同源策略限制)
 
-* CORS
+* CORS(新出的通信标准,是支持跨域通信的Ajax,浏览器会在HTTP头中加一个Orign来支持跨域)
 
 
