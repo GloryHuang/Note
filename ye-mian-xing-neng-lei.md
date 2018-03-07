@@ -8,7 +8,8 @@
 + 使用CDN
 + 预解析DNS
  
-```html    
+```html  
+  
     <meta http-equiv="x-dns-prefetch-control"content="on">
     <link rel="dns-prefetch" href="//host_name_to_prefetch.com">
 
