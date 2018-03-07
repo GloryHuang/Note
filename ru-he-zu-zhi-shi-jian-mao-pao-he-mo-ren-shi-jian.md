@@ -23,6 +23,7 @@
 
 默认事件：即浏览器本身具备的功能
 
+```js
     function preventDefa(e){ 
       if(window.event){ 
         //IE中阻止函数器默认动作的方式  
@@ -33,10 +34,11 @@
       }  
     } 
 
-
+```
 这种是兼容性写法，但是如果你只需要支持高版本浏览器的话，那么如上文一样，一句话即可。
 
-
+```js
     btn.onclick = function (){ 
       return false; 
     }
+```
