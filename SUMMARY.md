@@ -15,6 +15,7 @@
   * [错误监控类](cuo-wu-jian-kong-lei.md)
   * [常见面试题](chang-jian-mian-shi-ti.md)
   * [面向对象类](mian-xiang-dui-xiang-lei.md)
+  * [通信类](tong-xin-lei.md)
 * [常见问题](常见问题.md)
   * [如何解析JSON](如何解析json.md)
   * [事件委托](javascript.md)
