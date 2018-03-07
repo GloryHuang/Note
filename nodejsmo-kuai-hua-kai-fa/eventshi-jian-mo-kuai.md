@@ -1,5 +1,6 @@
 ####事件模块
 
+```js
 
     Events
 
@@ -38,3 +39,5 @@
 
 	//第二种
 	EventEmitter.listenerCount(instance,'event')
+	
+```
