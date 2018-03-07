@@ -2,17 +2,21 @@
 
 ####基本概念:盒模型+IE模型
 
-    border+margin+padding+content
+* 文档中每个元素都会被描述为一个矩形盒子，盒子有一个边界，分别为margin edge，border edge，padding edge，content edge。盒子模型分为标准盒子模型和IE盒子模型（微软没有遵从W3C标准）
+
     
 ####标准模型和IE模型的区别
-        
-    就是计算宽度和高度的不同
+
+* 这两者的关键差别在于：W3C盒子模型——属性高（height）和属性宽（width）这两个值不包括（padding）和边框（border）；IE盒子模型——属性高（height）和属性宽（width）这两个值包含填充（padding）和边框（border）。
+                
+* 就是计算宽度和高度的不同
+
     
-###标准模型(不包含padding和border)
+###标准模型(宽高不包含padding和border)
     
 ![](/assets/QQ截图20180130212438.png)
         
-###IE模型
+###IE模型(宽高包含padding和border)
 
 ![](/assets/QQ截图20180130212326.png)
 
