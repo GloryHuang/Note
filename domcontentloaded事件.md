@@ -1,4 +1,4 @@
-######DOMContentLoaded事件
+###DOMContentLoaded事件
 
 
 
@@ -25,7 +25,7 @@
 
 ```
 
-######DOMContentLoaded事件兼容写法
+###DOMContentLoaded事件兼容写法
 
 ```js
           /*
