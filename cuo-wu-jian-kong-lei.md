@@ -26,8 +26,8 @@
  
  ![](/assets/QQ截图20171213230515.png)
     
-    1.在客户端,在script标签增加crossorigin属性
-    2.在服务端,设置js资源响应头Access-Control-Allow-Origin:*
+* 1.在客户端,在script标签增加crossorigin属性
+* 2.在服务端,设置js资源响应头Access-Control-Allow-Origin:*
 
 ####上报错误的基本原理
 
