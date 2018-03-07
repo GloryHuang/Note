@@ -5,7 +5,7 @@
 
 * 类的声明
 
-     * 在ES5中声明
+ * 在ES5中声明
 ```js
      function Animal(){
         this.name='name';
