@@ -1,5 +1,5 @@
 ## 事件委托
-```html  
+```js
 有关 event 和 window.event在IE/Opera中，是window.event,
 
 而在Firefox中，是event而事件的对象，

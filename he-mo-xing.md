@@ -29,9 +29,9 @@
 
     * 前提是页面处于”怪异模式”，“标准模式”不存在兼容性问题。 
     
-    
- 1) 假设内容的宽度必须固定为100px
+        *  假设内容的宽度必须固定为100px
         
+        *  wrapper
       
 ```css
 
@@ -43,11 +43,7 @@
         padding:0 10px;border:20px solid blue;margin:70px;  
     }  
 
-```
- 2) wrapper
-      
 
- ```css  
         #box{
              width:100px;
              margin:70px;
