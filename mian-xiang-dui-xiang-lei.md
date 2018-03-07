@@ -66,6 +66,8 @@
      }
      
      Child2.prototype=new Parent2();
+     
+     console.log(new Child2());
 ```
 
 
