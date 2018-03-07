@@ -34,3 +34,17 @@
 
 
 ####跨域通信的几种方式
+
+* JSONP
+![](/assets/QQ图片20180307170052.png)
+
+* Hash(hash改变页面不刷新,url中?后search改变页面是会刷新的,所以search不能做跨域通信)
+
+
+* postMessage(H5中新增加的处理跨域通信的方式)
+
+* WebSocket
+
+* CORS
+
+
