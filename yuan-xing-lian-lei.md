@@ -22,10 +22,11 @@
     * var o3=Object.creat(P);
 
 ####原型、构造函数、实例、原型链
-
+![](/assets/QQ截图20180307112217.png)
 
 
 ####instanceof的原理
+![](/assets/QQ截图20180307150215.png)
 
 
 ####new运算符
