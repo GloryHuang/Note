@@ -38,6 +38,8 @@
 
 ####描述DOM事件捕获的具体流程
 
+```html
+
     window
         document
             html
@@ -47,6 +49,8 @@
                             子级元素
                                 目标元素
     
+```
+
 ```js
 
 <!DOCTYPE html>
