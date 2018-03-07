@@ -38,6 +38,13 @@
      function Parent1(){
           this.name='parent1';
      }
+     
+     function Child1(){
+          Parent1.call(this);//apply(改变函数运行的上下文)
+          this.type='child1';
+     }
+     
+     console.log(new Child1);
 ```
      
 
