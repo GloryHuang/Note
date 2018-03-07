@@ -18,19 +18,27 @@
 
 ####CSS是如何设置这种模型
 
+```css
+
     浏览器默认的是content-box
     box-sizing:content-box;(标准模型)
     box-sizing:border-box;(IE模型)
     
+```    
 
 ####JS如何设置获取盒模型对应的宽和高
 
+```js
+
     dom.style.width/height(只能取内联样式)
+    
     dom.currentStyle.width/height(拿到渲染以后的宽高)(仅IE支持)
+    
     window.getComputedStyle(dom).width/height(兼容FF和Chrome)(通用性更好一些)
+    
     dom.getBoundingClientRect().width/height
     计算元素在视窗绝对位置四个元素left top height width
-
+```
 
 ####实例题(根据盒模型解释边距重叠)
 
@@ -38,5 +46,13 @@
     重叠
 
 ####BFC(边距重叠解决方案)
+
+* BFC的基本概念
+
+* BFC的原理
+
+* 如何创建BFC
+
+
     
     
