@@ -38,7 +38,7 @@
 
 ####描述DOM事件捕获的具体流程
 
-```html
+```js
 
     window
         document
