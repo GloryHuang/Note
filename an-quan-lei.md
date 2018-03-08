@@ -30,9 +30,9 @@
 
 ####XSS
 
-    * 基本概念和缩写
+* 基本概念和缩写
     
-        * XSS（cross-site script，跨站脚本攻击） 
+    * XSS（cross-site script，跨站脚本攻击） 
     
     * 攻击原理
     
@@ -42,8 +42,11 @@
     * 防御措施
     
     
-    * CSRF和XSS的区别
     
-        * XSS是向页面注入js运行，
-        * CSRF是利用本身的漏洞去执行接口，
-        * CSRF要登录网站
+* CSRF和XSS的区别
+    
+    * XSS是向页面注入js运行
+
+    * CSRF是利用本身的漏洞去执行接口
+        
+    * CSRF要登录网站
