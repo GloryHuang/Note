@@ -2,27 +2,31 @@
 
 ####前端错误的分类
 
-    * 即时运行错误:代码错误
+
+* 即时运行错误:代码错误
+
     
-    * 资源加载错误
+* 资源加载错误
+
     
 ####错误的捕获方式
 
-    * 即时运行错误的捕获方式
+* 即时运行错误的捕获方式
     
-        * try...catch
-        * window.onerror
+ * try...catch
+ 
+ * window.onerror
 
-    * 资源加载错误
+* 资源加载错误
          
-        * object.onerror
+    * object.onerror
         
-        * performance.getEntries()
+    * performance.getEntries()
         
-        * Error事件捕获
+    * Error事件捕获
         
 
- ####*延伸:跨域的js运行错误可以捕获吗,错误提示什么,应该怎么处理?
+ ####延伸:跨域的js运行错误可以捕获吗,错误提示什么,应该怎么处理?
  
  ![](/assets/QQ截图20171213230515.png)
     
