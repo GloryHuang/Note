@@ -11,11 +11,13 @@
     
 ####错误的捕获方式
 
+
 * 即时运行错误的捕获方式
     
- * try...catch
+  * try...catch
  
- * window.onerror
+  * window.onerror
+ 
 
 * 资源加载错误
          
