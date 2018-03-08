@@ -135,3 +135,48 @@ function ajax_tool(url,data,method,success) {
  }
 
 ```
+
+###进阶版
+
+```js
+
+    function ajax_tools_pro(obj) {
+
+    var ajax = new XMLHttpRequest();
+
+    if (obj.method == 'get') {
+
+        if (obj.data) {
+            obj.url += '?';
+            obj.url += obj.data;
+        } else {
+
+        }
+        ajax.open(obj.method, obj.url);
+        ajax.send();
+    } else {
+        ajax.open(obj.method, obj.url);
+        ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+        if (obj.data) {
+            ajax.send(obj.data);
+        } else {
+            ajax.send();
+        }
+    }
+
+
+    ajax.onreadystatechange = function () {
+
+        if (ajax.readyState == 4 && ajax.status == 200) {
+            obj.success(ajax.responseText);
+        }
+
+
+    }
+
+}
+
+
+
+```
