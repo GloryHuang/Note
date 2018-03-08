@@ -28,9 +28,11 @@
 
 ####异步任务:
 
-    * setTimeout和setinterval
-    * DOM事件
-    * ES6中的Promise
+* setTimeout和setinterval
+
+* DOM事件
+
+* ES6中的Promise
     
 
 
