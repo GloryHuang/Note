@@ -14,10 +14,10 @@
 
 ###Set
 
-    * Sst add   添加元素
-    * Set delete移除元素
-    * Set clear 清空元素
-    * Set has 判断集合中有没有这个元素
+* Sst add   添加元素
+* Set delete移除元素
+* Set clear 清空元素
+* Set has 判断集合中有没有这个元素
 
 ```js
 
@@ -132,12 +132,12 @@
 
 ###WeakSet
 
-    * WeakSet和Set支持数据类型不一样
-    * WeakSet的元素必须是对象(不能是数值,boolean,字符串)
-    * WeakSet不进行垃圾回收检测
-    * WeakSet没有clear方法(仅有add、has、delete方法)
-    * WeakSet没有Set属性
-    * WeakSet不能遍历
+* WeakSet和Set支持数据类型不一样
+* WeakSet的元素必须是对象(不能是数值,boolean,字符串)
+* WeakSet不进行垃圾回收检测
+* WeakSet没有clear方法(仅有add、has、delete方法)
+* WeakSet没有Set属性
+* WeakSet不能遍历
 
 ```js
 {
