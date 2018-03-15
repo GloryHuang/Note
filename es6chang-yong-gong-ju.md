@@ -1,4 +1,7 @@
+```js
+
 //抽奖次数限制
+
 {
 
     //抽奖次数限制
@@ -28,11 +31,11 @@
     }, false);
 }
 
+
 //长轮询
-{
+ {
     let ajax = function*() {
         yield new Promise((resolve, reject) => {
-
 
             //重写接口
             setTimeout(function() {
@@ -60,6 +63,7 @@
             }
         });
     }
-
     pull();
-}
+    
+    }
+```
