@@ -1,8 +1,8 @@
 ####iterator和for..of.....循环
 
-     * 什么是iterator接口
-     * iterator的基本用法
-     * for.....of
+ * 什么是iterator接口
+ * iterator的基本用法
+ * for.....of
 
 
 ####iterator

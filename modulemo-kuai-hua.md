@@ -1,10 +1,10 @@
 ###Module模块化
 
 
-     * 基本概念
-     * ES6的基本模块化语法
-     * ES6模块的引入:import 
-     * ES6模块导出:export
+ * 基本概念
+ * ES6的基本模块化语法
+ * ES6模块的引入:import 
+ * ES6模块导出:export
 
 
 ```js 
