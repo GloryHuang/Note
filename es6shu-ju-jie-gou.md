@@ -3,10 +3,10 @@
 
  ####ES6 数据结构
  
-     * Set的用法
-     * WeakSet的用法
-     * Map的用法
-     * WeakMap的用法
+ * Set的用法
+ * WeakSet的用法
+ * Map的用法
+ * WeakMap的用法
 
     //数组也算是集合
     //Set集合中的元素不能重复,必须是唯一的
