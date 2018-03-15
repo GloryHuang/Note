@@ -1,7 +1,7 @@
 ###Proxy 和 Reflect
 
-     * Proxy和Reflect的概念
-     * Proxy和Reflect的适用场景
+ * Proxy和Reflect的概念
+ * Proxy和Reflect的适用场景
 
 ####Proxy 代理
 
