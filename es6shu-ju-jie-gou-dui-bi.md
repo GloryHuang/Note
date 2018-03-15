@@ -1,7 +1,7 @@
 ###ES6中的数据结构对比
 
-     * Map与Array的对比
-     * Set与Array的对比
+ * Map与Array的对比
+ * Set与Array的对比
 
 
 
@@ -121,8 +121,9 @@
 ```
 
 结论:
-    * Map和set的效率最好
-    * Map的成本最低
+
+* Map和set的效率最好
+* Map的成本最低
 
 
 
