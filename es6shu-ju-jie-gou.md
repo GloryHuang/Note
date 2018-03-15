@@ -201,10 +201,10 @@
 
 ###WeakMap
 
-    * WeakMap接受的key值只能是对象
-    * WeakMap没有clear
-    * WeakMap不能遍历
-    * 与WeakSet类似
+ * WeakMap接受的key值只能是对象
+ * WeakMap没有clear
+ * WeakMap不能遍历
+ * 与WeakSet类似
 
 
 ```js
