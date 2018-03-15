@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [面试题](面试题.md)
   * [闭包](面试题.md)
-  * [Web存储](web存储.md)
+  * [Web存储](webcunchu.md)
   * [页面布局类](ye-mian-bu-ju-lei.md)
   * [盒模型](he-mo-xing.md)
   * [DOM事件类](domshi-jian-lei.md)
