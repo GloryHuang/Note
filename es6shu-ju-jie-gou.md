@@ -159,13 +159,13 @@
 ###Map
 
 
-    * Map添加元素用set(),Set添加元素用add();
-    * Map的key值(键值)可以是任意数据类型
-    * Map获取值用get()
-    * Map获取长度size
-    * Map删除元素delete()
-    * Map清空元素clear()
-    * 遍历方式和Set一致
+* Map添加元素用set(),Set添加元素用add();
+* Map的key值(键值)可以是任意数据类型
+* Map获取值用get()
+* Map获取长度size
+* Map删除元素delete()
+* Map清空元素clear()
+* 遍历方式和Set一致
 
 
 ####Map第一种定义方法(不带参数)
