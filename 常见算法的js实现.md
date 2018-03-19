@@ -177,8 +177,7 @@ function unique(arr) {
     for (var i in arr) {
         if (!obj[arr[i]]) {
             obj[arr[i]] = true;
-            result.
-            push(arr[i]);
+            result.push(arr[i]);
     }
 }
 return result;
