@@ -186,6 +186,7 @@
     // weaklist.add(2);
 
     console.log('weaklist', weaklist);
+    //weaklist WeakSet {}
 }
 ```
 
@@ -216,6 +217,7 @@
 
 
     console.log('map', map, map.get(arr));
+    //map Map { [ '123' ] => 456 } 456
 }
 
 ```
@@ -228,8 +230,13 @@
         ['b', 456]
     ]);
     console.log('map args', map);
+    //map args Map { 'a' => '213', 'b' => 456 }
+    
     console.log('size', map.size);
+    //size 2
+    
     console.log('delete', map.delete('a'), map);
+    //delete true Map { 'b' => 456 }
 }
 ```
 
@@ -249,6 +256,7 @@
 
     weakmap.set(o, 123);
     console.log('weakmap', weakmap.get(o));
+    //weakmap 123
 }
 
 ```
