@@ -113,27 +113,50 @@
     //遍历Key值(键值)
     for (let key of list.keys()) {
         console.log('key', key);
-        //
+        //key add
+        //key delete
+        //key clear
+        //key has
     }
 
     //遍历Value(值)
     for (let values of list.values()) {
         console.log('values', values);
+        //values add
+        //values delete
+        //values clear
+        //values has
+
     }
 
     //for of 遍历
     for (let values of list) {
         console.log('list-values', values);
+        //list-values add
+        //list-values delete
+        //list-values clear
+        //list-values has
+
     }
 
     //entries遍历
     for (let [key, values] of list.entries()) {
         console.log('entries', key, values);
+        //entries add add
+        // entries delete delete
+        //entries clear clear
+        //entries has has
+
     }
 
     //foreach遍历
     list.forEach(function(item, index) {
         console.log('foreach', index, item);
+        //foreach add add
+        //foreach delete delete
+        //foreach clear clear
+        //foreach has has
+
     });
 
 }
