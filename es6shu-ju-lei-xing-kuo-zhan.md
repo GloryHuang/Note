@@ -20,6 +20,7 @@
 
         //永远是独一无二的
         console.log(a1 === a2); //false
+        
 
         //声明方式2
         let a3 = Symbol.for('a3');
@@ -40,11 +41,13 @@
             'c': '456'
         }
         console.log('obj', obj);
-
+        //obj { abc: '345', c: '456', [Symbol(abc)]: '123' }
 
         //for in for of遍历取不到Symbol的值
         for (let [key, value] of Object.entries(obj)) {
             console.log('let of ', key, value);
+            //let of  abc 345
+            //let of  c 456
         }    
 
         //这个方法得到一个数组
