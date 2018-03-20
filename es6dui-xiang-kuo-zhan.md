@@ -24,6 +24,7 @@
             k
         };
         console.log(es5, es6);
+        //{ o: 1, k: 2 } { o: 1, k: 2 }
 
 
 
@@ -41,6 +42,8 @@
 
 
         console.log(es5_menthod.hello(), es6_menthod.hello());
+        //Hello
+        //Hello
     }
 
 ```
@@ -62,6 +65,7 @@
         }
 
         console.log(es5_obj, es6_obj);
+        //{ a: 'c', b: 'c' } { b: 'c' }
     }
 ```
 
@@ -72,17 +76,23 @@
     {
         //is()和===的功能没有区别
         console.log('字符串', Object.is('abc', 'abc'));
+        //字符串 true
+        
         //两个数组引用的是不用的地址
         console.log('数组', Object.is([], [])); //false
-
+        //数组 false
+        
         //拷贝的功能
         //拷贝的属性是有限制的,浅拷贝(修改地址不是改变值)
         //不会拷贝继承、不可枚举的属性
         console.log('拷贝', Object.assign({ a: 'a' }, { b: 'b' }));
-
+        //拷贝 { a: 'a', b: 'b' }
+        
         let test = { k: 123, o: 456 };
         for (let [key, value] of Object.entries(test)) {
             console.log([key, value]);
+            // [ 'k', 123 ]
+            // [ 'o', 456 ]
         }
     }
 
