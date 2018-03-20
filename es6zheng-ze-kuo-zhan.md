@@ -10,12 +10,14 @@
         let regex = new RegExp('xyz', 'i');
         let regex2 = new RegExp(/xyz/i);
         console.log(regex.test('xyz123'), regex2.test('xyz123'));
-
+        //true true
 
         //ES6中声明正则表达式的方法
         let regex3 = new RegExp(/xyz/ig, 'i');
+        //flags
         //查看当前正则表达式使用的修饰符是什么
         console.log(regex3.flags);
+        //i
 
     }
 ```
@@ -32,9 +34,17 @@
         let a1 = /b+/g;
         let a2 = /b+/y;
         console.log('One', a1.exec(s), a2.exec(s));
-        console.log('Two', a1.exec(s), a2.exec(s));
+        //One [ 'bbb', index: 0, input: 'bbb_bb_b' ] [ 'bbb', index: 0, input: 'bbb_bb_b'
 
+        console.log('Two', a1.exec(s), a2.exec(s));
+        //Two [ 'bb', index: 4, input: 'bbb_bb_b' ] null
+
+        //sticky属性
+        //判断正则是否设置了y修饰符。
+        //返回布尔值。
         console.log(a1.sticky, a2.sticky);
+        //false true
+        
     }
 
 
