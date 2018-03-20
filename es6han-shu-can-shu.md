@@ -10,7 +10,9 @@
             console.log('默认值', x, y);
         }
         test('hello');
+        //默认值 hello world
         test('hello', 'kill');
+        //默认值 hello kill
     }
 
 
@@ -22,6 +24,7 @@
             console.log('作用域', x, y);
         }
         test2('kill'); //上面的x取得是这里的x
+        //作用域 kill kill
     }
 
 ```
@@ -40,6 +43,11 @@
             }
         }
         test3(1, 2, 3, 4, 'a');
+       //rest 1
+       //rest 2
+       //rest 3
+       //rest 4
+       //rest a
     }
 ```
 
