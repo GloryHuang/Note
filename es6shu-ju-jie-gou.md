@@ -26,12 +26,17 @@
 
         let arr = ['add', 'delete', 'clear', 'has'];
         let list = new Set(arr);
+        
         console.log('has', list.has('add'));
-        //
+        //has true
+        
         console.log('has', list.delete('add'), list);
+        //has true Set { 'delete', 'clear', 'has' }
+        
         list.clear();
         console.log(list);
-        console.log('---------');
+        //Set {}
+    
     }
 
 ```
