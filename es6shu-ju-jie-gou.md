@@ -143,7 +143,7 @@
     for (let [key, values] of list.entries()) {
         console.log('entries', key, values);
         //entries add add
-        // entries delete delete
+        //entries delete delete
         //entries clear clear
         //entries has has
 
