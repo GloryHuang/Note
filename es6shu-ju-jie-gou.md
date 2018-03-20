@@ -19,6 +19,7 @@
 * Set clear 清空元素
 * Set has 判断集合中有没有这个元素
 
+####Set has 判断集合中有没有这个元素
 ```js
 
     {
@@ -26,6 +27,7 @@
         let arr = ['add', 'delete', 'clear', 'has'];
         let list = new Set(arr);
         console.log('has', list.has('add'));
+        //
         console.log('has', list.delete('add'), list);
         list.clear();
         console.log(list);
@@ -48,6 +50,7 @@
 
         //查看当前set有多少个元素
         console.log('size', list.size);
+        //size 2
 
     }
 ```
@@ -60,6 +63,7 @@
 
 
         console.log('size', list.size);
+        //size 5
     }
 
     //添加重复的元素是不会报错的
@@ -72,6 +76,7 @@
         list.add(1);
 
         console.log('list', list);
+        //list Set { 1, 2 }
     }
 
 ```
@@ -103,6 +108,7 @@
     //遍历Key值(键值)
     for (let key of list.keys()) {
         console.log('key', key);
+        //
     }
 
     //遍历Value(值)
