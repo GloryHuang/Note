@@ -57,7 +57,9 @@
 
         for (let values of ['1', 'c', 'ks'].values()) {
             console.log('values', values)
-
+            //1
+            //c
+            //ks
         }
 
         //不存在兼容性问题
