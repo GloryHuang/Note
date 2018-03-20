@@ -11,8 +11,14 @@
     let arr = ['hello', 'world'];
     let map = arr[Symbol.iterator]();
     console.log(map.next());
+    //{ value: 'hello', done: false }
+    
     console.log(map.next());
+    //{ value: 'world', done: false }
+    
     console.log(map.next());
+    //{ value: undefined, done: true }
+    
 }
 ```
 
@@ -48,6 +54,12 @@
     }
     for (let key of obj) {
         console.log(key);
+        //1
+        //3
+        //2
+        //7
+        //9
+        //8
     }
 }
 ```
