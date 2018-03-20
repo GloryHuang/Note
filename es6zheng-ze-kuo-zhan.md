@@ -49,26 +49,40 @@
 
 
     {
-        console.log('u-1', /^\uD83D$/.test('\uD83D\uDC2A'));
+         console.log('u-1', /^\uD83D$/.test('\uD83D\uDC2A'));
+        //u-1 false
+
         console.log('u-2', /^\uD83D$/u.test('\uD83D\uDC2A'));
+        //u-2 false
+
 
         //a的Unicode编码是\u61
         //根据Unicode编码进行正则匹配
-        console.log(/\u{61}/.test('a')); //返回 false
-        console.log(/\u{61}/u.test('a')); //返回 true
+        console.log(/\u{61}/.test('a'));
+        //返回 false
+
+        console.log(/\u{61}/u.test('a'));
+        //返回 true
 
 
 
         console.log('\u{20BB7}');
+        //false
 
         let s = '𠮷';
 
-        console.log('u',/^.$/.test(s));
-        console.log('u-2',/^.$/u.test(s));
+        console.log('u', /^.$/.test(s));
+        // true
+
+        console.log('u-2', /^.$/u.test(s));
+        //𠮷
+
+        console.log('test', /𠮷{2}/.test('𠮷𠮷'));
+        // test false
 
 
-        console.log('test',/𠮷{2}/.test('𠮷𠮷'));
-        console.log('test-2',/𠮷{2}/u.test('𠮷𠮷'));
-    }
+        console.log('test-2', /𠮷{2}/u.test('𠮷𠮷'));
+        // test-2 true
+        }
     
 ```
