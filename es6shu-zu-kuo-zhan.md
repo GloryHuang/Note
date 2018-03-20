@@ -78,6 +78,7 @@
     //替换的位置从0开始.读取的位置从3开始,截止位置是4
     {
         console.log([1, 2, 3, 4, 5].copyWithin(0, 3, 4));
+        //[ 4, 2, 3, 4, 5 ]
     }
 ```
 
@@ -89,15 +90,18 @@
         //find只找到满足条件的第一个,之后就不往下继续查找
         console.log([1, 2, 3, 4, 5, 6].find(function(item) {
             return item > 3;
+            //4
         }))
 
         console.log([1, 2, 3, 4, 5, 6].find((value) => {
             return value == 2;
+            //2
         }));
 
         //找到满足条件的数组下标
         console.log([1, 2, 3, 4, 5, 6].findIndex(function(item) {
             return item > 3;
+            //3
         }))
     }
 ```
@@ -107,6 +111,8 @@
     //后面直接输入值
     {
         console.log('number', [1, 2, NaN].includes(1));
+        //number true
         console.log('number', [1, 2, NaN].includes(NaN));
+        //number true
     }
 ```
