@@ -221,7 +221,6 @@ function factorialize(num) {
 
 ```js
 function factorialize(num) {
-    var result = 1;
     if (num < 0) 
            return -1;
     if (num == 0 || num == 1) 
@@ -245,9 +244,11 @@ function getfib(n) {
         return getfib(n - 1) + getfib(n - 2);
 }
 
+
+//求斐波拉契数列的前几项
 function fibo(len) {
     var fibo = [];
-    for (var i = 0; i < len; i++) {
+    for (var i = 1; i <= len; i++) {
         fibo.push(getfib(i));
         }
         return fibo;
