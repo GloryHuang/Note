@@ -54,12 +54,16 @@
         //使得foreach 可以遍历出symbol的值 只取得symbol的值
         Object.getOwnPropertySymbols(obj).forEach(function(item, index) {
             console.log('getOwnPropertySymbols', item);
+            //getOwnPropertySymbols Symbol(abc)
         });
 
 
         //返回了symbol和非symbol的值,返回的是一个数组
         Reflect.ownKeys(obj).forEach(function(item, index) {
     	    console.log('ownKeys',index,item);
+            //ownKeys 0 abc
+            //ownKeys 1 c
+            //ownKeys 2 Symbol(abc)
         });
 
 
