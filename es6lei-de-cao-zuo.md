@@ -30,6 +30,7 @@
     let v_parent = new Parent('小明');
 
     console.log('构造函数和实例', v_parent);
+    //构造函数和实例 Parent { name: '小明' }
 }
 
 ```
@@ -63,7 +64,10 @@
 
 
     console.log('继承', new Child());
+    //继承 Child { name: 'child', type: 'child' }
+    
     console.log('继承', new Child('hello'));
+    //继承 Child { name: 'hello', type: 'child' }
 }
 
 ```
@@ -90,11 +94,13 @@
 
     let v = new Parent();
     console.log('getter', v.longName);
-
+    //getter mk mukewang
+    
     //setter操作
     //赋值就相当于是setter操作
     v.longName = 'hello';
     console.log('setter', v.longName);
+    //setter mk hello
 }
 
 ```
@@ -115,6 +121,7 @@
     }
 
     Parent.tell();
+    //tell
 
 }
 ```
@@ -135,5 +142,6 @@
 
     Parent.type = 'test';
     console.log('静态属性', Parent.type);
+    //静态属性 test
 }
 ```
