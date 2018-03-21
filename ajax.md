@@ -180,3 +180,61 @@ function ajax_tool(url,data,method,success) {
 
 
 ```
+
+###参数格式化
+
+```js
+
+	function ajax(option) {
+  // 创建对象
+  var xmlRequest ;
+  if (XMLHttpRequest) {
+      xmlRequest = new XMLHttpRequest();
+  }else{
+      xmlRequest = new ActiveXObject("Microsoft.XMLHTTP");
+
+  }
+
+  // 格式化传入的数据为name=fox&age=18这样的格式
+  var formatStr = "";
+  for(var item in option.data){
+      // 获取属性名,属性值,进行拼接
+      formatStr+=item;// 属性名
+      formatStr+="=";//等号
+      formatStr+=option.data[item];//属性值
+      formatStr+="&";//分隔符
+  }
+
+  // 去除最后一个&
+  formatStr = formatStr.slice(0,-1);
+
+  // open方法 如果是get方法,那么url之后需要添加数据
+  if(option.method == "get"){
+      option.url = option.url+"?"+formatStr;
+      option.data = null;
+  }
+  // 调用open方法
+  xmlRequest.open(option.method,option.url)
+
+  // 如果是post设置HTTP协议头
+  if (option.method=="post") {
+      xmlRequest.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+  }
+
+  // send方法 这里的data已经是修改过的,如果使用的是get方法,那么data为null
+      xmlRequest.send(option.data);
+
+  // 判断状态改变,调用方法
+  xmlRequest.onreadystatechange = function () {
+  // 这步为判断服务器是否正确响应
+  if (xhr.readyState == 4 && xhr.status == 200) {
+             option.success(这里的数据是ajax获取的);  
+     } 
+  };
+}
+
+
+
+
+
+```
