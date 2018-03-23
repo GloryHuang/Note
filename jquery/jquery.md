@@ -192,6 +192,20 @@
  切换 另附(推荐用法)：
  fadeToggle();
 
+```
+
+
+* 切换透明度动画
+
+```js
+
+
+ fadeTo()
+ fadeTo();不带参数
+ fadeTo(2000);(带参数);毫秒值
+ fadeTo("fast"/"slow"/"normal");带字符串
+ fadeTo(1000,透明度值,fn)//带回调方法
+
 
 
 ```
