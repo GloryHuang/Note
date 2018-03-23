@@ -51,6 +51,27 @@
        $(document).undelegate(".box","mouseenter", fn2);
 
 
+  例如：
+    // $(document).delegate(".box", "click mouseenter", function() {
+        //     alert("2");
+        // });
+
+
+        // $(document).delegate(".box", "click mouseenter", fn);
+        // $(document).delegate(".box", "click mouseenter", fn2);
+
+        // function fn() {
+        //     alert("1");
+        // }
+
+        // function fn2() {
+        //     alert("2");
+        // }
+
+
+    解绑：$(document).undelegate(".box","mouseenter", fn);
+         $(document).undelegate(".box","mouseenter", fn2);
+
 
 
 
