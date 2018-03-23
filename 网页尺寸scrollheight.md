@@ -142,10 +142,14 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 * 如果没有给 HTML 元素指定过 top 样式，则 style.top 返回的是空字符串。
 
 
-###判断是否声明DTD
+####判断是否声明DTD
 
 * document.compatMode === "BackCompat"
 * BackCompat  未声明
 * CSS1Compat  已经声明
  * IE678默认识别CSS1Compat ，无论有没有dtd
+
+####滚动到指定坐标
+
+ * window.scrollTo()可把内容滚动到指定的坐标。
 
