@@ -212,15 +212,13 @@
 
 
 ```js
-自定义动画
+
         animate({json},speed,fn);
 
         animate()不支持背景色
 
-
-
-      //animate自定义动画实现显示效果
-       $("div").animate({"display": "none","opacity":0,"width":0,"height":0} , 2000);
+        //animate自定义动画实现显示效果
+         $("div").animate({"display": "none","opacity":0,"width":0,"height":0} , 2000);
 
          //animate自定义动画实现滑出效果
         // $("div").animate({"height": 0} , 2000);
@@ -228,7 +226,7 @@
         //animate自定义动画实现淡出效果
          $("div").animate({"opacity": 0} , 2000);
 
-  //animate自定义动画实现改变透明度效果
+        //animate自定义动画实现改变透明度效果
         // $("div").animate({"opacity": 0.5} , 2000);
  
 
