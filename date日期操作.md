@@ -69,11 +69,13 @@
     //第三种
      var date3 = new Date('Fri Feb 10 2017 12: 52: 20 GMT');
      console.log(date3);
-     //
+     //Invalid Date
 
     //第四种
      var date4 = new Date(2016, 1, 27);
      console.log(date4);
+     //Sat Feb 27 2016 00:00:00 GMT+0800 (中国标准时间)
+
 
     // 获取日期和时间
      getDate()                 获取日 1-31
