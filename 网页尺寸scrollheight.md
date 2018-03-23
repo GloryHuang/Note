@@ -90,6 +90,7 @@ offsetHeight = clientHeight + 滚动条 + 边框。
   
   * offsetLeft从父亲的padding开始算 父亲的boder不算
   
+  
  * offsetParent
  
   * 返回改对象的父级 （带有定位）
