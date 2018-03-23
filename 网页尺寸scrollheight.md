@@ -74,21 +74,26 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 
 #####scrollTop的兼容写法
 
+```js
         //没有dtd约束的(火狐浏览器不显示)
-        // document.title = document.body.scrollTop;
+        
+         document.title = document.body.scrollTop;
+         
         //有dtd约束的(兼容火狐浏览器)
-        // document.title = document.documentElement.scrollTop;
+         document.title = document.documentElement.scrollTop;
 
         //兼容写法(三种)
-        // document.title=document.body.scrollTop||document.documentElement.scrollTop;
+        
+         document.title=document.body.scrollTop||document.documentElement.scrollTop;
 
-        // document.title = document.body.scrollTop + document.documentElement.scrollTop;
+         document.title = document.body.scrollTop + document.documentElement.scrollTop;
 
-        // document.title=window.pageYOffset;
+         document.title=window.pageYOffset;
 
         //主流写法
         document.title=window.pageYOffset||document.body.scrollTop||document.documentElement.scrollTop;
-        
+     
+```
 ###offset
  
  * 得到对象的宽度和高度
