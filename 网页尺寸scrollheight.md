@@ -299,10 +299,6 @@ clientY/clientX:（clientTop/clientLeft 值的是border）
 
 ```
 
-####阻止冒泡
-
-
-
 
 ###模拟垂直滚动条口诀
 
