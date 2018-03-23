@@ -144,3 +144,22 @@
 
   * 给父容器设置高度 
   * 通过设置clear：left|right|both
+  * 给父容器设置overflow:hidden
+  * 通过伪元素
+  
+```css
+  
+   .clearfix:after{
+     content:'';
+     height:0;
+     line-height:0;
+     visibility:hidden
+     clear:both;
+     display:block;
+   }
+   .clearfix{
+     zoom:1  //兼容ie
+   }     
+ ```         
+                          
+  
