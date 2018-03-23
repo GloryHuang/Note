@@ -199,13 +199,13 @@
 
 
         if (sumMS < 0) {
-            div.innerHTML = "距离苹果发布会还有:00天00小00时00分钟00秒000毫秒";
+            div.innerHTML = "距离XXXX还有:00天00小00时00分钟00秒000毫秒";
             clearInterval(timer);
             return;
         }
 
         //3.把天时分秒整合成字符串后赋值给div的innerText
-        div.innerText = "距离苹果发布会还有:\t" + day + "天" + hour + "小时" + minute + "分钟" + seccond + "秒 " + ms + "毫秒";
+        div.innerText = "距离XXX还有:\t" + day + "天" + hour + "小时" + minute + "分钟" + seccond + "秒 " + ms + "毫秒";
 
 
 
