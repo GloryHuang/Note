@@ -1,11 +1,6 @@
 ###JQ获取节点的封装
 
 ```js
-
-
-
-
-
  function $(str) {
         var str1 = str.charAt(0);
         if (str1 === "#") {
