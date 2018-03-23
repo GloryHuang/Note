@@ -95,4 +95,5 @@ offsetHeight = clientHeight + 滚动条 + 边框。
   * 返回改对象的父级 （带有定位）
   
     * 如果当前元素的父级元素没有进行CSS定位(position为absolute或relative，fixed)offsetParent为body。
-2、如果当前元素的父级元素中有CSS定位		（position为absolute或relative，fixed），	offsetParent取最近的那个父级元素。
+
+    * 如果当前元素的父级元素中有CSS定位		(position为absolute或relative，fixed),	offsetParent取最近的那个父级元素。
