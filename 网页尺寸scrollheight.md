@@ -1,6 +1,7 @@
 ### 网页尺寸scrollHeight
 
-```
+```js
+
 scrollHeight和scrollWidth，获取网页内容高度和宽度。
 
 一、针对IE、Opera:
@@ -19,6 +20,7 @@ var h=document.documentElement.scrollHeight|| document.body.scrollHeight;
 注意:区分大小写
 
 scrollHeight和scrollWidth还可获取Dom元素中内容实际占用的高度和宽度。
+
 ```
 
 #####网页尺寸offsetHeight
