@@ -272,8 +272,8 @@ clientY/clientX:（clientTop/clientLeft 值的是border）
 		调用者：event.clientX(event)
 		作用：鼠标距离浏览器可视区域的距离（左、上）。
 
-
 ```
+
 
 
 ###模拟垂直滚动条口诀
