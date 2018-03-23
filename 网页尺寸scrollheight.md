@@ -44,6 +44,22 @@ offsetHeight = clientHeight + 滚动条 + 边框。
  
 ```
 
+###scroll
+ 
+  scroll这个单词本身是--卷页，卷曲的意思
+  
+ * scrollHeight 内、scrollWidth容的宽高
+ 
+  * IE67可以比盒子小、IE8+火狐谷歌不能比盒子小
+  
+ *  scrollLeft/scrollTop
+  
+  * 被卷去的左侧和头部（浏览器无法显示的左/头部）
+
+  * 一般调用document.body.scrollTop:
+
+
+
 
 #####网页卷去的距离与偏移量
 
@@ -69,6 +85,10 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 ```
 
 ###网页尺寸scrollTop
+
+###
+
+
 
 ####scrollTop的兼容写法
 
@@ -123,3 +143,5 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 
 * 如果没有给 HTML 元素指定过 top 样式，则 style.top 返回的是空字符串。
 
+
+###
