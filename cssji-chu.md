@@ -162,4 +162,11 @@
    }     
  ```         
                           
+ ####CSS可见性
+ 
+  * display:none; 元素隐藏不占位置
   
+  * overflow:hidden; 将超出部分隐藏
+  
+  * visibility:hidden;元素隐藏占位置
+ 
