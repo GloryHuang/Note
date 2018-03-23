@@ -105,5 +105,6 @@
   * [ES6常用工具](es6chang-yong-gong-ju.md)
   * [Ajax](ajax.md)
   * [JQ原理获取节点的封装](jqyuan-li-huo-qu-jie-dian-de-feng-zhuang.md)
+  * [获取元素节点的封装](huo-qu-yuan-su-jie-dian-de-feng-zhuang.md)
 * [常见框架](chang-jian-kuang-jia.md)
 
