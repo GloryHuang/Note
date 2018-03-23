@@ -89,3 +89,18 @@
 
 
 ```
+
+###元素操作
+
+```js
+ 
+     设置属性
+    1.attr("title",aaaa);
+      attr("class",aaaa);
+
+    2.prop("sectled/checked....",true);
+
+
+```
+
+
