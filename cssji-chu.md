@@ -67,9 +67,11 @@
   
    * display:block;
    
+   
   * 将行内元素装换成行内块元素
   
    * display:inline-block
+   
    
   * 装换成行内元素
   
