@@ -145,8 +145,11 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 ####判断是否声明DTD
 
 * document.compatMode === "BackCompat"
+
 * BackCompat  未声明
+
 * CSS1Compat  已经声明
+
  * IE678默认识别CSS1Compat ，无论有没有dtd
 
 ####滚动到指定坐标
