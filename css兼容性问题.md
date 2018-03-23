@@ -38,3 +38,15 @@
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
     <![endif]-->
 ```
+
+####透明度
+
+ * opacity: 0.5;  内容一起透明.(火狐谷歌IE9+)
+  
+   * 取值范围：  0-1
+   
+   
+ * filter: alpha(opacity=50);     IE678
+ 
+  * 取值范围：  0-100
+
