@@ -160,3 +160,17 @@ offsetHeight = clientHeight + 滚动条 + 边框。
  
   * ypos 必需。要在窗口文档显示区左上角显示的文档的 y 坐标
 
+###事件对象（event）
+
+ * 普通浏览器支持 event（传参）
+
+ * ie 678 支持 window.event（无参）
+
+ <table boder="1px solid black">
+  <tr>
+    <td>ssss</td>
+    <td>ssss</td>
+    <td>ssss</td>
+  </tr>
+ </table>
+   
