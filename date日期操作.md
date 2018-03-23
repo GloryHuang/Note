@@ -93,7 +93,7 @@
 
 
 
-     console.log(date1.getDate()); //获取日 1 - 31
+     console.log(date1.getDate()); //获取日 1 - 31 
      console.log(date1.getDay()); //获取星期 0 - 6（ 0 代表周日）
      console.log(date1.getMonth()); //获取月 0 - 11（ 1 月从0开始）
      console.log(date1.getFullYear()); //获取完整年份（ 浏览器都支持）
@@ -106,10 +106,10 @@
 
 
     //获取当前时间距1979/01/01的毫秒值
-    // var date11 = Date.now();
-    // var date22 = +new Date();
-    // var date33 = new Date().getTime();
-    // var date44 = new Date().valueOf();
+     var date11 = Date.now();
+     var date22 = +new Date();
+     var date33 = new Date().getTime();
+     var date44 = new Date().valueOf();
 
     // console.log(date11);
     // console.log(date22);
