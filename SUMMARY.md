@@ -107,4 +107,5 @@
   * [JQ原理获取元素的封装](jqyuan-li-huo-qu-jie-dian-de-feng-zhuang.md)
   * [获取元素节点的封装](huo-qu-yuan-su-jie-dian-de-feng-zhuang.md)
 * [常见框架](chang-jian-kuang-jia.md)
+* [雅虎14条优化规则](ya-hu-14-tiao-xing-neng-you-hua.md)
 
