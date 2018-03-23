@@ -136,3 +136,11 @@
 
  * remove();
  
+####复制元素
+
+ * clone();
+ 
+···js
+   var newUl = $(".box ul").clone();
+            $(".box").append(newUl);
+```
