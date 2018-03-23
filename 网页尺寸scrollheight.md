@@ -98,3 +98,15 @@ offsetHeight = clientHeight + 滚动条 + 边框。
     * 如果当前元素的父级元素没有进行CSS定位(position为absolute或relative，fixed)offsetParent为body。
 
     * 如果当前元素的父级元素中有CSS定位		(position为absolute或relative，fixed),	offsetParent取最近的那个父级元素。
+
+
+#### offsetTop style.top 的区别
+
+* 最大区别在于  offsetLeft  可以返回没有定位       	盒子	的距离左侧的位置。 而 style.top 不可以
+
+二、offsetTop 返回的是数字，而 style.top 返回的    	是字	符串，除了数字外还带有单位：px。
+
+三、offsetTop 只读，而 style.top 可读写。
+
+四、如果没有给 HTML 元素指定过 top 样式，则 	style.top 返回的是空字符串。
+
