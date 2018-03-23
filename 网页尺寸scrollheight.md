@@ -94,11 +94,11 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 ####scrollTop的兼容写法
 
 ```js
-        //没有dtd约束的(火狐浏览器不显示)
+        //没有dtd约束的(火狐浏览器不显示,谷歌只认识他)（IE9+认识他)
         
          document.title = document.body.scrollTop;
          
-        //有dtd约束的(兼容火狐浏览器)
+        //有dtd约束的(兼容火狐浏览器,已经声明DTD（IE678只认识他）(IE9+任何时候))
          document.title = document.documentElement.scrollTop;
 
         //兼容写法(三种)
@@ -107,7 +107,7 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 
          document.title = document.body.scrollTop + document.documentElement.scrollTop;
 
-         document.title=window.pageYOffset;
+         document.title=window.pageYOffset;（火狐/谷歌/ie9+以上支持的(不管DTD)）
 
         //主流写法
         document.title=window.pageYOffset||document.body.scrollTop||document.documentElement.scrollTop;
