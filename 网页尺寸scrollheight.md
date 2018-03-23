@@ -235,6 +235,31 @@ window.getSelection ? window.getSelection().removeAllRanges() : document.selecti
 ```
 
 
+###offset/scroll/client区别
+
+* 区别一
+
+```css
+ 
+  （offset/scroll/client宽高）
+
+clientWidth  = width  + padding
+clientHeight = height + padding
+offsetWidth  = width  + padding + border
+offsetHeight = height + padding + border
+scrollWidth   = 内容宽度（不包含border）
+scrollHeight  = 内容高度（不包含border）
+
+
+```
+
+
+
+
+
+
+
+
 ###模拟垂直滚动条口诀
 
 
