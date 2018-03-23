@@ -37,8 +37,11 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 二、浏览器兼容性
 
 ```js
+
  var w= document.documentElement.offsetWidth || document.body.offsetWidth;
+ 
  var h= document.documentElement.offsetHeight|| document.body.offsetHeight;
+ 
 ```
 
 
