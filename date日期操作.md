@@ -76,8 +76,11 @@
      console.log(date4);
      //Sat Feb 27 2016 00:00:00 GMT+0800 (中国标准时间)
 
+```
+####获取日期和时间
 
-    // 获取日期和时间
+```js
+    
      getDate()                 获取日 1-31
      getDay ()                 获取星期 0-6（0代表周日）
      getMonth ()             获取月 0-11（1月从0开始）
@@ -89,16 +92,16 @@
      getTime ()	       返回累计毫秒数(从1970/1/1午夜)
 
 
-    //获取日期和时间
-    // console.log(date1.getDate()); //获取日 1 - 31
-    // console.log(date1.getDay()); //获取星期 0 - 6（ 0 代表周日）
-    // console.log(date1.getMonth()); //获取月 0 - 11（ 1 月从0开始）
-    // console.log(date1.getFullYear()); //获取完整年份（ 浏览器都支持）
-    // console.log(date1.getHours()); //获取小时 0 - 23
-    // console.log(date1.getMinutes()); //获取分钟 0 - 59
-    // console.log(date1.getSeconds()); //获取秒 0 - 59
-    // console.log(date1.getMilliseconds()); //获取毫秒（ 1 s = 1000 ms）
-    // console.log(date1.getTime()); //返回累计毫秒数(从1970 / 1 / 1 午夜)
+
+     console.log(date1.getDate()); //获取日 1 - 31
+     console.log(date1.getDay()); //获取星期 0 - 6（ 0 代表周日）
+     console.log(date1.getMonth()); //获取月 0 - 11（ 1 月从0开始）
+     console.log(date1.getFullYear()); //获取完整年份（ 浏览器都支持）
+     console.log(date1.getHours()); //获取小时 0 - 23
+     console.log(date1.getMinutes()); //获取分钟 0 - 59
+     console.log(date1.getSeconds()); //获取秒 0 - 59
+     console.log(date1.getMilliseconds()); //获取毫秒（ 1 s = 1000 ms）
+     console.log(date1.getTime()); //返回累计毫秒数(从1970 / 1 / 1 午夜)
 
 
 
