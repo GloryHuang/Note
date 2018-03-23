@@ -118,7 +118,7 @@
 
 ```
 
-#####获取时间封装
+#####获取时间封装(设置日期格式 xxxx-xx-xx hh:mm:ss)
 
 ```js
 
@@ -143,6 +143,7 @@
             second = second < 10?"0"+second:second;
             return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
         }
+        //2018-03-23 19:46:42
 
 ```
 
