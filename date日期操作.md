@@ -111,10 +111,10 @@
      var date33 = new Date().getTime();
      var date44 = new Date().valueOf();
 
-    // console.log(date11);
-    // console.log(date22);
-    console.log(date33);
-    // console.log(date44);
+     console.log(date11);
+     console.log(date22);
+     console.log(date33);
+     console.log(date44);
 
 ```
 
