@@ -72,7 +72,20 @@
     解绑：$(document).undelegate(".box","mouseenter", fn);
          $(document).undelegate(".box","mouseenter", fn2);
 
+```
 
+####on()
+
+```js
+  
+    
+    on()绑定（元素，事件或者多个事件，数据(json)，函数）
+    
+    $().on("div","click mouseenter",{"name":111}function(e){
+         e.data.name;
+    });
+
+    解绑：$().off("click);
 
 
 ```
