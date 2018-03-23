@@ -104,5 +104,6 @@
   * [缓动动画封装](缓动动画封装.md)
   * [ES6常用工具](es6chang-yong-gong-ju.md)
   * [Ajax](ajax.md)
+  * [JQ原理获取节点的封装](jqyuan-li-huo-qu-jie-dian-de-feng-zhuang.md)
 * [常见框架](chang-jian-kuang-jia.md)
 
