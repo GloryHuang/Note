@@ -1,6 +1,6 @@
 ### 网页尺寸scrollHeight
 
-```js
+
 
 scrollHeight和scrollWidth，获取网页内容高度和宽度。
 
@@ -13,6 +13,9 @@ scrollHeight 是网页内容实际高度，可以小于 clientHeight。
 scrollHeight 是网页内容高度，不过最小值是 clientHeight。也就是说网页内容实际高度小于 clientHeight 时，scrollHeight 返回 clientHeight 。
 
 三、浏览器兼容性
+
+```js
+
 
 var w=document.documentElement.scrollWidth|| document.body.scrollWidth;
 var h=document.documentElement.scrollHeight|| document.body.scrollHeight;
@@ -33,9 +36,10 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 
 二、浏览器兼容性
 
-     var w= document.documentElement.offsetWidth || document.body.offsetWidth;
-     var h= document.documentElement.offsetHeight|| document.body.offsetHeight;
-
+```js
+ var w= document.documentElement.offsetWidth || document.body.offsetWidth;
+ var h= document.documentElement.offsetHeight|| document.body.offsetHeight;
+```
 
 
 #####网页卷去的距离与偏移量
