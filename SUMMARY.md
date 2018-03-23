@@ -71,6 +71,8 @@
   * [JavaScript高级第五天](javascript高级第五天.md)
   * [JavaScript高级第六天](javascript高级第六天.md)
   * [作用域与上下文](作用域与上下文.md)
+* [jQuery](jquery.md)
+  * [jQuery](jquery/jquery.md)
 * [ES6](es6.md)
   * [ES6基本](es6ji-ben.md)
   * [ES6字符串操作](es6zi-fu-chuan.md)
