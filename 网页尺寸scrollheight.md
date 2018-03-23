@@ -86,4 +86,6 @@ offsetHeight = clientHeight + 滚动条 + 边框。
  
  * offsetWidth=width+padding+border
 
-
+ * offsetLeft 返回距离上级盒子(带有定位)左边的位置,如果父级都没有定位则以body为准,
+  
+  * offsetLeft从父亲的padding开始算 父亲的boder不算
