@@ -147,3 +147,71 @@
 
 ```
 
+####倒计时
+
+```js
+
+     //模拟倒计时
+    //需求：打开页面后,每毫秒都在倒计时
+    //步骤：(设置一个定时器,每隔1毫秒刷新div的内容)
+    //0.定义一个定时器
+    //1.获取时间差(现在开始的时间差,毫秒值)
+    //2.把时间差转化成天时分毫秒
+    //3.把天时分秒整合成字符串后赋值给div的innerText
+
+    //0.定义一个定时器
+    var div = document.getElementsByTagName("div")[0];
+    timer = setInterval(fn, 1);
+
+    //封装成方法,每隔固定时间调用一次
+    function fn() {
+        //1.获取时间差(获取时间差,毫秒值)
+        // var futureTime = new Date("2017/09/08 01:00:00");
+        var futureTime = new Date("2017/02/13 20:33:00");
+        var nowTime = new Date();
+        //时间差(毫秒值)=未来的时间-当前的时间
+        var sumMS = futureTime.getTime() - nowTime.getTime();
+        // console.log(sumMS);
+        //2.把时间差转化成天时分毫秒
+        //总的毫秒值中包含多少天? /毫秒制/秒进制/分进制/小时进制/天进制
+        var day = parseInt(sumMS / 1000 / 60 / 60 / 24);
+        // console.log(day);
+        //我们要的是除去天数意外剩余的小时数,完整的24小时留给天,剩下的才是小时自己的
+        var hour = parseInt(sumMS / 1000 / 60 / 60 % 24);
+        //同理
+        var minute = parseInt(sumMS / 1000 / 60 % 60);
+        var seccond = parseInt(sumMS / 1000 % 60);
+        var ms = parseInt(sumMS % 1000);
+        // console.log(seccond);
+
+        //问题处理：所有的时间当小于10的时候自动补0,毫秒值要双补0
+
+        day = day < 10 ? "0" + day : day;
+        hour = hour < 10 ? "0" + hour : hour;
+        minute = minute < 10 ? "0" + minute : minute;
+        seccond = seccond < 10 ? "0" + seccond : seccond;
+
+        if (ms < 10) {
+            ms = "00" + ms;
+        } else if (ms < 100) {
+            ms = "0" + ms;
+        }
+
+
+        if (sumMS < 0) {
+            div.innerHTML = "距离苹果发布会还有:00天00小00时00分钟00秒000毫秒";
+            clearInterval(timer);
+            return;
+        }
+
+        //3.把天时分秒整合成字符串后赋值给div的innerText
+        div.innerText = "距离苹果发布会还有:\t" + day + "天" + hour + "小时" + minute + "分钟" + seccond + "秒 " + ms + "毫秒";
+
+
+
+    }
+
+
+
+```
+
