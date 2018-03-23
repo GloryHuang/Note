@@ -177,3 +177,21 @@
 
 
 ```
+
+
+* 淡入/淡出动画
+
+
+```js
+
+ fadedIn/fadeOut();不带参数
+ fadedIn/fadeOut(2000);(带参数);毫秒值
+ fadedIn/fadeOut();("fast"/"slow"/"normal");带字符串
+ fadedIn/fadeOut();(1000,fn)//带回调方法
+
+ 切换 另附(推荐用法)：
+ fadeToggle();
+
+
+
+```
