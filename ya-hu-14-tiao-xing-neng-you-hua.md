@@ -32,3 +32,8 @@
 * 避免重定向 
 
   * 重定向的主要问题是降低了 用户体验。 一种最耗费资源、经常发生而很容易被忽视的重定向是 URL 的最后缺少/，如访 问 http://astrology.yahoo.com/astrology 将被重定向到 http://astrology.yahoo.com/astrology/。在 Apache 下，可以通过 Alias，mod_rewrite 或 DirectorySlash 等方式来解决该问题。 
+  
+  
+* 删除重复的脚本文件
+ 
+  * 一个避免重复的脚本文件的方式是使用模板系统来建立脚本管理模块。 除了防止 重复的脚本文件外，该模块还可以实现依赖性检查和增加版本号到脚本文件名 中，从而实现超长的过期时间。
