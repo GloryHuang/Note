@@ -51,6 +51,7 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 
    ![](http://img.mukewang.com/5347b2b10001e1a307520686.jpg)
 
+```js
     scrollLeft:设置或获取位于给定对象左边界与窗口中目前可见内容的最左端之间的距离 ，即左边灰色的内容。
 
     scrollTop:设置或获取位于对象最顶端与窗口中可见内容的最顶端之间的距离 ，即上边灰色的内容。
@@ -65,7 +66,7 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 
     2. offsetParent：布局中设置postion属性(Relative、Absolute、fixed)的父容器，从最近的父节点开始，一层层向上找，直到HTML的body。
 
-
+```
 
 ####网页尺寸scrollTop
 
