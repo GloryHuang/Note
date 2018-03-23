@@ -72,7 +72,7 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 
 
 
-#####scrollTop的兼容写法
+####scrollTop的兼容写法
 
 ```js
         //没有dtd约束的(火狐浏览器不显示)
