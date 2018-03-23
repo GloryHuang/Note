@@ -201,6 +201,26 @@ offsetHeight = clientHeight + 滚动条 + 边框。
  * pageX/pageY低版本浏览器（IE67）不支持,以当前文档的左上角为基准点
  
  * screenX/screenY当前屏幕的左上角为基准点
+ 
+#####Client 
+ 
+* clientWidth	获取网页可视区域宽度（两种用法）
+
+  clientHeight 	获取网页可视区域高度（两种用法）
+  
+ * 调用者不同，意义不同：
+   
+   * 盒子调用：指盒子本身。
+		
+   * body/html调用：可视区域大小。
+
+*  clientX       鼠标距离可视区域左侧距离（event调用）
+   clientY       鼠标距离可视区域上侧距离（event调用）
+
+*  clientTop		盒子的上border
+   clientLeft		盒子的左border
+ 
+ 
 
 
 ####清除选中的内容
