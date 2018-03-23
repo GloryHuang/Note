@@ -194,6 +194,11 @@ offsetHeight = clientHeight + 滚动条 + 边框。
  * clientY 光标相对于该网页的垂直位置
  
  
+ 
+ 
+ 
+ 
+ 
 ###Cient
 
  * clientX/clientY  
@@ -293,6 +298,11 @@ clientY/clientX:（clientTop/clientLeft 值的是border）
  document.body.clientHeight
 
 ```
+
+####阻止冒泡
+
+
+
 
 ###模拟垂直滚动条口诀
 
