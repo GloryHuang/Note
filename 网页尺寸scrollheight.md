@@ -189,6 +189,18 @@ offsetHeight = clientHeight + 滚动条 + 边框。
  * clientX 光标相对于该网页的水平位置 （当前可见区域）
 
  * clientY 光标相对于该网页的垂直位置
+ 
+ 
+###Cient
+
+ * clientX/clientY  
+
+  * 当前窗口的左上角为基准点
+
+ * pageX/pageY低版本浏览器（IE67）不支持,以当前文档的左上角为基准点
+ 
+ * 
+
 
 
 
