@@ -107,7 +107,7 @@
 
     //获取当前时间距1979/01/01的毫秒值
      var date11 = Date.now();
-     var date22 = +new Date();
+     var date22 = new Date();
      var date33 = new Date().getTime();
      var date44 = new Date().valueOf();
 
