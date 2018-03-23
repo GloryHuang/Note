@@ -166,11 +166,16 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 
  * ie 678 支持 window.event（无参）
 
- <table boder="1px solid black">
+ <table>
   <tr>
     <td>ssss</td>
     <td>ssss</td>
     <td>ssss</td>
   </tr>
+  <tr>
+<td>ssss</td>
+<td>ssss</td>
+<td>ssss</td>
+</tr>
  </table>
    
