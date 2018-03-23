@@ -117,3 +117,16 @@
   伪类将应用于拥有键盘输入焦点的元素。
   
  顺序问题：LoVe  HAte原则。
+ 
+####外边距合并问题
+
+![](/assets/QQ截图20180323163709.png)
+![](/assets/QQ截图20180323163855.png)
+ 
+ 
+####行内元素 padding和margin问题
+
+ * 行内元素不要给上下的margin和padding
+ * 上下margin和padding会被忽略
+ * 左右margin和padding会起作用
+ 
