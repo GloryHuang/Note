@@ -52,6 +52,7 @@ offsetHeight = clientHeight + 滚动条 + 边框。
  
   * IE67可以比盒子小、IE8+火狐谷歌不能比盒子小
   
+  
  *  scrollLeft/scrollTop
   
   * 被卷去的左侧和头部（浏览器无法显示的左/头部）
