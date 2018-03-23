@@ -2,7 +2,7 @@
 
 #####1.appendChild()插入节点
 
-    在指定节点的最后一个子节点列表之后添加一个新的子节点。
+ * 在指定节点的最后一个子节点列表之后添加一个新的子节点。
 
     语法:
 
@@ -75,6 +75,7 @@
 
 #####5.createElement()创建元素节点
 
+```js
     createElement()方法可创建元素节点。此方法可返回一个 Element 对象。
 
     语法：
@@ -107,7 +108,7 @@
        body.appendChild(btn);  
  
         效果：在HTML文档中，创建一个文本框，使用setAttribute设置属性值。 当点击这个文本框时，会弹出对话框“This is a text!”。
-   
+```  
 
 #####6.createTextNode()创建文本节点
     createTextNode() 方法创建新的文本节点，返回新创建的 Text 节点。
