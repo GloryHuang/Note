@@ -42,6 +42,7 @@
 ```js
 
    delegate()绑定（元素，事件或者多个事件，函数）
+   
    $().delegate("div","click mouseenter",function(){
 
     });
