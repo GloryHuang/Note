@@ -274,7 +274,22 @@ clientY/clientX:（clientTop/clientLeft 值的是border）
 
 ```
 
+####client检浏览器宽/高度(可视区域)
 
+```js
+
+ ie9及其以上的版本
+ window.innerWidth/Height  
+ 
+ 标准模式（有DTD）（“CSS1Compat”）
+ document.documentElement.clientWidth
+ document.documentElement.clientHeight
+ 
+ 怪异模式 （没有DTD）
+ document.body.clientWidth
+ document.body.clientHeight
+
+```
 
 ###模拟垂直滚动条口诀
 
