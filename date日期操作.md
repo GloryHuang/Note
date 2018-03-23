@@ -119,7 +119,9 @@
 ```
 
 #####倒计时程序
-    
+
+```js
+
      function getTimeString(d) {
             //如果date不是日期对象，返回
             if (!date instanceof Date) {
@@ -141,5 +143,5 @@
             return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
         }
 
-
+```
 
