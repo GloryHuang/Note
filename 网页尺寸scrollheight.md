@@ -208,8 +208,6 @@ offsetHeight = clientHeight + 滚动条 + 边框。
   var targetId =  event.target ?  event.target.id : event.srcElement.id;
 
 
-
-
 ```
  
  
@@ -315,6 +313,27 @@ clientY/clientX:（clientTop/clientLeft 值的是border）
 
 ```
 
+####变量属性获取/赋值方法
+
+```js
+
+  //给属性赋值：（既能获取又能赋值）
+  div.style.width                             单个赋值
+  div.style[“width”]    			变量赋值
+
+  //获取属性值：（只能获取）
+  div.currentStyle.width;   IE678		单个获取
+  
+  window.getComputedStyle(div,null).width;
+  
+  div.currentStyle[“width”];   IE678		变量获取
+  
+  window.getComputedStyle(div,null)[“width”];
+  
+   参数1：获取属性的元素。
+   参数2：伪元素。
+   
+```
 
 ###模拟垂直滚动条口诀
 
