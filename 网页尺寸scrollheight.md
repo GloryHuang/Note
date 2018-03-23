@@ -209,6 +209,9 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 
 window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
 
+//IE9、Firefox、Safari、Chrome和Opera支持：window.getSelection() 
+//IE9以下支持：document.selection 
+
 ```
 
 
