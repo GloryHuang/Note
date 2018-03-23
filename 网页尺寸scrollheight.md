@@ -215,4 +215,12 @@ window.getSelection ? window.getSelection().removeAllRanges() : document.selecti
 ```
 
 
- 
+###模拟垂直滚动条口诀
+
+
+ * 动态设置滚动条的高度 scrollBarHeight = （ 容器的高度 / 内容的高度*容器的高度 ）
+   
+* 滚动条滚动一次    内容移动的距离
+  
+  (内容的高度 - 容器的高度)   / (容器的高度 - 滚动条的高度)* 滚动条移动的距离
+
