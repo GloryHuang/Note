@@ -254,9 +254,26 @@ scrollHeight  = 内容高度（不包含border）
 ```
 
 
+* 区别二
+
+```css
+
+（offset/scroll/client上下）
+
+offsetTop/offsetLeft ：
+		调用者：任意元素。(盒子为主)
+		作用：距离父系盒子中带有定位的距离。
+		
+scrollTop/scrollLeft:(盒子也可以调用，必须有滚动条)
+		调用者：document.body.scrollTop/.....(window)
+		作用：浏览器无法显示的部分（被卷去的部分）。
+		
+clientY/clientX:（clientTop/clientLeft 值的是border）
+		调用者：event.clientX(event)
+		作用：鼠标距离浏览器可视区域的距离（左、上）。
 
 
-
+```
 
 
 
