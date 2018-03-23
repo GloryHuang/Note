@@ -50,8 +50,31 @@
 
 ```css
 
-      <meta http-equiv="refresh" content="5; http://www.baidu.com">
+      <meta http-equiv="refresh" content="http://www.baidu.com">
       
 ```
 
+###告诉搜索引擎你的站点的作者是谁
+
+```css
+
+   <meta http-equiv="Author" content="你的姓名">
+   
+```
+
+###让你的网页被搜索引擎以什么样的方式抓取
+
+
+```css
+
+   <meta http-equiv="Robots" content="all|none|index|noindex|follow|nofollow">
+   
+   all:文件被检索,页面上的链接可以被查询
+   none:文件不被检索,而且页面上上的链接不可以被查询
+   index:文件将被检索
+   follow:页面上的链接可以被查询
+   noindex:文件将不被检索,但页面上的链接可以被查询
+   nofollow:文件将不被检索,页面上的链接可以被查询
+   
+```
 
