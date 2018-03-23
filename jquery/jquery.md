@@ -35,5 +35,22 @@
    
    解绑：$().unbind("click");
 
+```
+
+####delegate()
+
+```js
+
+   delegate()绑定（元素，事件或者多个事件，函数）
+   $().delegate("div","click mouseenter",function(){
+
+    });
+
+  解绑：$(document).undelegate(".box","mouseenter", fn);
+       $(document).undelegate(".box","mouseenter", fn2);
+
+
+
+
 
 ```
