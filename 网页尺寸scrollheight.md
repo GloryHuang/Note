@@ -203,8 +203,13 @@ offsetHeight = clientHeight + 滚动条 + 边框。
  * screenX/screenY当前屏幕的左上角为基准点
 
 
+####清除选中的内容
 
+```js
 
+window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+
+```
 
 
  
