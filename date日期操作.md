@@ -111,10 +111,10 @@
      var date33 = new Date().getTime();
      var date44 = new Date().valueOf();
 
-     console.log(date11);
-     console.log(date22);
-     console.log(date33);
-     console.log(date44);
+     console.log(date11);//1521805398586
+     console.log(date22);//Fri Mar 23 2018 19:43:18 GMT+0800 (中国标准时间)
+     console.log(date33);//1521805398586
+     console.log(date44);//1521805398586
 
 ```
 
