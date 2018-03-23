@@ -13,7 +13,8 @@
  
  
 
-####click
+####click()
+
  ```js
   
   click()事件不会重叠
@@ -22,8 +23,17 @@
   
   解绑：$().unbiind("click");
   
-  
-  
- 
- 
  ```
+ 
+####bind()
+
+```js
+
+   bind()绑定（可以绑定多个事件）
+   
+   $().bind("click mouseenter",function(){});
+   
+   解绑：$().unbind("click");
+
+
+```
