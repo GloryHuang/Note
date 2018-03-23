@@ -23,3 +23,11 @@
 * 把 JavaScript 和 CSS 放到外部文件中 
 
 * 减少 DNS 查询次数 
+
+* 最小化 JavaScript代码 
+
+ * 最小化 JavaScript 代码指在 JS 代码中删除不必要的字符，从而降低下载时间。 
+ 
+* 避免重定向 
+
+  * 重定向的主要问题是降低了 用户体验。 一种最耗费资源、经常发生而很容易被忽视的重定向是 URL 的最后缺少/，如访 问 http://astrology.yahoo.com/astrology 将被重定向到 http://astrology.yahoo.com/astrology/。在 Apache 下，可以通过 Alias，mod_rewrite 或 DirectorySlash 等方式来解决该问题。 
