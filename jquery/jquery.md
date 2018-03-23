@@ -163,3 +163,17 @@
   
 ```
 
+* 滑入/滑出动画
+
+```js
+
+  slideUp/sildeDown();不带参数
+  slideUp/sildeDown(2000);(带参数);毫秒值
+  slideUp/sildeDown();("fast"/"slow"/"normal");带字符串
+  slideUp/sildeDown();(1000,fn)//带回调方法
+
+  切换 另附(推荐用法)：
+  slideToggle();
+
+
+```
