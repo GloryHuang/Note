@@ -166,16 +166,31 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 
  * ie 678 支持 window.event（无参）
 
- <table>
-  <tr>
-    <td>ssss</td>
-    <td>ssss</td>
-    <td>ssss</td>
-  </tr>
-  <tr>
-<td>ssss</td>
-<td>ssss</td>
-<td>ssss</td>
-</tr>
- </table>
-   
+####Event属性
+ 
+ * timeStamp 返回事件生成的日期和时间。
+ 
+ * bubbles   返回布尔值，指示事件是否是起泡事件类型。
+
+ * button   返回当事件被触发时，哪个鼠标按钮被点击。
+ 
+ * pageX   光标相对于该网页的水平位置（ie无）
+
+ * pageY  光标相对于该网页的垂直位置（ie无）
+
+ * screenX 光标相对于该屏幕的水平位置
+
+ * screenY  光标相对于该屏幕的垂直位置
+
+ * target 该事件被传送到的对象
+
+ * type  事件的类型
+
+ * clientX 光标相对于该网页的水平位置 （当前可见区域）
+
+ * clientY 光标相对于该网页的垂直位置
+
+
+
+
+ 
