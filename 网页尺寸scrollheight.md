@@ -153,3 +153,10 @@ offsetHeight = clientHeight + 滚动条 + 边框。
 
  * window.scrollTo()可把内容滚动到指定的坐标。
 
+
+ * scrollTo(xpos,ypos)
+ 
+  * xpos 必需。要在窗口文档显示区左上角显示的文档的 x 坐标。
+ 
+  * ypos 必需。要在窗口文档显示区左上角显示的文档的 y 坐标
+
