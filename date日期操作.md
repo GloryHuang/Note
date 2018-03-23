@@ -1,10 +1,11 @@
 ####日期操作
 
-
+```js
 
     Date-引用类型，JavaScript中的内置对象
     获取当前时间
     var date = new Date();   //UTC的时间
+```
 
     //返回数字，时间的毫秒形式
     var date = Date.now();   //HTML5，IE9+
@@ -20,6 +21,9 @@
     把字符串或2005，10，1日期的每一部分转换成日期的毫秒形式，如果字符串的格式不是时间的正确格式返回NaN
 
 
+####Date方法
+
+```js
     
     toString()
     valueOf()   -- 返回时间对象对应的毫秒数字，因此可以直接使用 >  < 判断两个时期的大小
@@ -30,6 +34,11 @@
     toLocaleTimeString()
     不同的浏览器，各种toString()返回的结果不一致
 
+```
+
+####获取时间
+
+```js
 
     getTime()  返回毫秒数和valueOf()结果一样
     getMilliseconds() 
@@ -40,6 +49,11 @@
     getDate()    返回当前月的第几天
     getMonth()   返回月份，从0开始
     getFullYear()   返回4位的年份  如 2016
+```
+
+####设置时间的形式
+
+```js
 
     //第一种
     // var date1 = new Date();
@@ -93,7 +107,7 @@
     console.log(date33);
     // console.log(date44);
 
-
+```
 
 #####倒计时程序
     
