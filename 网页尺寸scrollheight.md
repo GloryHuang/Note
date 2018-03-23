@@ -196,6 +196,7 @@ offsetHeight = clientHeight + 滚动条 + 边框。
  * clientX/clientY  
 
   * 当前窗口的左上角为基准点
+  
 
  * pageX/pageY低版本浏览器（IE67）不支持,以当前文档的左上角为基准点
  
