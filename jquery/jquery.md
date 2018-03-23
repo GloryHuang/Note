@@ -144,3 +144,16 @@
    var newUl = $(".box ul").clone();
             $(".box").append(newUl);
 ```
+
+
+
+###动画操作
+
+* 显示/隐藏动画
+
+```js  
+  show/hide();不带参数
+  show/hide(2000)(带参数);毫秒值
+  show/hide("fast"/"slow"/"normal");带字符串
+  show/hide(1000,fn)//带回调方法
+```
