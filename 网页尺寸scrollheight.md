@@ -201,7 +201,8 @@ offsetHeight = clientHeight + 滚动条 + 边框。
   IE678               event.srcElement（事件源）
   
   火狐/谷歌等     event.target（事件源）
-  兼容写法获取元素ID：
+  
+  //兼容写法获取元素ID：
   
   var event = event || window.event;
   var targetId =  event.target ?  event.target.id : event.srcElement.id;
