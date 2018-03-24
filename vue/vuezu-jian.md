@@ -10,42 +10,42 @@
 
 - 写法2:使用 Vue.component方法定义注册组件一步到位
 
-       ![](/assets/d3-8.png)   
+   ![](/assets/d3-8.png)   
 
 - 写法3：将组件内容定义到template模板中
     
-   ![d3-9.png](imgs/d3-9.png "")
+   ![](/assets/d3-9.png)
     
 - 写法4：将组件内容定义到类型为 x-template的script模板中
     
-   ![d3-10.png](imgs/d3-10.png "")    
+   ![](/assets/d3-10.png)   
     
 
 ###组件中实现指令以及事件绑定
     
-   ![d3-11.png](imgs/d3-11.png "")
+   ![](/assets/d3-11.png)
     
 
 ###组件中注册子组件
     
-   ![d3-12.png](imgs/d3-12.png "")
+   ![](/assets/d3-12.png)
     
 ###组件中利用component中的is来实现组件切换
     
-   ![d3-13.png](imgs/d3-13.png "")
+   ![](/assets/d3-13.png)
    
 ###实现父组件传值给子组件
     
-   ![d3-14.png](imgs/d3-14.png "")
+   ![](/assets/d3-14.png)
 
 ###实现子组件传值给父组件
     
-   ![d3-15.png](imgs/d3-15.png "")
+   ![](/assets/d3-15.png)
    
 ###通过v-el获取到dom对象
     
-   ![d3-16.png](imgs/d3-16.png "")
+   ![](/assets/d3-16.png)
    
 ###通过v-ref获取到整个组件的对象
     
-   ![d3-17.png](imgs/d3-17.png "")
+   ![](/assets/d3-17.png)
