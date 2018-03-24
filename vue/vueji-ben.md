@@ -66,7 +66,7 @@
 ```
 
 
-* v-html
+v-html
 
 ```js
 
