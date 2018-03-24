@@ -401,3 +401,18 @@ v-html
 
 * 写法格式
 
+```js
+
+    定义指令：
+    Vue.elementDirective('指令id',{
+        bind:function(){
+          //实现指令的业务
+		this.el //代表使用这个指令的元素对象
+        }
+    });
+	
+    使用指令：
+       <指令id></指令id>
+
+
+```
