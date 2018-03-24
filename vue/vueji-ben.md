@@ -616,3 +616,81 @@ v-html
 
 - vue-resource GitHub 地址：https://github.com/pagekit/vue-resource
 - vue-resource Http请求api参考（主要看这个）：https://github.com/pagekit/vue-resource/blob/master/docs/http.md
+
+####vue结合vue-resource写法步骤
+
+```js
+
+    1、通过 https://cdn.jsdelivr.net/vue.resource/1.2.1/vue-resource.min.js 下载到vue-resource文件
+    
+    2、在html页面中通过script标签导入vue-resource.min.js 文件后，就会自动的在Vue对象实例上初始化 $http
+    
+    3、使用
+    // 全局Vue对象写法
+        Vue.http.get('/someUrl', [options]).then(successCallback, errorCallback);
+        Vue.http.post('/someUrl', [body], [options]).then(successCallback, errorCallback);
+
+    // 在Vue对象中的写法
+        this.$http.get('/someUrl', [options]).then(successCallback, errorCallback);
+        this.$http.post('/someUrl', [body], [options]).then(successCallback, errorCallback);
+
+```
+
+- vue-resource get请求
+
+```js
+
+    写法格式：
+     this.$http.get('请求的url', [可选参数对象，使用{}传参]).then(成功回调函数, 失败回调函数);
+     
+    成功回调函数参数对象主要属性说明：
+    1、url ： 请求的原始url
+    2、body： 响应报文体中的数据（我们通常用这个属性获取服务器返回的数据）
+    3、其他属性请看文档
+    
+    举例：
+     this.$http.get('http://vuecms.ittun.com/api/getlunbo?id=1').then(function(res){console.log(res.body)}, function(err){//err是异常数据});
+
+```
+- vue-resource post请求
+
+```js
+
+     写法格式：
+     this.$http.post('请求的url',[可选参数请求报文体对象body,使用{}传参], [可选参数对象，使用{}传参]).then(成功回调函数, 失败回调函数);
+     
+    成功回调函数参数对象主要属性说明：
+    1、url ： 请求的原始url
+    2、body： 响应报文体中的数据（我们通常用这个属性获取服务器返回的数据）
+    3、其他属性请看文档
+    
+    注意点：
+    $http.post()方法中的第二个参数固定写成：{emulateJSON:true},否则可能造成服务器无法接收到请求报文体中的参数值
+    
+    举例：
+     this.$http.post('http://vuecms.ittun.com/api/adddata?id=1'  //请求的url
+     ,{content:'hello'}  //请求报文体中传入的参数对象，多个使用逗号分隔
+     ,{emulateJSON:true}  //固定写法，保证服务器可以获取到请求报文体参数值
+     ).then(function(res){console.log(res.body)}, function(err){//err是异常数据});
+
+
+```
+- vue-resource jsonp请求
+
+```js
+
+   jsonp请求主要用来解决ajax跨域请求问题，使用jsonp实现跨域首先要保证服务器api支持jsonp请求的格式
+    
+    
+    写法格式：
+     this.$http.jsonp('请求的url', [可选参数对象，使用{}传参]).then(成功回调函数, 失败回调函数);
+     
+    成功回调函数参数对象主要属性说明：
+    1、url ： 请求的原始url
+    2、body： 响应报文体中的数据（我们通常用这个属性获取服务器返回的数据）
+    3、其他属性请看文档
+    
+    举例：
+     this.$http.jsonp('http://vuecms.ittun.com/api/getlunbo?id=1').then(function(res){console.log(res.body)}, function(err){//err是异常数据});
+
+```
