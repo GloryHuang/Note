@@ -598,9 +598,6 @@ v-html
 
 * http响应报文
 
-```
-
-
 
 ```
     当浏览器请求服务器的时候，服务器需要将数据返回给浏览器，这种数据是通过响应报文响应回浏览器的
@@ -617,6 +614,5 @@ v-html
 
 * Vue与后台Api进行交互通常是利用vue-resource来实现的，本质上vue-resource是通过http来完成AJAX请求响应的
 
-  - vue-resource GitHub 地址：https://github.com/pagekit/vue-resource
-  - vue-resource Http请求api参考（主要看这个）：https://github.com/pagekit/vue-resource/blob/master/docs/http.md
-  
+- vue-resource GitHub 地址：https://github.com/pagekit/vue-resource
+- vue-resource Http请求api参考（主要看这个）：https://github.com/pagekit/vue-resource/blob/master/docs/http.md
