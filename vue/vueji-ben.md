@@ -223,11 +223,40 @@ v-html
           2、vue1.0中 (index,item) in list  而 vue2.0 变成了 (item,index) in list的写法
           3、vue1.0中使用 track-by来标记dom对象的唯一性，vue2.0中改成了 :key
           
+```
 
+####v-if
+
+```js
+
+    1、作用：根据表达式的值的真假条件来决定是否渲染元素，如果条件为false不渲染（达到隐藏元素的目的），为true则渲染。在切换时元素及它的数据绑定被销毁并重建
+    
+    2、示例：
+        <!-- Handlebars 模板 -->
+        {{#if isShow}}
+          <h1>Yes</h1>
+        {{/if}}
+
+        通常我们使用写法居多：
+        <h1 v-if="isShow">Yes</h1>
+        
+        也可以用 v-else 添加一个 “else” 块：
+        <h1 v-if="isShow">Yes</h1>
+        <h1 v-else>No</h1>
+        
+        注意：v-else 元素必须紧跟在 v-if 元素否则它不能被识别。
+        
+         new Vue({
+                data:{
+                   isShow:true
+                    }
+            });
 
 
 
 
 
 ```
+
+
 
