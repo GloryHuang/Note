@@ -87,4 +87,29 @@ v-html
 
 ```
 
+####v-cloak
+
+```js
+    
+     v-cloak指令保持在元素上直到关联实例结束编译后自动移除，v-cloak和 CSS 规则如 [v-cloak] { display: none } 一起用时，这个指令可以隐藏未编译的 Mustache 标签直到实例准备完毕。
+    通常用来防止{{}}表达式闪烁问题
+    例如：
+    <style>
+     [v-cloak] { display: none } 
+    </style>
+    
+     <!-- 在span上加上 v-cloak和css样式控制以后，浏览器在加载的时候会先把span隐藏起来，知道 Vue实例化完毕以后，才会将v-cloak从span上移除，那么css就会失去作用而将span中的内容呈现给用户 -->
+    <span v-cloak>{{msg}}</span>    
+    
+     new Vue({
+              data:{
+                  msg:'hello ivan'
+                }
+          })
+
+
+
+
+```
+
 
