@@ -621,3 +621,10 @@ v-html
         3、响应报文体
 
 ```
+
+###vue-resource
+
+* Vue与后台Api进行交互通常是利用vue-resource来实现的，本质上vue-resource是通过http来完成AJAX请求响应的
+
+  - vue-resource GitHub 地址：https://github.com/pagekit/vue-resource
+  - vue-resource Http请求api参考（主要看这个）：https://github.com/pagekit/vue-resource/blob/master/docs/http.md
