@@ -346,4 +346,23 @@ v-html
 
 ```
 
+* 可以自定义按键别名
 
+```js
+
+    在Vue2.0 中默认的按键修饰符是存储在 Vue.config.keyCodes中
+    // 例如在Vue2.0版本中扩展一个f1的按键修饰符写法：
+    Vue.config.keyCodes.f1 = 112
+
+    
+    在1.0.17+ 中默认的按键修饰符是存储在Vue.directive('on').keyCodes中                                         
+    
+    // 例如在Vue1.0中扩展一个f1的按键修饰符写法：
+    Vue.directive('on').keyCodes.f1 = 112
+      
+```   
+###自定义指令
+
+ * 当Vue提供的系统指令不能满足需求时，就需要自己定义指令来进行扩展，例如，定义一个v-focus指令来实现文本框的自动获取焦点功能
+ 
+* 自定义属性指令
