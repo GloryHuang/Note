@@ -325,6 +325,9 @@ v-html
 
 ###v-on按键修饰符
 
+
+* 作用说明
+
 ```js
 
     文档地址：http://cn.vuejs.org/v2/guide/events.html#按键修饰符
