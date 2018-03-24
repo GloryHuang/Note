@@ -726,6 +726,11 @@ v-html
      ***transition通常与下面指令结合在一起使用：
        - v-if
        - v-show
-
-
+       
 ```
+
+####Vue中过渡动画的几种常用写法
+
+- 利用css控制过渡动画
+  - Vue1.0写法
+   ![](/assets/d3-1.png)
