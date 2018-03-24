@@ -748,3 +748,8 @@ v-html
 
   - Vue2.0写法
    ![](/assets/d3-4.png)
+  
+ * 利用钩子函数控制过渡动画
+ 
+    - Vue1.0 过渡动画API文档：http://v1-cn.vuejs.org/guide/transitions.html
+    - Vue2.0 过渡动画API文档：http://cn.vuejs.org/v2/guide/transitions.html
