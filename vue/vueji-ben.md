@@ -628,3 +628,4 @@ v-html
 
   - vue-resource GitHub 地址：https://github.com/pagekit/vue-resource
   - vue-resource Http请求api参考（主要看这个）：https://github.com/pagekit/vue-resource/blob/master/docs/http.md
+  
