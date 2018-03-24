@@ -254,5 +254,26 @@ v-html
 
 ```
 
+####v-show
+
+```js
+
+    1、根据表达式的真假值，切换元素的 display CSS 属性，如果为false，则在元素上添加 display:none来隐藏元素，否则移除display:none实现显示元素
+    
+
+    2、示例：
+         <h1 v-show="isShow">Yes</h1>
+        
+         new Vue({
+                data:{
+                   isShow:true
+                    }
+            });
+            
+    3、v-if和v-show的总结：
+         v-if和v-show 都能够实现对一个元素的隐藏和显示操作,但是v-if是将这个元素添加或者移除到dom中，而v-show
+         是在这个元素上添加 style="display:none"和移除它来控制元素的显示和隐藏的
+
+```
 
 
