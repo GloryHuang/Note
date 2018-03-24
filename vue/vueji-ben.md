@@ -489,3 +489,93 @@ v-html
 
 ```
 
+* (应用示例)自定义全局过滤器实现日期格式化
+
+```js
+
+     1、 定义全局的日期格式化过滤器：
+    
+        new Vue({
+        	el:'#app',
+        	data:{
+        		time:new Date()
+        	},
+        	filters:{
+        		//定义在 VM中的filters对象中的所有过滤器都是私有过滤器
+        		datefmt:function(input,splicchar){
+        			var date = new Date(input); 
+                	var year = date.getFullYear();
+                	var m = date.getMonth() + 1;
+                	var d = date.getDate();        	
+                	var fmtStr = year+splicchar+m +splicchar+d;
+                	return fmtStr; //返回输出结果
+        		}
+        	}
+        });
+
+   2、使用
+   
+      <div id="app">
+		{{ time | datefmt '-' }}  //Vue1.0传参写法
+		
+        {{ time | datefmt('-') }} //Vue2.0传参写法
+
+	  </div>
+
+```
+
+####自定义全局过滤器
+
+* 定义方式
+
+```js
+
+
+     可以用全局方法 Vue.filter() 注册一个全局自定义过滤器，它接收两个参数：过滤器 ID 和过滤器函数。过滤器函数以值为参数，返回转换后的值
+    
+    定义格式：
+    Vue.filter('过滤器名称', function (管道符号|左边参数的值,其他参数1,其他参数2,....) {
+      return 对管道符号|左边参数的值做处理以后的值
+    })
+    
+    Vue1.0 使用：
+    <span>{{ msg | 过滤器名称 '参数1' '参数2' .... }}</span>
+    
+    Vue2.0 使用：
+    <span>{{ msg | 过滤器名称('参数1' '参数2' ....) }}</span>
+
+```
+
+* (应用示例)自定义全局过滤器实现日期格式化
+
+```js
+
+     1、 定义全局的日期格式化过滤器：
+    
+        Vue.filter('datefmt',function(input,splicchar){
+        	var date = new Date(input); 
+        	var year = date.getFullYear();
+        	var m = date.getMonth() + 1;
+        	var d = date.getDate();        	
+        	var fmtStr = year+splicchar+m +splicchar+d;
+        	return fmtStr; //返回输出结果
+        });    
+
+   2、使用
+   
+      <div id="app">
+		{{ time | datefmt '-' }}  //Vue1.0传参写法
+		
+        {{ time | datefmt('-') }} //Vue2.0传参写法
+
+	  </div>
+	<script>  
+        new Vue({
+        	el:'#app1',
+        	data:{
+        		time:new Date()
+        	}
+        });
+    </script>
+
+```
