@@ -28,7 +28,7 @@
 
 ```js
 
-  ```
+
     数据绑定最常见的形式就是使用 “Mustache” 语法（双大括号）的文本插值        
     例如：<span>Message: {{ msg }}</span>
     Mustache 标签将会被替代为对应数据对象上 msg 属性（msg定义在data对象中）的值。
@@ -44,10 +44,6 @@
     {{ var a = 1 }}
     <!-- 流控制也不会生效，请使用三元表达式 -->
     {{ if (ok) { return message } }}
-
-```
-
-
 
 
 ```
