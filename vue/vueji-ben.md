@@ -141,4 +141,93 @@ v-html
 
 ```
 
+####v-bind
+
+
+```js
+
+    1、作用：可以给html元素或者组件动态地绑定一个或多个特性，例如动态绑定style和class
+    
+    2、举例：
+        <img v-bind:src="imageSrc">   
+        <div v-bind:class="{ red: isRed }"></div>
+        <div v-bind:class="[classA, classB]"></div>
+        <div v-bind:class="[classA, { classB: isB, classC: isC }]">
+        <div v-bind:style="{ fontSize: size + 'px' }"></div>
+        <div v-bind:style="[styleObjectA, styleObjectB]"></div>
+           
+    3、缩写形式
+        <img :src="imageSrc">
+        <div :class="{ red: isRed }"></div>
+        <div :class="[classA, classB]"></div>
+        <div :class="[classA, { classB: isB, classC: isC }]">
+        <div :style="{ fontSize: size + 'px' }"></div>
+        <div :style="[styleObjectA, styleObjectB]"></div>
+
+
+
+```
+
+
+####v-for
+
+```js
+
+      1、作用：通常是根据数组中的元素遍历指定模板内容生成内容
+      
+      2、用法举例：
+          <div v-for="item in items">
+              {{ item.text }}
+            </div>
+            new Vuew({
+                data:{
+                    items:[{text:'1'},{text:'2'}]                
+                    }
+            });
+      3、可以为数组索引指定别名（或者用于对象的键）：
+          Vue1.0写法:
+            <div v-for="(index,item) in items"></div>
+            <div v-for="(key,val) in user"></div>
+              new Vue({
+                data:{
+                    items:[{text:'1'},{text:'2'}],
+                    user:{uname:'ivan',age:32}
+                    }
+            });
+            
+          Vue2.0写法:
+            <div v-for="(item, index) in items"></div>
+            <div v-for="(val, key) in user"></div>
+            <div v-for="(val, key, index) in user"></div>            
+             new Vue({
+                data:{
+                    items:[{text:'1'},{text:'2'}],
+                    user:{uname:'ivan',age:32}
+                    }
+            });
+            
+       4、v-for 默认行为试着不改变整体(为了性能考虑的设计)，而是替换元素。迫使其重新排序的元素,在Vue2.0版本中需要提供一个 key 的特殊属性，在Vue1.0版本中需要提供一个 track-by="$index":
+       
+       Vue2.0写法：
+       <div v-for="item in items" :key="item.id">
+          {{ item.text }}
+        </div>
+        
+       Vue1.0写法：
+       <div v-for="item in items" track-by="$index">
+          {{ item.text }}
+        </div>
+        
+      5、vue1.0与vue2.0对于v-for使用区别总结：
+          1、vue1.0中有$index ，而vue2.0中将$index移除
+          2、vue1.0中 (index,item) in list  而 vue2.0 变成了 (item,index) in list的写法
+          3、vue1.0中使用 track-by来标记dom对象的唯一性，vue2.0中改成了 :key
+          
+
+
+
+
+
+
+```
 
