@@ -403,6 +403,23 @@ v-html
 
 ```js
 
+    定义指令：
+    Vue.elementDirective('指令id',{
+        bind:function(){
+          //实现指令的业务
+		this.el //代表使用这个指令的元素对象
+        }
+    });
+	
+    使用指令：
+       <指令id></指令id>
+
+```
+
+* （元素指令应用举例）利用自定义属性指令实现日期格式化
+
+```js
+
      定义指令：
        Vue.elementDirective('datefmt',{
     	bind:function(){
@@ -430,6 +447,7 @@ v-html
             <datefmt :dt="time"></datefmt>
         </div>
 
-```
 
+
+```
 
