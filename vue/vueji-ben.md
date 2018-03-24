@@ -1,3 +1,6 @@
+
+
+
 ###Vue
 
 ####MVVM模式
@@ -731,6 +734,17 @@ v-html
 
 ####Vue中过渡动画的几种常用写法
 
-- 利用css控制过渡动画
+ * 利用css控制过渡动画
   - Vue1.0写法
    ![](/assets/d3-1.png)
+   
+  - Vue2.0写法
+   ![](/assets/d3-2.png)
+   
+ - 利用animate.css控制过渡动画
+ 
+  - Vue1.0写法
+   ![](/assets/d3-3.png)  
+
+  - Vue2.0写法
+   ![](/assets/d3-4.png)
