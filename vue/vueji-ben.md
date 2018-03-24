@@ -708,3 +708,24 @@ v-html
     3、动态组件
     
 ```
+
+####transition的作用
+
+```js
+
+    1、在Vue1.0版本中为了应用过渡效果，需要在实现过渡动画的元素上使用 transition 特性，示例：
+     <div v-if="show" transition="my-transition"></div> ,my-transition 可以有程序员自定义名称
+      
+
+    2、 在Vue2.0版本中改变成了由 transition特性的写法变成了 <transition></transition>的写法    
+     <transition name="fade">
+        <p v-if="show">hello</p>
+      </transition>
+    
+
+     ***transition通常与下面指令结合在一起使用：
+       - v-if
+       - v-show
+
+
+```
