@@ -403,16 +403,33 @@ v-html
 
 ```js
 
-    定义指令：
-    Vue.elementDirective('指令id',{
-        bind:function(){
-          //实现指令的业务
-		this.el //代表使用这个指令的元素对象
-        }
+     定义指令：
+       Vue.elementDirective('datefmt',{
+    	bind:function(){
+    		var v=this.el.attributes[0].value;	
+    		var date = new Date(this.vm[v]); 
+    		var year = date.getFullYear();
+    		var m = date.getMonth() + 1;
+    		var d = date.getDate();
+    		//输出： yyyy-mm-dd
+    		var fmtStr = year+'-'+m +'-'+d;
+    
+    		this.el.innerText = fmtStr;			
+    	}
+    });
+    
+    new Vue({
+    	el:'#app',
+    	data:{
+    		time:new Date()
+    	}    	
     });
 	
     使用指令：
-       <指令id></指令id>
-
+        <div id="app">
+            <datefmt :dt="time"></datefmt>
+        </div>
 
 ```
+
+
