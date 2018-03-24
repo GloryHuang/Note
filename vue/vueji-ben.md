@@ -49,3 +49,20 @@
 ```
 
 ####v-text
+
+```js
+    
+     v-text可以将一个变量的值渲染到指定的元素中,例如：
+        <div v-text="msg"></div>
+        new Vue({
+            data:{
+                msg:'hello ivan'                                            
+               }
+        });
+        
+        输出结果：
+        <div>hello ivan</div>        
+
+
+
+```
