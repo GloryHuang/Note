@@ -459,3 +459,33 @@ v-html
 - 关于系统过滤器的使用参考请参考文档：http://v1-cn.vuejs.org/api/#过滤器
 - 注意：系统过滤器是Vue1.0中存在的，在Vue2.0中已经删除了
 
+####自定义过滤器
+
+- 文档地址：http://v1-cn.vuejs.org/guide/custom-filter.html
+
+###自定义私有过滤器
+
+* 定义方式
+
+```js
+
+    可以在 new Vue({filters：{}})中的filters中注册一个私有过滤器
+    
+    定义格式：
+    new Vue({
+	el:'#app',	
+	filters:{		
+        '过滤器名称':function(管道符号|左边参数的值,参数1,参数2,....) {
+          return 对管道符号|左边参数的值做处理以后的值
+        })    
+	}
+    });
+    
+    Vue1.0 使用写法：
+    <span>{{ msg | 过滤器id '参数1' '参数2' .... }}</span>
+    
+    Vue2.0 使用写法：
+    <span>{{ msg | 过滤器id('参数1' '参数2' ....) }}</span>
+
+```
+
