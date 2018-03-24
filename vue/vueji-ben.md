@@ -131,7 +131,7 @@ v-html
                 }
           })
           
-    4、修饰符（了解）：
+    4、修饰符：
         .lazy - 取代 input 监听 change 事件
         .number - 自动将输入的字符串转为数字
         .trim - 自动将输入的内容首尾空格去掉
@@ -320,5 +320,27 @@ v-html
        5、v-on的缩写形式：可以使用@替代 v-on:
         <button @click="doThis"></button>
 
+```
+
+
+###v-on按键修饰符
+
+```js
+
+    文档地址：http://cn.vuejs.org/v2/guide/events.html#按键修饰符
+    
+    在监听键盘事件时，我们经常需要监测常见的键值。 Vue 允许为 v-on 在监听键盘事件时添加按键修饰符：
+    .enter
+    .tab
+    .delete (捕获 “删除” 和 “退格” 键)
+    .esc
+    .space
+    .up
+    .down
+    .left
+    .right
+    1.0.8+ 支持单字母按键别名。
 
 ```
+
+
