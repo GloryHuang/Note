@@ -63,6 +63,27 @@
         输出结果：
         <div>hello ivan</div>        
 
+```
+
+
+####v-html
+
+```js
+
+
+    双大括号和v-text会将数据解释为纯文本，而非 HTML 。
+      为了输出真正的 HTML ，你需要使用 v-html 指令：
+      例如：<div v-html="rawHtml"></div>
+          new Vue({
+              data:{
+                  rawHtml:'<h1>hello ivan</h1>'
+                }
+          })
+          
+        被插入的内容都会被当做 HTML,但是对于没有HTML标签的数据绑定时作用同v-text和{{}}
+        
+    注意：使用v-html渲染数据可能会非常危险，因为它很容易导致 XSS（跨站脚本） 攻击，使用的时候请谨慎，能够使用{{}}或者v-text实现的不要使用v-html
+
 
 
 ```
