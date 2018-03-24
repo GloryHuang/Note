@@ -107,6 +107,35 @@ v-html
                 }
           })
 
+```
+
+####v-model以及双向数据绑定
+
+
+```js
+    
+    1、在表单控件或者组件上创建双向绑定
+    
+    2、v-model仅能在如下元素中使用：
+       input
+       select
+       textarea
+       components（Vue中的组件）
+       
+    3、举例：
+       <input type="text" v-model="uname" />
+       
+     new Vue({
+              data:{
+                  uname:'' //这个属性值和input元素的值相互一一对应，二者任何一个的改变都会联动的改变对方
+                }
+          })
+          
+    4、修饰符（了解）：
+        .lazy - 取代 input 监听 change 事件
+        .number - 自动将输入的字符串转为数字
+        .trim - 自动将输入的内容首尾空格去掉
+
 
 
 
