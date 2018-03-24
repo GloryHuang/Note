@@ -276,4 +276,49 @@ v-html
 
 ```
 
+####v-on
 
+```js
+
+       1、作用：绑定事件监听，表达式可以是一个方法的名字或一个内联语句，如果没有修饰符也可以省略，用在普通的html元素上时，只能监听 原生 DOM 事件。用在自定义元素组件上时，也可以监听子组件触发的自定义事件。
+      
+      2、常用事件：
+          v-on:click
+          v-on:keydown
+          v-on:keyup
+          v-on:mousedown
+          v-on:mouseover
+          v-on:submit
+          ....
+          
+      3、v-on提供了很多事件修饰符来辅助实现一些功能，例如阻止冒泡等
+        事件修饰符有如下：
+        .stop - 调用 event.stopPropagation()。
+        .prevent - 调用 event.preventDefault()。
+        .capture - 添加事件侦听器时使用 capture 模式。
+        .self - 只当事件是从侦听器绑定的元素本身触发时才触发回调。
+        .{keyCode | keyAlias} - 只当事件是从侦听器绑定的元素本身触发时才触发回调。
+        .native - 监听组件根元素的原生事件。
+        
+      4、示例：
+          <!-- 方法处理器 -->
+        <button v-on:click="doThis"></button>
+        <!-- 内联语句 -->
+        <button v-on:click="doThat('hello', $event)"></button>
+        <!-- 缩写 -->
+        <button @click="doThis"></button>
+        <!-- 停止冒泡 -->
+        <button @click.stop="doThis"></button>
+        <!-- 阻止默认行为 -->
+        <button @click.prevent="doThis"></button>
+        <!-- 阻止默认行为，没有表达式 -->
+        <form @submit.prevent></form>
+        <!--  串联修饰符 -->
+        <button @click.stop.prevent="doThis"></button>
+   
+        
+       5、v-on的缩写形式：可以使用@替代 v-on:
+        <button @click="doThis"></button>
+
+
+```
