@@ -753,3 +753,42 @@ v-html
  
     - Vue1.0 过渡动画API文档：http://v1-cn.vuejs.org/guide/transitions.html
     - Vue2.0 过渡动画API文档：http://cn.vuejs.org/v2/guide/transitions.html
+    
+    
+ - Vue1.0钩子函数
+    ```js
+      1、过渡动画进入
+          beforeEnter:function(el){}      过渡动画进入之前，一般在这个方法中定义目标元素的初始位置
+          enter:function(el,done){}       过渡动画进入中，在这个方法中定义目标元素的结束位置
+          afterEnter:function(el){}       过渡动画结束后，通常在这个方法里面重置初始值
+          enterCancelled:function(el){}   取消过渡动画时被调用
+      
+      2、过渡动画离开
+          beforeLeave:function(el){}      动画离开之前触发    
+          leave:function(el){}            过渡动画进入中触发
+          afterLeave:function(el){}       过渡动画离开结束后
+          leaveCancelled:function(el){}   取消过渡动画时被调用
+
+    ```
+      3、使用示例：
+         ![d3-5.png](imgs/d3-5.png "")
+
+- Vue2.0钩子函数
+
+```js
+     1、过渡动画进入
+          before-enter      过渡动画进入之前，一般在这个方法中定义目标元素的初始位置
+          enter             过渡动画进入中，在这个方法中定义目标元素的结束位置
+          after-enter       过渡动画结束后，通常在这个方法里面重置初始值
+          enter-cancelled   取消过渡动画时被调用
+      
+      2、过渡动画离开
+          before-leave      动画离开之前触发    
+          leave             过渡动画进入中触发
+          after-leave       过渡动画离开结束后
+          leave-cancelled   取消过渡动画时被调用
+
+```
+
+   3、使用示例：
+   ![](/assets/d3-5.png)
