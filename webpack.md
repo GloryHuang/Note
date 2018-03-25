@@ -348,3 +348,24 @@ cnpm install node-sass sass-loader css-loader style-loader --save-dev
     3、<style></style>  中的样式是全局的
        <style scoped></style> 中的样式是当前组件的
 ```
+
+
+* 将.vue中的内容解析编译并且展示在浏览器中
+
+```js
+     1、npm install vue  --save
+     2、在main.js中编写解析.vue的代码
+        // 1.0 导入vue这个包
+        import Vue from 'vue';
+
+        // 2.0 导入 App.vue文件
+        import App from './App.vue';
+
+        // 3.0 将App中的内容编译解析出来替换index.html中的<div id="app"></div>
+        new Vue({
+            el:'#app',
+            // render:function(create){create(App);}  es5语法
+            render:create=>create(App) //es6语法
+        });
+
+```
