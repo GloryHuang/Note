@@ -46,3 +46,8 @@
  * nowrap: 所有的元素都在一行。
  * wrap: 元素自动换成多行。
  * wrap-reverse: 元素自动换成逆序的多行
+ 
+ 
+* flex-flow:  (flex-direction)  (flex-wrap)
+
+ * flex-direction和flex-wrap两个属性经常会一起使用。所以有缩写属性flex-flow。这个缩写属性接受两个属性的值，两个值中间以空格隔开。
