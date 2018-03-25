@@ -39,3 +39,10 @@
   * center: 元素纵向居中。
   * baseline: 元素在容器的基线位置显示。
   * stretch: 元素被拉伸以填满整个容器。
+
+
+* flex-wrap:分散
+
+ * nowrap: 所有的元素都在一行。
+ * wrap: 元素自动换成多行。
+ * wrap-reverse: 元素自动换成逆序的多行
