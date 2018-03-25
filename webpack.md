@@ -298,4 +298,41 @@ cnpm install node-sass sass-loader css-loader style-loader --save-dev
 ```
 * 运行
 
-  * 在cmd中执行npm run dev 命令开启 webpack-dev-server服务器来运行vue项目,这时候可以随便修改一个css样式，就会自动刷新看到效果    
+  * 在cmd中执行npm run dev 命令开启 webpack-dev-server服务器来运行vue项目,这时候可以随便修改一个css样式，就会自动刷新看到效果 
+  
+###利用webpack解析和打包 .vue组件页面   
+
+
+```js
+
+    Vue项目中的每个页面其实都是一个.vue的文件，这种文件，Vue称之为组件页面，必须借助于 webpack的vue-loader才能使用
+    所以必须安装相关包：
+        vue-loader            ： .vue文件编译loader
+        vue-template-compiler ： .vue模板编译,被vue-loader所依赖
+        babel-plugin-transform-runtime : es6实时转换成es5语法
+        
+     1、在项目根目录下打开cmd命令面板，输入：
+       npm install vue-loader vue-template-compiler babel-plugin-transform-runtime --save-dev 回车即可完成安装
+       
+     2、在webpack.config.js中添加如下配置（只能在webpack1.0中使用）：
+     babel:{
+		 presets: ['es2015'],  
+		 plugins: ['transform-runtime']  //这句代码就是为了解决打包.vue文件不报错
+	}
+	
+     在webpack2.0中在webpack.config.js中添加 babel:{}是不认识的，要改成如下方式：
+     在项目根目录下新建 .babelrc文件，内容填写如下：
+     {
+		 presets: ['es2015'],  
+		 plugins: ['transform-runtime']  //这句代码就是为了解决打包.vue文件不报错
+	}
+	
+
+    3、在webpack.config.js中的loaders中增加
+            {
+				// 打包.vue文件
+				test:/\.vue$/,   //表示当前要打包的文件的后缀正则表达式
+				loader:'vue-loader' //
+			}
+    
+```
