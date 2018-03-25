@@ -50,5 +50,38 @@
 
 ```js
 
+  // 导入html-webpack-plugin 包，用来根据模板自动生成index.html
+  var htmlwp = require('html-webpack-plugin');
 
+  module.exports={	
+  
+	entry:'./src/main.js', // 1.0 定义打包的入口文件路径
+	output:{
+		path:'./dist',   //打包以后的文件存放目录
+		filename:'build.js'  // 打包以后生成的文件名称
+	},
+	module:{
+		loaders:[
+			{
+				// 将当前项目中所有的.js文件都要进行es6转es5操作，node_moudels除外
+				test:/\.js$/,   //表示当前要打包的文件的后缀正则表达式
+				// loader:'babel-loader?presets[]=es2015', //如果写到这里，将来在打包.vue文件的时候会报错，表示先利用css-loader解析.css文件，再调用style-loader打包
+				loader:'babel-loader',
+				exclude:/node_modules/  //node_modules中的所有.js文件不去转换，提高打包性能
+			}			
+		]
+	},
+	babel:{
+		 presets: ['es2015'],  //表示es6转es5
+		 plugins: ['transform-runtime']  //这句代码就是为了解决打包.vue文件不报错
+	},
+	plugins:[
+        new htmlwp({
+          title: '首页',  //生成的页面标题
+          filename: 'index.html', //webpack-dev-server在内存中生成的文件名称，自动将build注入到这个页面底部，才能实现自动刷新功能
+          template: 'index1.html' //根据index1.html这个模板来生成(这个文件请你自己生成)
+        })
+    ]
+}
+    
 ```
