@@ -48,7 +48,9 @@
   * stretch: 元素被拉伸以填满整个容器。
 
 
-* flex-wrap:分散
+* flex-wrap:
+
+  属性规定flex容器是单行或者多行，同时横轴的方向决定了新行堆叠的方向
 
  * nowrap: 所有的元素都在一行。
  * wrap: 元素自动换成多行。
@@ -60,7 +62,9 @@
  * flex-direction和flex-wrap两个属性经常会一起使用。所以有缩写属性flex-flow。这个缩写属性接受两个属性的值，两个值中间以空格隔开。
  
  
-* align-content：来决定行与行之间隔多远
+* align-content：
+
+ 属性在弹性容器内的各项没有占用交叉轴上所有可用的空间时对齐容器内的各项（垂直）
 
  * flex-start: 多行都集中在顶部。
  * flex-end: 多行都集中在底部。
