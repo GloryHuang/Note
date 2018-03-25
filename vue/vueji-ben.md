@@ -699,7 +699,8 @@ v-html
 ```
 
 #### Vue的生命周期方法
-![](/assets/d2-6.png)
+
+ ![](/assets/d2-6.png)
 
 ###Vue过渡动画
 
