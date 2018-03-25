@@ -336,3 +336,15 @@ cnpm install node-sass sass-loader css-loader style-loader --save-dev
 			}
     
 ```
+
+* vue组件页面的写法结构
+
+```css
+
+    1、<template><div class="tmpl"></div>由于是vue2.0 所以这个里面一定要放一个根元素，可以放vue的指令 v-</template>
+
+    2、<script> export default{data:{}} -> new Vue({data:{}}) 就是导出一个 Vue的实例  </script>
+
+    3、<style></style>  中的样式是全局的
+        <style scoped></style> 中的样式是当前组件的
+```
