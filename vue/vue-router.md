@@ -29,3 +29,39 @@
 ###vue2.0的路由参数定义实现url的传值
 
   ![](/assets/d4-4.png)
+  
+###vue1中嵌套路由的写法
+
+  ![](/assets/d4-5.png)
+
+###vue2中嵌套路由的写法
+
+  ![](/assets/d4-6.png)
+  
+  
+###watch与计算属性computed
+
+*  watch与computed均可以监控程序员想要监控的对象，当这些对象发生了改变以后，可以触发回调函数做一些逻辑处理
+
+####watch用法举例
+
+- 监听data中定义的属性
+
+  ![](/assets/d4-7.png)
+
+- 监听路由对象$route
+
+  ![](/assets/d4-8.png)
+  
+
+####computed用法举例
+
+- 监听data中定义的属性
+
+  ![](/assets/d4-9.png)
+  
+#### Vue1.0与Vue2.0区别总结
+
+  ![](/assets/d4-10.png)
+
+
