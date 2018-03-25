@@ -86,3 +86,63 @@
 }
     
 ```
+
+###webpack中loader介绍
+
+ * webpack本身不支持css,less,sass,js,image等相关资源的打包工作的，它仅仅提供了一个基础的框架，在这个框架上借助于相关的loader才可以实现css,less,sass,js,image等相关资源的打包工作
+ 
+####webpack相关配置
+
+* 在使用loader之前需要在当前项目目录下打开cmd命令面板，输入: npm init 初始化一个 package.json文件来存放相关的 loader包
+
+####打包css资源
+
+* webpack中使用css-loader和style-loader这两个loader来处理css资源的打包工作，所以使用前必须在项目中先安装这两个包:
+npm i css-loader style-loader --save-dev
+
+* 在webpack.config.js中配置这两个loader
+
+![](/assets/d4-11.png)
+
+* 在项目中建立一个site.css文件，并且在main.js中导入
+
+![](/assets/d4-12.png)
+
+* 在cmd中执行webpack命令
+
+![](/assets/d4-13.png)
+
+###打包sass资源
+
+* webpack中使用sass-loader，css-loader，style-loader来处理.scss文件的打包工作,而sass-loader需要依赖于node-sass所以使用前必须在项目中先安装这些包，
+并且node-sass的某些文件下载是需要去google上的，为了防止被墙而导致安装失败，所以建议使用cnpm来安装：
+cnpm install node-sass sass-loader css-loader style-loader --save-dev
+
+
+ * 在webpack.config.js中配置这两个loader
+ 
+ ![](/assets/d4-14.png)
+
+ * 在项目中建立一个site1.scss文件，并且在main.js中导入
+ 
+ ![](/assets/d4-15.png)
+
+ * 在cmd中执行webpack命令
+ 
+ * 在项目根目录下打开cmd命令面板，输入：webpack  回车即可打包完成
+  此时检查build.js文件的内容，sass语法是变成了css语法表示打包成功
+  
+###打包less资源
+
+* 需要安装的node包有：
+
+  * css-loader：  编译css
+  * style-loader：编译css
+  * less-loader： 编译less
+  * less:  less-loader的依赖包
+  
+	
+* 在项目根目录下打开cmd命令面板，输入：
+
+   * npm install less less-loader style-loader css-loader --save-dev 回车即可完成安装
+ 
