@@ -258,3 +258,24 @@ cnpm install node-sass sass-loader css-loader style-loader --save-dev
     //host： 可以指定服务器的ip，不指定默认为127.0.0.1(localhost)
  
 ```
+###配置html-webpack-plugin组件
+
+* webpack-dev-server要实现浏览器自动刷新，必须要利用html-webpack-plugin在内存中生成index.html页面才能实现
+   
+* html-webpack-plugin 配置步骤：
+
+```js
+
+    1、在webpack.config.js中加入如下代码：
+        // 导入html-webpack-plugin 包,获取到插件对象
+        var htmlwp = require('html-webpack-plugin');
+        
+        plugins:[
+        new htmlwp({
+          title: '首页',  //生成的页面标题
+          filename: 'index.html', //webpack-dev-server在内存中生成的文件名称，自动将build注入到这个页面底部，才能实现自动刷新功能
+          template: 'index1.html' //根据index1.html这个模板来生成(这个文件请程序员自己生成)
+        })
+    ]
+    
+```
