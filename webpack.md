@@ -43,7 +43,10 @@
 ```
 * webpack.config.js配置文件的作用
 
- *  如果只在cmd命令面板中输入 webpack指令，后面不跟任何参数的话，则默认查找的是 webpack.config.js文件，在这个文件中可以配置入口文件，输出文件以及相关loader和插件等,以增强webpack的功能
+ * 如果只在cmd命令面板中输入 webpack指令，后面不跟任何参数的话，则默认查找的是 webpack.config.js文件，在这个文件中可以配置入口文件，输出文件以及相关loader和插件等,以增强webpack的功能
+
+
+* 一个常用webpack1.0版本的webpack.config.js文件结构：
 
 ```js
 
