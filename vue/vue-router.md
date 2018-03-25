@@ -60,7 +60,7 @@
 
   ![](/assets/d4-9.png)
   
-#### Vue1.0与Vue2.0区别总结
+###Vue1.0与Vue2.0区别总结
 
   ![](/assets/d4-10.png)
 
