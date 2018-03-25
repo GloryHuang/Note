@@ -47,7 +47,7 @@
  
 
 
-* 一个常用webpack1.0版本的webpack.config.js文件结构：
+####一个常用webpack1.0版本的webpack.config.js文件结构：
 
 ```js
 
