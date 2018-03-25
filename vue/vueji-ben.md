@@ -772,8 +772,9 @@ v-html
 
     ```
       3、使用示例：
-         ![d3-5.png](imgs/d3-5.png "")
-
+       
+      ![](/assets/d3-5.png)
+      
 - Vue2.0钩子函数
 
 ```js
