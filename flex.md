@@ -51,3 +51,13 @@
 * flex-flow:  (flex-direction)  (flex-wrap)
 
  * flex-direction和flex-wrap两个属性经常会一起使用。所以有缩写属性flex-flow。这个缩写属性接受两个属性的值，两个值中间以空格隔开。
+ 
+ 
+* align-content：来决定行与行之间隔多远
+
+ * flex-start: 多行都集中在顶部。
+ * flex-end: 多行都集中在底部。
+ * center: 多行居中。
+ * space-between: 行与行之间保持相等距离。
+ * space-around: 每行的周围保持相等距离。
+ * stretch: 每一行都被拉伸以填满容器。
