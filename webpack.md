@@ -173,3 +173,24 @@ cnpm install node-sass sass-loader css-loader style-loader --save-dev
     
    * npm install url-loader file-loader --save-dev 回车即可完成安装
  
+ 
+* 在webpack.config.js中配置这两个loader
+
+  ![](/assets/d4-18.png)
+
+* 在site.css文件导入一个图片
+
+  ![](/assets/d4-19.png)
+
+* 在cmd中执行webpack命令
+
+
+* 在项目根目录下打开cmd命令面板，输入：webpack  回车即可打包完成
+
+  * 检查是否成功分两种情况：
+  
+   1、如果打包的图片大小大于配置文件中 url-loader?limit= 中的limit值的话，则会在目录下看到一张单独的一个图片
+   
+   2、如果打包的图片大小小于等于配置文件中 url-loader?limit= 中的limit值的话，则会将图片以base64格式存储在build.js中
+   
+* 按照上述两种情况去验证是否打包成功
