@@ -194,3 +194,33 @@ cnpm install node-sass sass-loader css-loader style-loader --save-dev
    2、如果打包的图片大小小于等于配置文件中 url-loader?limit= 中的limit值的话，则会将图片以base64格式存储在build.js中
    
 * 按照上述两种情况去验证是否打包成功
+
+###ECMAScript6语法转ECMAScript5语法
+
+* 需要安装的node包有：
+
+ * babel-core
+ * babel-loader
+ * babel-preset-es2015
+ * babel-plugin-transform-runtime：这个包主要是在打包.vue组件页面中的es6语法需要
+ 
+	
+  * 在项目根目录下打开cmd命令面板，输入：
+   
+   * npm install babel-core babel-loader babel-preset-es2015 babel-plugin-transform-runtime  --save-dev 回车即可完成安装
+   
+   
+* 在webpack.config.js中配置这两个loader
+
+  ![](/assets/d4-20.png)
+
+* 在main.js中使用es6语法导入site.css
+
+```js
+   import '../statics/css/site.css'
+```
+
+* 在cmd中执行webpack命令
+
+  * 在项目根目录下打开cmd命令面板，输入：webpack  回车即可打包完成
+  检查build.js文件中，如果出现了类似于 require('../statics/css/site.css'); 但是看不到import '../statics/css/site.css' 表示转换成功
