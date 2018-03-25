@@ -224,3 +224,37 @@ cnpm install node-sass sass-loader css-loader style-loader --save-dev
 
   * 在项目根目录下打开cmd命令面板，输入：webpack  回车即可打包完成
   检查build.js文件中，如果出现了类似于 require('../statics/css/site.css'); 但是看不到import '../statics/css/site.css' 表示转换成功
+  
+###webpack相关配置
+
+####利用webpack-dev-server实现热刷新配置
+
+*  我们在修改了代码以后需要不断的重新执行webpack命令重新打包然后回到浏览器刷新页面去查看，这种开发效率很低下，所以这里使用webpack-dev-server当代码更新的时候自动重新打包和刷新浏览器。
+
+* 需要安装的node包有：
+
+  * webpack-dev-server ： webpack开发服务器
+  * html-webpack-plugin ：结合webpack在内存中自动生成index.html的入口文件
+  
+ 
+* 在项目根目录下打开cmd命令面板，输入：
+   
+   * npm install webpack-dev-server html-webpack-plugin  --save-dev 回车即可完成安装 
+  
+ 
+* 在package.json文件中配置webpack-dev-server命令
+
+```js
+
+    "scripts": {
+        "dev":"webpack-dev-server --inline --hot --open --port 4009"
+      }
+      
+    参数说明：
+    //inline :自动刷新
+    //hot :热加载
+    //port 指定监听端口为 5200
+    //open : 自动在默认浏览器中打开
+    //host： 可以指定服务器的ip，不指定默认为127.0.0.1(localhost)
+ 
+```
