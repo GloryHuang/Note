@@ -145,4 +145,31 @@ cnpm install node-sass sass-loader css-loader style-loader --save-dev
 * 在项目根目录下打开cmd命令面板，输入：
 
    * npm install less less-loader style-loader css-loader --save-dev 回车即可完成安装
+   
+* 在webpack.config.js中配置这两个loader
+
+  ![](/assets/d4-16.png)
+
+* 在项目中建立一个site1.scss文件，并且在main.js中导入
+
+ ![](/assets/d4-17.png)
+
+* 在cmd中执行webpack命令
+
+
+* 在项目根目录下打开cmd命令面板，输入：webpack  回车即可打包完成
+  此时检查build.js文件的内容，less语法是变成了css语法表示打包成功
+  
+  
+###打包url()请求的资源
+
+* 需要安装的node包有：
+
+   * url-loader：打包通过url()方式的请求资源
+   * file-loader: url-loader的依赖loader
+	
+	
+* 在项目根目录下打开cmd命令面板，输入：
+    
+   * npm install url-loader file-loader --save-dev 回车即可完成安装
  
