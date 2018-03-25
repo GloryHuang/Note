@@ -279,3 +279,23 @@ cnpm install node-sass sass-loader css-loader style-loader --save-dev
     ]
     
 ```
+* index1.html 模板页面代码
+
+```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    	<meta charset="UTF-8">
+    	<title>Document</title>
+    	<meta name="viewport"
+              content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    </head>
+    <body>
+        <div id="app">
+        </div>	
+    </body>
+    </html>
+```
+* 运行
+
+  * 在cmd中执行npm run dev 命令开启 webpack-dev-server服务器来运行vue项目,这时候可以随便修改一个css样式，就会自动刷新看到效果    
