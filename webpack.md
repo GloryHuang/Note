@@ -346,5 +346,5 @@ cnpm install node-sass sass-loader css-loader style-loader --save-dev
     2、<script> export default{data:{}} -> new Vue({data:{}}) 就是导出一个 Vue的实例  </script>
 
     3、<style></style>  中的样式是全局的
-        <style scoped></style> 中的样式是当前组件的
+       <style scoped></style> 中的样式是当前组件的
 ```
