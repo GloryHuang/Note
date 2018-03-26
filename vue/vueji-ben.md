@@ -91,7 +91,7 @@ Mustache 标签将会被替代为对应数据对象上 msg 属性（msg定义在
 ```js
     
      v-cloak指令保持在元素上直到关联实例结束编译后自动移除，v-cloak和 CSS 规则如 [v-cloak] { display: none } 一起用时，这个指令可以隐藏未编译的 Mustache 标签直到实例准备完毕。
-    通常用来防止{{}}表达式闪烁问题
+    通常用来防止{ { } }表达式闪烁问题
     例如：
     <style>
      [v-cloak] { display: none } 
