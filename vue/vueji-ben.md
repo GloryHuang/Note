@@ -232,9 +232,9 @@ Mustache 标签将会被替代为对应数据对象上 msg 属性（msg定义在
     
     2、示例：
         <!-- Handlebars 模板 -->
-        {{#if isShow}}
+        { { #if isShow } }
           <h1>Yes</h1>
-        {{/if}}
+        { {/if} }
 
         通常我们使用写法居多：
         <h1 v-if="isShow">Yes</h1>
