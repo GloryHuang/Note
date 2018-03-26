@@ -5,13 +5,13 @@
 
 #####CSS Hack大致有3种表现形式
 
-    * CSS类内部Hack
+* CSS类内部Hack
     
-    * 选择器Hack
+* 选择器Hack
     
-    * HTML头部引用(if IE)Hack
+* HTML头部引用(if IE)Hack
     
-    * CSS Hack主要针对类内部Hack：比如 IE6能识别下划线"_"和星号" * "，IE7能识别星号" * "，但不能识别下划线"_"，而firefox两个都不能认识。    
+* CSS Hack主要针对类内部Hack：比如 IE6能识别下划线"_"和星号" * "，IE7能识别星号" * "，但不能识别下划线"_"，而firefox两个都不能认识。    
 
 ####头部hack(条件注释)
 

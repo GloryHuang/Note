@@ -6,30 +6,31 @@
 
    * 语法：
 
-    elementNode.childNodes
+   elementNode.childNodes
 
    * 注意:
     
-    如果选定的节点没有子节点，则该属性返回不包含节点的 NodeList。
+   如果选定的节点没有子节点，则该属性返回不包含节点的 NodeList。
     
    ![](/assets/538405fa00010e6c05630357.jpg)
 
 
-    * 运行结果:
+  * 运行结果:
 
-     * IE:
+   * IE:
 
        UL子节点个数:3
        
        节点类型:1
        
-     * 其它浏览器:
+       
+    * 其它浏览器:
 
        UL子节点个数:7
        
        节点类型:3
    
-    * 注意:
+* 注意:
 
      1. IE全系列、firefox、chrome、opera、safari兼容问题
 
