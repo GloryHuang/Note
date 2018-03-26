@@ -29,24 +29,22 @@
 
 ```js
 
-/*
 数据绑定最常见的形式就是使用 “Mustache” 语法（双大括号）的文本插值        
 例如：<span>Message: {{ msg }}</span>
 Mustache 标签将会被替代为对应数据对象上 msg 属性（msg定义在data对象中）的值。
 无论何时，绑定的数据对象上 msg 属性发生了改变，插值处的内容都会更新。
 
 差值表达式对JavaScript 表达式支持，例如：
-{{ number + 1 }}
-{{ ok?'YES':'NO'}}
-{{ message.split('').reverse().join('') }}
+{ { number + 1 } }
+{ { ok?'YES':'NO'} }
+{ { message.split('').reverse().join('') } }
 
 但是有个限制就是，每个绑定都只能包含单个表达式，如下表达式无效：
 <!-- 这是语句，不是表达式 -->
-{{ var a = 1 }}
+{ { var a = 1 } }
 <!-- 流控制也不会生效，请使用三元表达式 -->
-{{ if (ok) { return message } }}
+{ { if (ok) { return message } } }
 
-*/
 ```
 
 ####v-text
