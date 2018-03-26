@@ -37,7 +37,7 @@
     Mustache 标签将会被替代为对应数据对象上 msg 属性（msg定义在data对象中）的值。
     无论何时，绑定的数据对象上 msg 属性发生了改变，插值处的内容都会更新。
 
-    {{ }}对JavaScript 表达式支持，例如：
+    差值表达式对JavaScript 表达式支持，例如：
     {{ number + 1 }}
     {{ ok ? 'YES' : 'NO' }}
     {{ message.split('').reverse().join('') }}
