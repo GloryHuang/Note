@@ -48,7 +48,7 @@ Mustache 标签将会被替代为对应数据对象上 msg 属性（msg定义在
 <!-- 这是语句，不是表达式 -->
 { var a = 1 }
 <!-- 流控制也不会生效，请使用三元表达式 -->
-{{ if (ok) { return message } }}
+{ if (ok) { return message } }
 
 
 ```
