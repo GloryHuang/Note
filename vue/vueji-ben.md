@@ -36,7 +36,7 @@ Mustache 标签将会被替代为对应数据对象上 msg 属性（msg定义在
 
 差值表达式对JavaScript 表达式支持，例如：
 {{ number + 1 }}
-{{ ok ? 'YES' : 'NO' }}
+{{ ok?'YES' : 'NO' }}
 {{ message.split('').reverse().join('') }}
 
 但是有个限制就是，每个绑定都只能包含单个表达式，如下表达式无效：
