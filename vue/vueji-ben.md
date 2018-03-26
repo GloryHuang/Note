@@ -515,9 +515,9 @@ Mustache 标签将会被替代为对应数据对象上 msg 属性（msg定义在
    2、使用
    
       <div id="app">
-		{{ time | datefmt '-' }}  //Vue1.0传参写法
+		{/{ time | datefmt '-' }/}  //Vue1.0传参写法
 		
-        {{ time | datefmt('-') }} //Vue2.0传参写法
+        {/{ time | datefmt('-') }/} //Vue2.0传参写法
 
 	  </div>
 
