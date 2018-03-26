@@ -4,14 +4,11 @@
  function stopBubble(e){
 
      if(e && e.stopPropagation){
-          
           //w3c的方法是：（火狐、谷歌、IE11）
            e.stopPropagation()
-
       }else{
           //IE10以下
            window.event.cancelBubble=true
-
       }
       return false
 }
