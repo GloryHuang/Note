@@ -1,7 +1,6 @@
 ######如何解析JSON
 ```js
-
-     /*
+       /*
         * 如何解析JSON:
         * 1、JSON.parse
         * 2、eval

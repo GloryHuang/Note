@@ -6,7 +6,6 @@
 ####浮动解决方案
     
 ```js
-
      <!-- 浮动解决方案 -->
     <section class="layout float">
         <style>
