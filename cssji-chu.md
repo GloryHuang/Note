@@ -17,7 +17,23 @@
   * 后代选择器  .box h1
   * 并集选择器 #box1,#box2
   
+
+####CSS3新增选择器
+
+  * 属性选择器
   
+   * 语法：
+     
+     标志性符号:[]
+	^:开头  $:结尾  *:包含
+```css
+ E[title]:选中页面的E元素,并且需要带有title属性
+ E[title="abc"]:选中页面E的元素,并且E需要带有title属性,属性值为abc
+ E[title^="abc"]:选中页面E的元素,并且E需要带有title属性,属性值为abc开头
+ E[title$="abc"]:选中页面E的元素,并且E需要带有title属性,属性值为abc结尾
+ E[title*="abc"]:选中页面E的元素,并且E需要带有title属性,属性值为包含abc
+```	
+   
   
 ####CSS样式类型
 
