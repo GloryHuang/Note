@@ -1,11 +1,48 @@
-###margin和pading的百分比值
+###CSS常见问题
+
+####margin和pading的百分比值
 
     * margin和pading的百分比值参考的是父级元素的width。
     
-###文字超出部分省略
+####文字超出部分省略
 
 ```css
      overflow: hidden;
      text-overflow: ellipsis;
      white-space: nowrap;
  ```
+ 
+ 
+####子元素margin影响父元素解决办法
+
+ * overflow: hidden;
+ 
+ * border: 1px solid transparent;
+ 
+ * float: left;
+ 
+ * padding-top: 1px;
+ 
+ * position: absolute;
+
+  ![](/assets/margin.png)
+
+####inline-block之间空白间距问题的解决方法
+ 
+ * letter-spacing: -3px;
+ 
+ * word-spacing:-3px;
+ 
+ * 给父元素设置font-size:0;
+ 
+ * 标签结束处消除换行符，或者把换行符添加到标签内部。
+   
+   
+```html
+      <!--尽量不换行-->
+      <ul>
+        <li>1</l1><li>2</l1><li>2</l1>
+      </ul>
+ ```  
+    
+

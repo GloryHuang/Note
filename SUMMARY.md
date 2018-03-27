@@ -21,7 +21,6 @@
   * [如何解析JSON](如何解析json.md)
   * [事件委托](javascript.md)
   * [SEO搜索引擎优化](seosou-suo-yin-qing-you-hua.md)
-  * [CSS常见问题](csschang-jian-wen-ti.md)
 * [常见算法的JS实现](常见算法的js实现.md)
   * [常见算法的JS实现](常见算法的js实现.md)
 * [NodeJS模块化开发](nodejsmo-kuai-hua-kai-fa.md)
