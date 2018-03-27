@@ -56,16 +56,17 @@
 * 伪元素:
 
 ```css
-        通过css模拟出html效果
-	E::before
-	E::after  必须content属性
+      通过css模拟出html效果
+      E::before
+      E::after  必须content属性
 
 ```
 * 伪元素选择器:
+```css
 	E::first-letter 选中第一个字母
 	E::first-line选中第一行
 	E::selection:表示选择的区域 通过设置背景颜色和颜色
- 
+ ```
 ####CSS样式类型
 
 * 内联式(行内式)
