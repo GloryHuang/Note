@@ -61,7 +61,10 @@
 	E::after  必须content属性
 
 ```
- 
+* 伪元素选择器:
+	E::first-letter 选中第一个字母
+	E::first-line选中第一行
+	E::selection:表示选择的区域 通过设置背景颜色和颜色
  
 ####CSS样式类型
 
