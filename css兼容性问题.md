@@ -50,10 +50,8 @@
 ####inline-block
 
 ```css
-    display: inline-block;
-    /* ie6 \7 都不支持 inline-block*/
-    *display: inline;
-    /* 只有ie6和7 能识别的css设置*/
+    display: inline-block; /* ie6 \7 都不支持 inline-block*/
+    *display: inline;     /* 只有ie6和7 能识别的css设置*/
     zoom: 1;
 ```
 
