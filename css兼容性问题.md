@@ -25,7 +25,7 @@
     “\9\0″ 只对IE9/IE10生效，是IE9/10的hack
 ```
     
-####其他兼容
+####HTML5兼容
 
 ```css
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -46,4 +46,14 @@
  * filter: alpha(opacity=50);     IE678
  
   * 取值范围：  0-100
+
+####inline-block
+
+```css
+    display: inline-block;
+    /* ie6 \7 都不支持 inline-block*/
+    *display: inline;
+    /* 只有ie6和7 能识别的css设置*/
+    zoom: 1;
+```
 
