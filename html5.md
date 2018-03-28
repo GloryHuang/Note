@@ -229,9 +229,12 @@
 ####多媒体
 
  * 方法：
+ 
    * load() 加载、play() 播放、pause() 暂停
-   
+ 
+
  * 属性：
+ 
    * currentTime 视频播放的当前进度、
    * duration:视频的总时间
    * paused:视频播放的状态.
