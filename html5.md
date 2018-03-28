@@ -146,6 +146,7 @@
  * HTML5通过< audio>标签来解决音频播放的问题。
  
 ```html
+   <!--通过指src属性定视频文件的路径-->
   <audio src="music/yinyue.mp3"></audio>
 ``` 
 * 属性：
@@ -167,4 +168,12 @@
         <source src="music/yinyue.wav">
         抱歉,你的浏览器不支持音频标签!
     </audio>
+```
+####视频
+
+ * HTML5通过< video>标签来解决音频播放的问题。
+ 
+```html
+ <!--通过指src属性定视频文件的路径-->
+ <audio src="music/yinyue.mp3"></audio>
 ```
