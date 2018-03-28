@@ -102,6 +102,7 @@
  
  * oninput 用户输入内容时触发，可用于移动端输入字数统计
  * oninvalid 验证不通过时触发
+ 
 ```html
    <form action="">
         <fieldset>
@@ -117,7 +118,8 @@
             <input type="submit">
         </fieldset>
     </form>
-    <script>
+```    
+```js
     //表单事件: oninput 当用户输入的时候
     //oninvalid 当验证不通过的时候触发
     var txt1 = document.getElementById("txt1");
@@ -135,4 +137,5 @@
     txt1.oninvalid = function() {
     	this.setCustomValidity("亲,请输入正确的邮箱格式！");
     }
+    
 ``` 
