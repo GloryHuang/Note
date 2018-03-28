@@ -146,7 +146,7 @@
  * HTML5通过< audio>标签来解决音频播放的问题。
  
 ```html
-   <!--通过指src属性定视频文件的路径-->
+   <!--通过指src属性定音频文件的路径-->
   <audio src="music/yinyue.mp3"></audio>
 ``` 
 * 属性：
@@ -175,5 +175,25 @@
  
 ```html
  <!--通过指src属性定视频文件的路径-->
- <audio src="music/yinyue.mp3"></audio>
+ <video src="video/movie.mp4"></video>
+```
+ * 属性：
+ 
+  * autoplay 自动播放
+  * controls 是否显示默认播放控件
+  * loop 循环播放
+  * preload 预加载，同时设置了autoplay，此属性将失效
+  * width 设置播放窗口宽度
+  * height 设置播放窗口的高度
+  
+* 兼容处理
+   
+   ![](/assets/meida.png)
+
+```html
+    <video controls autoplay loop>
+        <source src="video/movie.mp4">
+        <source src="video/movie.ogg">
+        <source src="video/movie.webm"> 您的浏览器不支持HTML视频播放功能
+    </video>
 ```
