@@ -17,4 +17,4 @@
  * < figure> 表示媒介内容分组
  * < mark> 表示标记
  * < progress> 表示进度
- * < time> 
+ * < time> 表示日期
