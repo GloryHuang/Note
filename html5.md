@@ -5,6 +5,7 @@
  * < !DOCTYPE html>
  * 语义化标签
  * 表单类型、表单元素、表单属性、表单事件
+ * 多媒体
  * 
 
 
@@ -139,3 +140,18 @@
     }
     
 ``` 
+
+####音频
+
+ * HTML5通过< audio>标签来解决音频播放的问题。
+ 
+```html
+  <audio src="music/yinyue.mp3"></audio>
+``` 
+* 属性：
+
+ * autoplay 自动播放
+ * controls 是否显不默认播放控件
+ * loop 循环播放
+ * preload 预加载 同时设置autoplay时些属性失效
+
