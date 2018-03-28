@@ -14,3 +14,7 @@
  * < section> 表示区块
  * < article> 表示文章 如文章、评论、帖子、博客
  * < aside> 表示侧边栏 如文章的侧栏
+ * < figure> 表示媒介内容分组
+ * < mark> 表示标记
+ * < progress> 表示进度
+ * < time> 
