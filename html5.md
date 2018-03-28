@@ -310,3 +310,16 @@
     * 当获取地理信息失败后，会调用errorCallback，并返回错误信息error
     
     * 可选参数 options 对象可以调整位置信息数据收集方式
+    
+###Web存储
+
+* Storage 存储  
+   * window.sessionStorage
+   * window.localStorage
+ 
+ 
+* 特性：
+  * 设置、读取方便
+  * 容量较大，sessionStorage约5M、localStorage约20M
+  * 只能存储字符串，可以将对象JSON.stringify() 编码后存储
+
