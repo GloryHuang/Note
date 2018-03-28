@@ -39,11 +39,13 @@
  
 ###Rem计算
 
-* rem基准值的计算
+```js
+    //获取视窗宽度(Viewport)
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
 
- * 
- 
+    //获取视窗高度
+    let htmlDom = document.getElementsByTagName('html')[0];
 
-* rem数值计算与构建
-
-* rem与scss结合使用
+    //设置html的font-size
+    htmlDom.style.fontSize = htmlWidth / 10 + 'px';
+```
