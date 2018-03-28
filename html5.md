@@ -215,3 +215,12 @@
  * Node.classList.contains('class') 检测是否存在class
 
 ###自定义属性
+
+* 在HTML5中我们可以自定义属性，其格式如下data-*=""，例如data-info="我是自定义属性"，通过
+
+ Node.dataset['info'] 我们便可以获取到自定义的属性值。
+
+* Node.dataset是以类对象形式存在的当我们如下格式设置时，则需要以驼峰格式才能正确获取
+
+ data-my-name="itcast"，获取Node.dataset['myName']
+
