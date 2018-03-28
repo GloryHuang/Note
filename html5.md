@@ -84,6 +84,16 @@
 ``` 
  * < progress>< /progress> 进度条
 
+####表单属性
+
+ * placeholder 占位符
+ * autofocus 获取焦点
+ * multiple 文件上传多选或多个邮箱地址  
+ * autocomplete 自动完成，用于表单元素，也可用于表单自身(on/off)
+ * form 指定表单项属于哪个form，处理复杂表单时会需要
+ * novalidate 关闭验证，可用于< form>标签
+ * required 必填项
+ * pattern 正则表达式 验证表单
 
 
  
