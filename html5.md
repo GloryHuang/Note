@@ -355,3 +355,24 @@
   * 减少请求，缓解服务器负担
 
 ####缓存清单
+
+ * 一个普通文本文件，其中列出了浏览器应缓存以供离线访问的资源，推荐使用.appcache为后缀名，添加MIME类型
+  
+   AddType text/cache-manifest .appcache 
+   
+   * 例如我们创建了一个名为demo.appcache的文件，然后在需要应用缓存在页面的根元素(html)添加属性manifest="demo.appcache"，路径要保证正确
+   
+   
+####manifest文件格式
+
+* 顶行写CACHE MANIFEST
+* CACHE: 换行 指定我们需要缓存的静态资源，如.css、image、js等
+* NETWORK: 换行 指定需要在线访问的资源，可使用通配符
+* FALLBACK: 当前页面无法访问时退回的页面(回退;  后退)
+* 换行 当被缓存的文件找不到时的备用资源 
+
+
+
+####Font Awesome 字体框架
+
+ * Font Awesome为您提供可缩放的矢量图标，可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果 
