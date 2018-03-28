@@ -155,3 +155,16 @@
  * loop 循环播放
  * preload 预加载 同时设置autoplay时些属性失效
 
+
+* 兼容处理： 
+ ![](/assets/audio.png)
+ 
+ 
+```html
+    <audio controls loop>
+        <source src="music/yinyue.mp3">
+        <source src="music/yinyue.ogg">
+        <source src="music/yinyue.wav">
+        抱歉,你的浏览器不支持音频标签!
+    </audio>
+```
