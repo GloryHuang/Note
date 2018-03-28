@@ -42,6 +42,7 @@
     * [如何阻止事件冒泡和默认事件](ru-he-zu-zhi-shi-jian-mao-pao-he-mo-ren-shi-jian.md)
 * [HTML](html.md)
   * [meta](meta.md)
+  * [HTML5](html5.md)
 * [CSS](css.md)
   * [CSS常见问题](margin和panding的百分比设置.md)
   * [居中布局](div元素水平居中的方法.md)
