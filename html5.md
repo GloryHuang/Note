@@ -82,7 +82,8 @@
 ```html
 <meter value="81" min="0" max="100" low="60" height="80"/>
 ``` 
- * < progress></progress>
+ * < progress>< /progress> 进度条
+
 
 
  
