@@ -94,6 +94,45 @@
  * novalidate 关闭验证，可用于< form>标签
  * required 必填项
  * pattern 正则表达式 验证表单
-
-
+ ```html
+ //验证手机号
+ <input type="tel" name="tel" required="required"  pattern="^(\+86)?1[3,5,8](\d{9})$">
+ ```
+####表单事件
  
+ * oninput 用户输入内容时触发，可用于移动端输入字数统计
+ * oninvalid 验证不通过时触发
+```html
+   <form action="">
+        <fieldset>
+            <label for="">
+                <legend>表单事件</legend>
+                邮箱:
+                <input type="email" name="" id="txt1">
+            </label>
+            <label for="">
+                用户名:
+                <input type="text" name="" id="txt2">
+            </label>
+            <input type="submit">
+        </fieldset>
+    </form>
+    <script>
+    //表单事件: oninput 当用户输入的时候
+    //oninvalid 当验证不通过的时候触发
+    var txt1 = document.getElementById("txt1");
+    var txt2 = document.getElementById("txt2");
+    var num = 0;
+    txt1.oninput = function() {
+        num++;
+        //将字数显示在txt2中
+        txt2.value = num;
+    }
+
+
+    //oninvalid 当验证不通过的时候触发
+    //一般用于页面不通过时的 设置提示文字
+    txt1.oninvalid = function() {
+    	this.setCustomValidity("亲,请输入正确的邮箱格式！");
+    }
+``` 
