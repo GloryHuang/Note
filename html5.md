@@ -1,7 +1,11 @@
 ###HTML5
 
-* < !DOCTYPE html>
-* 语义化标签
+* HTML5新增特性
+
+ * < !DOCTYPE html>
+ * 语义化标签
+ * 表单类型、表单元素、表单属性、表单事件
+ * 
 
 
 
@@ -34,4 +38,51 @@
         <script src="html5shiv.min.js"></script>
     <![endif]-->
 ```
+ 
+###表单
+
+####表单类型
+ 
+ * email 输入email格式
+ * tel 手机号码  
+ * url 只能输入url格式
+ * number 只能输入数字
+ * range 范围 滑动条
+ * color 拾色器
+ * time	时间
+ * date 日期 不是绝对的
+ * datetime 时间日期
+ * month 月份
+ * week 星期
+ * search 搜索框
+ 
+
+* 部分类型是针对移动设备生效的，且具有一定的兼容性，在实际应用当中可选择性的使用。
+
+####表单元素（标签）
+
+ * < datalist> 数据列表 与input 配合使用(会根据输入的内容进行匹配)
+
+```html
+ <input type=”text” list=”data”>
+    <datalist id=”data”>
+       <option>男</option>
+       <option>女</option>
+      <option>不详</option> 
+    </datalist>
+```
+ * < keygen>  生成加密字符串
+ 
+  *  keygen 元素的作用是提供一种验证用户的可靠方法。 
+  *  keygen 元素是密钥对生成器(key-pair generator),当提交表单时,会生成两个键,一个是私钥，一个公钥。 
+  *  私钥（private key）存储于客户端，公钥（public key）则被发送到服务器。公钥可用于之后验证用户的客户端证书（client certificate）。
+  
+ * < output>   输出 不可当做数据提交
+ * < meter>   表示度量器，不建议用作进度条
+```html
+<meter value="81" min="0" max="100" low="60" height="80"/>
+``` 
+ * < progress></progress>
+
+
  
