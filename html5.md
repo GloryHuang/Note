@@ -331,3 +331,6 @@
 ####网络状态
 
  * 通过window.onLine来检测，用户当前的网络状况，返回一个布尔值
+ 
+  *  window.online用户网络连接时被调用
+  *  window.offline用户网络断开时被调用
