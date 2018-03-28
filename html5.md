@@ -371,7 +371,7 @@
 * FALLBACK: 当前页面无法访问时退回的页面(回退;  后退)
 * 换行 当被缓存的文件找不到时的备用资源 
 
-
+ ![](/assets/mainset.png)
 
 ####Font Awesome 字体框架
 
