@@ -6,8 +6,8 @@
  * 语义化标签
  * 表单类型、表单元素、表单属性、表单事件
  * 多媒体
- * 
-
+ * DOM扩展
+ * 自定义属性
 
 
 
@@ -140,6 +140,7 @@
     }
     
 ``` 
+###多媒体
 
 ####音频
 
@@ -197,3 +198,20 @@
         <source src="video/movie.webm"> 您的浏览器不支持HTML视频播放功能
     </video>
 ```
+
+###DOM扩展
+
+####获取元素
+
+ * document.getElementsByClassName ('class') 通过类名获取元素，以类数组形式存在
+ * document.querySelector(‘div’) 通过CSS选择器获取元素，符合匹配条件的第1个元素
+ * document.querySelectorAll('selector') 通过CSS选择器获取元素，以类数组形式存在
+
+####类名操作
+
+ * Node.classList.add('class') 添加class
+ * Node.classList.remove('class') 移除class
+ * Node.classList.toggle('class') 切换class，有则移除，无则添加
+ * Node.classList.contains('class') 检测是否存在class
+
+###自定义属性
