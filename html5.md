@@ -333,4 +333,14 @@
  * 通过window.onLine来检测，用户当前的网络状况，返回一个布尔值
  
   *  window.online用户网络连接时被调用
-  *  window.offline用户网络断开时被调用
+  *  window.offline用户网络断开时被调用 
+  
+```js
+   window.addEventListener("online", function() {
+        alert("网络已连接!");
+    })
+    window.addEventListener("offline", function() {
+        alert("网络已断开!");
+    })
+```
+  
