@@ -9,6 +9,7 @@
  * DOM扩展
  * 自定义属性
  * 地理定位
+ * Web存储
 
 
 
@@ -281,3 +282,31 @@
 
 ###地理定位 
  
+ * 在HTML规范中，增加了获取用户地理信息的API，这样使得我们可以基于用户位置开发互联网应用，即基于位置服务 (Location Base Service)
+
+####获取地理信息方式
+
+ * IP地址
+ 
+ * 三维坐标 GPS Wi-Fi 手机信号
+ 
+ * 用户自定义数据
+ 
+  ![](/assets/local.png)
+  
+####隐私
+ 
+ * HTML5 Geolocation(地理位置定位) 规范提供了一套保护用户隐私的机制。必须先得到用户明确许可，才能获取用户的位置信息。
+ 
+####API详解
+ 
+ * navigator.getCurrentPosition(successCallback, errorCallback, options) 获取当前地理信息
+ * navigator.watchPosition(successCallback, errorCallback, options) 重复获取当前地理信息
+  
+  * 当成功获取地理信息后，会调用succssCallback，并返回一个包含位置信息的对象position  
+  
+    * Coords(坐标) position.coords.latitude纬度 position.coords.longitude经度
+  
+    * 当获取地理信息失败后，会调用errorCallback，并返回错误信息error
+    
+    * 可选参数 options 对象可以调整位置信息数据收集方式
