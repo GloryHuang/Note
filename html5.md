@@ -238,3 +238,24 @@
    * currentTime 视频播放的当前进度、
    * duration:视频的总时间
    * paused:视频播放的状态.
+   
+   
+ * 事件：
+ 
+  * oncanplay: 事件在用户可以开始播放视频/音频（audio/video）时触发。
+  * ontimeupdate:通过该事件来报告当前的播放进度.
+  * onended:播放完时触发
+  
+ * 全屏：
+ 
+  * video.webkitRequestFullScreen();
+  
+####拖拽
+
+ * 在HTML5的规范中，可以通过为元素增加draggable="true"来设置此元素是否可以进行拖拽操作，其中图片、链接默认是开启的。
+ 
+####拖拽元素
+
+ * 页面中设置了draggable="true"属性的元素
+
+####目标元素
