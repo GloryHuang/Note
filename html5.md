@@ -323,3 +323,6 @@
   * 容量较大，sessionStorage约5M、localStorage约20M
   * 只能存储字符串，可以将对象JSON.stringify() 编码后存储
 
+* 其他：
+  
+  * WebSQL已经被w3c 放弃了  IndexDB
