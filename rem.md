@@ -43,7 +43,7 @@
     //获取视窗宽度(Viewport)
     let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
 
-    //获取视窗高度
+    //获取html的DOM
     let htmlDom = document.getElementsByTagName('html')[0];
 
     //设置html的font-size
