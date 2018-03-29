@@ -298,7 +298,7 @@ var App=angular.module('App',{});
     ```
   
   
-   ```js
+     ```js
     App.controller('MyController', ['$scope', function($scope) {
         $scope.start = [{
             name: '张三',
@@ -317,4 +317,4 @@ var App=angular.module('App',{});
         $scope.items = ['Html', 'CSS', 'JavaScript','CSS1'];
     }])
 
-  ```
+    ```
