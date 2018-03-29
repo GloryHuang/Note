@@ -234,3 +234,44 @@ var App=angular.module('App',{});
     }])
     </script>
    ```
+   
+* ng-事件名
+
+   * AngularJS对事件也进行了扩展，无需显式的获取DOM元素便可以添加事件，易用性变的更强。通过在原有事件名称基础上添加ng-做为前缀，然后以属性的形式添加到相应的HTML标签上即可。如ng-click、ng-dblclick、ng-blur等   
+   
+   ```html
+     <div ng-controller="MyController">
+        <ul>
+            <li ng-click="click()">这里是ng-click事件</li>
+            <li ng-dblclick="dbclick()">这里是dbclick事件</li>
+            <li>
+                <input type="text" value="Hello World!" ng-focus="focus()">
+            </li>
+        </ul>
+        <div class="box" ng-mouseenter="enter()" ng-mouseleave="leav()">
+        </div>
+    </div>
+   ```
+   
+   ```js
+   var　 app = angular.module('MyApp', []);
+
+app.controller('MyController', ['$scope', function($scope) {
+    $scope.click = function() {
+        alert('这里是ng-click事件');
+    }
+    $scope.dbclick = function() {
+        alert('这里是dbclick事件');
+    }
+    $scope.focus = function() {
+        alert('这里是fouce事件');
+    }
+
+    $scope.enter = function() {
+        console.log('鼠标移入!')
+    }
+    $scope.leav = function() {
+      console.log('鼠标移出!')
+    }
+}]);
+   ```
