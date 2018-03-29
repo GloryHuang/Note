@@ -318,3 +318,19 @@ var App=angular.module('App',{});
     }])
 
     ```
+    
+###作用域
+
+ * 通常AngularJS中应用（App）是由若干个视图（View）组合成而成的，而视图（View）又都是HTML元素，并且HTML元素是可以互相嵌套的，另一方面视图都隶属于某个控制器（Controller），进而控制器之间也必然会产生嵌套关系。
+ * 每个控制器（Controller）又都对应一个模型（Model）也就是$scope对象，不同层级控制器（Controller）下的$scope便产生了作用域。
+
+####根作用域
+
+ * 一个AngularJS的应用（App）在启动时会自动创建一个根作用域$rootScope，这个根作用域在整个应用范围（ng-app所在标签以内）都是可以被访问到的。
+ 
+ ```html
+ <!--指定一个普通的DIV为应用的根元素,这个根元素对应的便是$rootScope-->
+ <!--通过ng-init为$rootScope添加数据-->
+ <div ng-arr="App" ng-init=name="zhangsang;age=10">
+      <span>{{age}}{{name}}
+ ```
