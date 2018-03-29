@@ -332,5 +332,8 @@ var App=angular.module('App',{});
  <!--指定一个普通的DIV为应用的根元素,这个根元素对应的便是$rootScope-->
  <!--通过ng-init为$rootScope添加数据-->
  <div ng-arr="App" ng-init=name="zhangsang;age=10">
-      <span>{{age}}{{name}}
+      <span>{{age}}{{name}}</span>
  ```
+ 
+ ####子作用域
+ 
