@@ -147,3 +147,4 @@ var App=angular.module('App',{});
     });
  
  ```
+###数据绑定
