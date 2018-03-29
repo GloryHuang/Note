@@ -433,3 +433,22 @@ var App=angular.module('App',{});
     });
 
   ``` 
+  #####这种方式会带来一个问题，当代码经过压缩后函数的参数被压缩，这样便会造成依赖无法找到。
+  
+* 行内注入  
+
+ * 以数组形式明确声明依赖，数组元素都是包含依赖名称的字符串，数组最后一个元素是依赖注入的目标函数。
+ 
+   ```js
+    //控制器依赖$http、$rootScope服务
+    //以数组形式进行声明,注意书写顺序
+    App.controller('DemoController',['$http','$rootScope',function($http,$rootScope)
+      {
+        //发送Ajax请求
+        $http({
+           method:'POST',
+           url:'example.php',
+           data{}
+       });
+    }]);
+   ```
