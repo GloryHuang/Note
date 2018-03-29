@@ -214,7 +214,7 @@ var App=angular.module('App',{});
 
  * 通过ng-init可以初始化模型（Model）也就是$scope。
  
-  ```html
+   ```html
       <div ng-controller="MyAppController">
         <div ng-init="msg='Hello World!';
         age=10;sex='Man'" ng-cloak>
@@ -233,4 +233,4 @@ var App=angular.module('App',{});
         $scope.age = "woman";
     }])
     </script>
-  ```
+   ```
