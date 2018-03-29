@@ -274,3 +274,47 @@ var App=angular.module('App',{});
                   }
       }]);
    ```
+   
+* ng-repeat
+ 
+  * 通过ng-repeat可以将数组或对象数据迭代到视图模板中，ng-switch、on、ng-switch-when可以对数据进行筛选。
+  
+     ```html
+    <body ng-app="MyApp">
+    <div ng-controller="MyController">
+        <ul ng-repeat="starts in start">
+            <li>{{starts.name}}</li>
+            <li>{{starts.age}}</li>
+            <li>{{starts.gender}}</li>
+        </ul>
+        <ul>
+            <li ng-repeat="item in items" ng-switch on="item">
+                <span ng-switch-when="CSS">{{item}}</span>
+            </li>
+        </ul>
+    </div>
+  
+    </body>
+    ```
+  
+  
+   ```js
+    App.controller('MyController', ['$scope', function($scope) {
+        $scope.start = [{
+            name: '张三',
+            age: 18,
+            gender: 'Man'
+        }, {
+            name: '李四',
+            age: 19,
+            gender: 'Woman'
+        }, {
+            name: '王老五',
+            age: 20,
+            gender: 'Man'
+        }, ];
+
+        $scope.items = ['Html', 'CSS', 'JavaScript','CSS1'];
+    }])
+
+  ```
