@@ -147,4 +147,90 @@ var App=angular.module('App',{});
     });
  
  ```
+ 
 ###数据绑定
+
+ * AngularJS是以数据做为驱动的MVC框架，所有模型（Model）里的数据经由控制器（Controller）展示到视图（View）中。
+
+ * 所谓数据绑定指的就是将模型（Model）中的数据与相应的视图（View）进行关联，分为**单向绑定**和**双向绑定**两种方式。
+
+####单向绑定
+
+ * 单向数据绑定是指将模型（Model）数据，按着写好的视图（View）模板生成HTML标签，然后追加到DOM中显示
+ 
+  ![](/assets/one-way Data Binding.png)
+  
+####双向绑定
+
+ * 双向绑定则可以实现模型（Model）数据和视图（View）模板的双向传递
+ 
+ ![](/assets/Two Way  Data Binding.png)
+  
+####相关指令
+
+* 在AngularJS中通过“{ { } }”和ng-bind指令来实现模型（Model）数据向视图模板（View）的绑定，模型数据通过一个内置服务$scope来提供，这个$scope是一个空对象，通过为这个对象添加属性或者方法便可以在相应的视图(View)模板里被访问。
+
+* ng-cloak
+
+ * 注：“{ { } }”是ng-bind的简写形式，其区别在于通过“{ { } }”绑定数据时会有“闪烁”现象，添加ng-cloak也可以解决“闪烁”现象，通过ng-bind-template可以绑定多个数据。
+
+   ```html
+    <ul ng-controller="DemoController">
+        <li ng-bind="name"></li>
+        <li ng-cloak>{{name}}{{age}}</li>
+        <li ng-bind-template="{{name}}{{age}}"></li>
+    </ul>
+ 
+   ```
+
+* ng-model
+ 
+ * 通过为表单元素添加ng-model指令实现视图（View）模板向模型（Model）数据的绑定。
+ 
+   ```html
+   <div ng-controller="MyController">
+        <!-- 要实现数据从视图向模型传递需要借助于表单元素 -->
+        <input type="text" ng-model="msg">
+        <button ng-click="show()">显示</button>
+        <div>{{msg}}</div>
+        ng-bind:<span ng-bind="msg"></span>
+    </div>
+    <script src="lib/angular.min.js"></script>
+   ```
+   ```js
+    var app = angular.module('App', []);
+
+    app.controller('MyController', ['$scope', function($scope) {
+
+        //$scope Model
+        $scope.show = function() {
+            alert($scope.msg);
+        }
+    }])
+   
+   ```
+   
+* ng-init
+
+ * 通过ng-init可以初始化模型（Model）也就是$scope。
+ 
+  ```html
+      <div ng-controller="MyAppController">
+        <div ng-init="msg='Hello World!';
+        age=10;sex='Man'" ng-cloak>
+            <h1>{{msg}}</h1>
+            <h1>{{age}}</h1>
+            <h1>{{sex}}</h1>
+        </div>
+    </div>
+   ```
+   ```js
+    var app = angular.module('App', []);
+    app.controller('MyAppController', ['$scope', function($scope) {
+        // $scope.msg = "";
+        $scope.msg = "new World";
+        $scope.age = "12";
+        $scope.age = "woman";
+    }])
+    </script>
+  ```
