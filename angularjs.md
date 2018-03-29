@@ -72,3 +72,9 @@ var App=angular.module('App',{});
           ];
  }])
  ```
+ 
+ * 模型（Model）数据是要展示到视图（View）上的，所以需要将控制器（Controller）关联到视图（View）上，通过为HTML标签添加ng-controller属性并赋值相应的控制器（Controller）的名称，就确立了关联关系。
+ 
+ ```js
+ 
+ ```
