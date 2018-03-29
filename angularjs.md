@@ -407,3 +407,29 @@ var App=angular.module('App',{});
     });
   
  ```
+ 
+###依赖注入
+
+* AngularJS采用模块化的方式组织代码，将一些通用逻辑封装成一个对象或函数，实现最大程度的复用，这导致了使用   者和被使用者之间存在依赖关系。 
+
+* 所谓依赖注入是指在运行时自动查找依赖关系，然后将查找到依赖传递给使用者的一种机制。
+
+* 常见的AngularJS内置服务有$http、$location、$timeout、$rootScope等
+
+####推断式注入
+
+* 没有明确声明依赖，AngularJS会将函数参数名称当成是依赖的名称。
+
+  ```js
+     //控制器依赖$http、$rootScope服务
+    //但并未明确声明依赖,这时会自动将函数里的参数名当成依赖对待
+    App.controller('DemoController',function($http,$rootScope){
+        //发送Ajax请求
+       $http({
+            method:'POST',
+            url:'example.php',
+            data{}
+        });
+    });
+
+  ``` 
