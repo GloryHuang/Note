@@ -64,7 +64,7 @@ var App=angular.module('App',{});
  //其余都是字符串
  app.controller('StudentController',[$scope,function($scope){
           //模型(Model)
-          $scope=[
+          $scope.stus=[
              {name:'张三',sex:'男',age:20},
              {name:'李四',sex:'男',age:20}，
              {name:'王五',sex:'男',age:20}，
@@ -74,7 +74,22 @@ var App=angular.module('App',{});
  ```
  
  * 模型（Model）数据是要展示到视图（View）上的，所以需要将控制器（Controller）关联到视图（View）上，通过为HTML标签添加ng-controller属性并赋值相应的控制器（Controller）的名称，就确立了关联关系。
- 
- ```js
- 
- ```
+
+```js
+        <table ng-controller="StudentController">
+		<thead>
+			<tr>
+				<th>姓名</th>
+				<th>性别</th>
+				<th>年龄</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="stu in stus">
+				<td>{{stu .name}}</td>
+				<td>{{stu .sex}}</td>
+				<td>{{stu .age}}</td>
+			</tr>
+		</tbody>
+	</table>
+```
