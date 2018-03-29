@@ -377,9 +377,9 @@ var App=angular.module('App',{});
  ```
  
  ```js
-     var App = angular.module('MyApp', []);
+    var App = angular.module('MyApp', []);
       //自定义控制器
-                   App.controller('MyFilterController', ['$scope', function($scope) {
+    App.controller('MyFilterController', ['$scope', function($scope) {
     $scope.name = "xiaoming";
     $scope.info = "my name is ";
     }]);
