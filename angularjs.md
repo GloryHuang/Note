@@ -41,3 +41,6 @@ AngularJS特性：
 <!--ng-app属性都不可以赋值,但是要关联相应模块时必须赋值-->
 <html lang="en" ng-app="App">
 ```
+
+####定义模块
+ * AngularJS提供了一个全局对象angular，在此全局对象下存在若干的方法，其中angular.module()方法用来定义一个模块。
