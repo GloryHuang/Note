@@ -256,22 +256,21 @@ var App=angular.module('App',{});
    ```js
    var　 app = angular.module('MyApp', []);
 
-app.controller('MyController', ['$scope', function($scope) {
-    $scope.click = function() {
-        alert('这里是ng-click事件');
-    }
-    $scope.dbclick = function() {
-        alert('这里是dbclick事件');
-    }
-    $scope.focus = function() {
-        alert('这里是fouce事件');
-    }
-
-    $scope.enter = function() {
-        console.log('鼠标移入!')
-    }
-    $scope.leav = function() {
-      console.log('鼠标移出!')
-    }
-}]);
+   app.controller('MyController', ['$scope', function($scope) {
+             $scope.click = function() {
+                    alert('这里是ng-click事件');
+                  }
+            $scope.dbclick = function() {
+                    alert('这里是dbclick事件');
+                  }
+            $scope.focus = function() {
+                    alert('这里是fouce事件');
+                  }
+            $scope.enter = function() {
+                    console.log('鼠标移入!')
+                  }
+            $scope.leav = function() {
+                    console.log('鼠标移出!')
+                  }
+      }]);
    ```
