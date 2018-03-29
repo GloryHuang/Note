@@ -39,5 +39,5 @@ AngularJS特性：
 ```js
 <!--为html标签添加ng-app表明整个文档都是应用-->
 <!--ng-app属性都不可以赋值,但是要关联相应模块时必须赋值-->
-
+<html lang="en" ng-app="App">
 ```
