@@ -116,3 +116,30 @@ var App=angular.module('App',{});
 * ng-readonly表单只读
 * ng-checked单/复选框表单选中
 * ng-selected下拉框表单选中
+
+####自定义指令
+ 
+ * AngularJS允许根据实际业务需要自定义指令，通过angular全局对象下的directive方法实现。
+ 
+ ```js
+  var App = angular.module('App', []);
+
+    //通过模块实例化对象的directive方法可以自定义指令
+    App.directive('tag', function() {
+
+        //返回一个对象,这个对象就是自定义指令相关内容
+        return {
+            //自定义指令的类型 E、A、C、M
+            //E element
+            //A attribute
+            //C class
+            //M mark replace 必须为true
+
+            restrict: 'ECMA', //E 可做标签使用 A 可做属性使用 C 可做类使用
+            //template:'<ul><li>首页</li><li>列表</li></ul>',
+            templateUrl: 'list.html',
+            replace:true
+        }
+    });
+ 
+ ```
