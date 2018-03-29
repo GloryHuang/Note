@@ -335,5 +335,75 @@ var App=angular.module('App',{});
       <span>{{age}}{{name}}</span>
  ```
  
- ####子作用域
+####子作用域
+
+ * 通过ng-controller指令可以创建一个子作用域，新建的作用域可以访问其父作用域的数据。
  
+
+###过滤器
+
+ *  在AngularJS中使用过滤器格式化展示数据，在“{ { } }”中使用“|”来调用过滤器，使用“:”传递参数
+ 
+####内置过滤器
+
+* currency将数值格式化为货币格式
+
+* date日期格式化,年(y)、月(M)、日(d)、星期(EEEE/EEE)、时(H/h)、分(m)、秒(s)、毫秒(.sss)也可以组合一起使用。
+
+* filter在给定数组中选择满足条件的一个子集，并返回一个新数组，其条件可以是一个字符串、对象、函数
+
+* json将Javascrip对象转成JSON字符串。
+
+* limitTo取出字符串或数组的前（正数）几位或后（负数）几位
+
+* lowercase将文本转换成小写格式
+
+* uppercase将文本转换成大写格式
+
+* number数字格式化，可控制小位位数
+
+* orderBy对数组进行排序，第2个参数可控制方向
+
+####自定义过滤器
+
+* 除了使用AngularJS内建过滤器外，还可以根业务需要自定义过滤器，通过模块对象实例提供的filter方法自定义过滤器。
+ 
+ ```html
+  <body ng-app="MyApp">
+    <div ng-controller="MyFilterController">
+        <h1>{{info|Capitalize}}{{name}}</h1>
+    </div>
+ </body>
+ ```
+ 
+ ```js
+ var App = angular.module('MyApp', []);
+//自定义控制器
+App.controller('MyFilterController', ['$scope', function($scope) {
+    $scope.name = "xiaoming";
+    $scope.info = "my name is ";
+}]);
+//自定义指令
+App.directive('name', function() {
+    return {
+        //
+    }
+});
+//自定义过滤器
+App.filter('MyFilter', function() {
+    //
+    return function(input) {
+        console.log('Hello' + input);
+
+        return 'Hello ' + input;
+    }
+});
+
+App.filter('Capitalize', function() {
+
+    return function(input) {
+        return input[0].toUpperCase() + input.slice(1);
+    }
+});
+ 
+ ```
