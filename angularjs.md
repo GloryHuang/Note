@@ -378,32 +378,32 @@ var App=angular.module('App',{});
  
  ```js
      var App = angular.module('MyApp', []);
-    //自定义控制器
-App.controller('MyFilterController', ['$scope', function($scope) {
+      //自定义控制器
+                   App.controller('MyFilterController', ['$scope', function($scope) {
     $scope.name = "xiaoming";
     $scope.info = "my name is ";
-}]);
-//自定义指令
-App.directive('name', function() {
-    return {
-        //
-    }
-});
-//自定义过滤器
-App.filter('MyFilter', function() {
+    }]);
+     //自定义指令
+     App.directive('name', function() {
+         return {
+           //
+      }
+    });
+     //自定义过滤器
+    App.filter('MyFilter', function() {
     //
     return function(input) {
         console.log('Hello' + input);
 
-        return 'Hello ' + input;
-    }
-});
+             return 'Hello ' + input;
+      }
+    });
 
-App.filter('Capitalize', function() {
+    App.filter('Capitalize', function() {
 
-    return function(input) {
-        return input[0].toUpperCase() + input.slice(1);
-    }
-});
- 
+       return function(input) {
+            return input[0].toUpperCase() + input.slice(1);
+      }
+    });
+  
  ```
