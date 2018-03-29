@@ -129,15 +129,19 @@ var App=angular.module('App',{});
 
         //返回一个对象,这个对象就是自定义指令相关内容
         return {
+        
             //自定义指令的类型 E、A、C、M
             //E element
             //A attribute
             //C class
             //M mark replace 必须为true
-
             restrict: 'ECMA', //E 可做标签使用 A 可做属性使用 C 可做类使用
+            
+            //指令模板
             //template:'<ul><li>首页</li><li>列表</li></ul>',
             templateUrl: 'list.html',
+            
+            //是否替换原有标签
             replace:true
         }
     });
