@@ -36,7 +36,7 @@ AngularJS特性：
 
 ####定义方式
 
-```js
+ ```js
 <!--为html标签添加ng-app表明整个文档都是应用-->
 <!--ng-app属性都不可以赋值,但是要关联相应模块时必须赋值-->
 <html lang="en" ng-app="App">
@@ -45,9 +45,30 @@ AngularJS特性：
 ####定义模块
  * AngularJS提供了一个全局对象angular，在此全局对象下存在若干的方法，其中angular.module()方法用来定义一个模块。
  
-```js
+ ```js
 //通过module方法定义模块
 //需要传递两个参数,第1个表示模块的名称
 //第2个表示此模块依赖的其它模块
 var App=angular.module('App',{});
 ```
+
+####定义控制器
+
+ * 控制器（Controller）作为连接模型（Model）和视图（View）的桥梁存在，所以当我们定义好了控制器以后也就定义好了模型和视图。
+ 
+ ```js
+ //APP是一个模块实例对象
+ //通过这个实例对象定义控制器
+ //需要两个参数,第1个参数表示控制器名称
+ //第2个参数是一个数组,这个数组除最后1个单元是函数外
+ //其余都是字符串
+ app.controller('StudentController',[$scope,function($scope){
+          //模型(Model)
+          $scope=[
+             {name:'张三',sex:'男',age:20},
+             {name:'李四',sex:'男',age:20}，
+             {name:'王五',sex:'男',age:20}，
+             {name:'赵四',sex:'男',age:20}
+          ];
+ }])
+ ```
