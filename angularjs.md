@@ -44,3 +44,10 @@ AngularJS特性：
 
 ####定义模块
  * AngularJS提供了一个全局对象angular，在此全局对象下存在若干的方法，其中angular.module()方法用来定义一个模块。
+ 
+```js
+//通过module方法定义模块
+//需要传递两个参数,第1个表示模块的名称
+//第2个表示此模块依赖的其它模块
+var App=angular.module('App',{});
+```
