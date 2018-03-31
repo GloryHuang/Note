@@ -517,3 +517,65 @@ var App=angular.module('App',{});
     ]);
 
 ```
+
+* $filter在控制器中格式化数据
+
+```js
+
+    //使用过滤器服务
+    App.controller('DemoController', ['$scope', '$filter', function($scope, $filter) {
+
+    //原始信息
+    $scope.content = 'My name is xiaoming';
+
+    //创建过滤器
+    var uppercase = $filter('uppercase');
+
+    //格式化数据
+    $scope.content = uppercase($scope.content);
+
+ }]);
+
+
+```
+
+* $log打印调试信息
+
+```js
+  App.controller('MyController', ['$log', function($log) {
+    $log.info('普通信息!');
+    $log.warn('警告信息!');
+    $log.error('错误信息!');
+    $log.log('打印信息!');
+    $log.debug('调试信息!');
+}])
+
+```
+
+* $http用于向服务端发起异步请求。
+  
+  * $http.get()、$http.post()、$http.jsonp
+  
+  ```js
+  //使用$http服务
+App.controller('DemoController', ['$scope', '$http', function($scope, $http) {
+
+    //发起异步请求
+    $http({
+        method: 'post', //请求方式
+        url: './example.php', //请求地址
+        data: { name: 'zhangsang', age: 10 }, //请求主体
+        headers: {
+            //请求头信息
+            'Content-Type': 'application/x-www-form-urlencoded'
+
+        }
+    }).success(function(data, status, headers, config) {
+        // success code
+    }).error(function(data, status, headers, config) {
+        //失败回调
+    });
+}]);
+  
+  ```
+
