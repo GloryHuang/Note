@@ -462,7 +462,6 @@ var App=angular.module('App',{});
  * $location是对原生Javascript中location对象属性和方法的封装
  
 ```js
- 
         // $location内置对象
         var App = angular.module('App', []);
     
@@ -498,10 +497,11 @@ var App=angular.module('App',{});
         });
  
  
-  ```
+    ```
+    
 * $timeout&$interval对原生Javascript中的setTimeout和setInterval进行了封装。
 
-```js
+ ```js
  
     app.controller('MyController', ['$scope','$timeout', '$interval',function($scope, $timeout, $interval) {
     
@@ -516,11 +516,11 @@ var App=angular.module('App',{});
       }
     ]);
 
-```
+ ```
 
 * $filter在控制器中格式化数据
 
-```js
+  ```js
 
     //使用过滤器服务
     App.controller('DemoController', ['$scope', '$filter', function($scope, $filter) {
@@ -537,11 +537,11 @@ var App=angular.module('App',{});
  }]);
 
 
-```
+  ```
 
 * $log打印调试信息
 
-```js
+  ```js
   App.controller('MyController', ['$log', function($log) {
     $log.info('普通信息!');
     $log.warn('警告信息!');
@@ -550,7 +550,7 @@ var App=angular.module('App',{});
     $log.debug('调试信息!');
 }])
 
-```
+  ```
 
 * $http用于向服务端发起异步请求。
   
@@ -578,4 +578,5 @@ App.controller('DemoController', ['$scope', '$http', function($scope, $http) {
 }]);
   
   ```
-
+  
+####自定义服务
