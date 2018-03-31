@@ -629,6 +629,27 @@ App.controller('DemoController', ['$scope', '$http', function($scope, $http) {
 
     }])
 ```
+####value方法定义常量
 
-* value方法定义常量
+```js
+ 
+    //本质上是一个服务
+    //从表现形式上是一个常量
+    //常量就是不变的值与变对量相对应
 
+    //声明依赖调用服务
+    App.controller('MyController', ['$scope',
+        'author', 'version',
+        function($scope, author, version) {
+
+            $scope.author = author;
+            $scope.version = version;
+        }
+    ]);
+
+
+
+    App.value('author', 'G1ory');
+    App.value('version', '1.0');
+
+```
