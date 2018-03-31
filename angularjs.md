@@ -520,7 +520,7 @@ var App=angular.module('App',{});
 
 * $filter在控制器中格式化数据
 
-  ```js
+```js
 
     //使用过滤器服务
     App.controller('DemoController', ['$scope', '$filter', function($scope, $filter) {
@@ -579,4 +579,56 @@ App.controller('DemoController', ['$scope', '$http', function($scope, $http) {
   
   ```
   
-####自定义服务
+###自定义服务
+
+* 服务是将一些通用性的功能逻辑进行封装方便使用，AngularJS允许将自定义服务,服务本质就是一个对象或函数，所以自定义服务就是要返回一个对象或函数以供使用。
+
+####factory方法
+
+```js
+   
+     //自定义服务显示日期
+     //自定义服务,但依赖于$filter
+    App.factory('showTime', ['$filter', function($filter) {
+
+        var now = new Date();
+        var date = $filter('date');
+        
+        //返回出去以被调用
+        return {
+            now: date(now, 'yyyy-MM-dd')
+        }
+    }]);
+
+    //声明依赖调用服务
+    App.controller('DemoController', ['$scope', 'showTime', function($scope, showTime) {
+
+        $scope.now = showTime.now;
+
+    }])
+   
+```
+
+####service方法
+
+```js
+    //自定义服务显示日期
+    App.service('showTime', ['$filter', function($filter) {
+
+        var now = new Date();
+
+        this.now = $filter('date')(now, 'yyyy-MM-dd')
+
+
+    }]);
+
+    //声明依赖调用服务
+    App.controller('DemoController', ['$scope', 'showTime', function($scope, showTime) {
+
+        $scope.now = showTime.now;
+
+    }])
+```
+
+* value方法定义常量
+
