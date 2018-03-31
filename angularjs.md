@@ -461,40 +461,59 @@ var App=angular.module('App',{});
 
  * $location是对原生Javascript中location对象属性和方法的封装
  
- ```js
-    // $location内置对象
-    var App = angular.module('App', []);
+```js
+ 
+        // $location内置对象
+        var App = angular.module('App', []);
     
-    // AngularJS 专门提供了一个帮你获URL地址一个服务
+        // AngularJS 专门提供了一个帮你获URL地址一个服务
 
-    App.controller('DemoController', ['$scope', '$location', function($scope, $location) {
+        App.controller('DemoController', ['$scope', '$location', function($scope, $location) {
 
-            $scope.title = '$location服务';
+                $scope.title = '$location服务';
 
-            // $location就是AngularJS提前封装好的
-            // 提供获取地址相关信息的服务
+                // $location就是AngularJS提前封装好的
+                // 提供获取地址相关信息的服务
 
-            //绝对路径
-            $scope.absUrl = $location.absUrl();
+                //绝对路径
+                $scope.absUrl = $location.absUrl();
 
-            //url地址
-            $scope.url = $location.url();
+                //url地址
+                $scope.url = $location.url();
 
-            //主机地址
-            $scope.host = $location.host();
+                //主机地址
+                $scope.host = $location.host();
+ 
+                //查询字符串
+                $scope.search = $location.search();
 
-            //查询字符串
-            $scope.search = $location.search();
+                //哈希值
+                $scope.hash = $location.hash();
 
-            //哈希值
-            $scope.hash = $location.hash();
+                //协议
+                $scope.protocol = $location.protocol();
 
-            //协议
-            $scope.protocol = $location.protocol();
-
-            //端口
-            $scope.port = $location.port();]
-    });
+                //端口
+                $scope.port = $location.port();]
+        });
  
  
- ```
+  ```
+* $timeout&$interval对原生Javascript中的setTimeout和setInterval进行了封装。
+
+```js
+ 
+    app.controller('MyController', ['$scope','$timeout', '$interval',function($scope, $timeout, $interval) {
+    
+        $timeout(function() {
+            $scope.time = new Date();
+        }, 2000);
+
+        $interval(function() {
+            $scope.time = new Date();
+        }, 1000);
+
+      }
+    ]);
+
+```
