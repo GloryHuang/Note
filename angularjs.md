@@ -653,3 +653,163 @@ App.controller('DemoController', ['$scope', '$http', function($scope, $http) {
     App.value('version', '1.0');
 
 ```
+
+
+###模块加载
+
+* AngularJS模块可以在被加载和执行之前对其自身进行配置。我们可以在应用的加载阶段配置不同的逻辑
+
+   ![](/assets/AngularJSModul.png)
+   
+####配置块
+
+* 通过config方法实现对模块的配置，AngularJS中的服务大部分都对应一个“provider”，用来执行与对应服务相同的功能或对其进行配置。
+比如$log、$http、$location都是内置服务，相对应的“provider”分别是$logProvider、$httpProvider、$locationPorvider。
+
+ * 下图以$log为例进行演示，修改了配置
+ 
+  ![](/assets/1.png)
+  
+ * 下图以$filter为例进行演示，实现相同功能
+ 
+  ![](/assets/2.png)
+  
+####运行块
+
+* 服务也是模块形式存在的对且对外提供特定功能，前面学习中都是将服务做为依赖注入进去的，然后再进行调用，除了这种方式外我们也可以直接运行相应的服务模块，AngularJS提供了run方法来实现。
+
+* 不但如此，run方法还是最先执行的，利用这个特点我们可以将一些需要优先执行的功能通过run方法来运行，比如验证用户是否登录，未登录则不允许进行任何其它操作。
+
+```js
+     //直接运行$http、$rootScope服务
+    //$rootScope根作用域
+
+    App.controller('MyController', ['$scope', function($scope) {
+        $scope.message = "后代";
+    }]);
+
+    App.run(['$http', '$rootScope', function($http, $rootScope) {
+
+        //直接执行$http
+        $http({
+            url: 'post.php',
+            method: 'post'
+        }).success(function(info) {![](/assets/ag3.png)
+            console.log(info);
+
+        });
+        //根作用域
+        $rootScope.message = "Hi";
+    }]);
+
+
+```
+
+
+###AngularJS路由
+
+####SPA
+
+ * SPA（Single Page Application）指的是通单一页面展示所有功能，通过Ajax动态获取数据然后进行实时渲染，结合CSS3动画模仿原生App交互，然后再进行打包（使用工具把Web应用包一个壳，这个壳本质上是浏览器）变成一个“原生”应用。
+ 
+* 在PC端也有广泛的应用，通常情况下使用Ajax异步请求数据，然后实现内容局部刷新，局部刷新的本质是动态生成DOM，新生成的DOM元素并没有真实存在于文档中，所以当再次刷新页面时新添加的DOM元素会“丢失”，通过单页面应可以很好的解决这个问题。
+
+
+####路由
+
+ * 在后端开发中通过URL地址可以实现页面（视图）的切换，但是AngularJS是一个纯前端MVC框架，在开发单页面应用时，所有功能都在同一页面完成，所以无需切换URL地址（即不允许产生跳转），但Web应用中又经常通过链接（a标签）来更新页面（视图），当点击链接时还要阻止其向服务器发起请求，通过锚点（页内跳转）可以实现这一点
+ 
+ * 单一页面中可以能过hashchange事件监听到锚点的变化，进而可以实现为不同的锚点准不同的视图，单页面应用就是基于这一原理实现的。
+ 
+ * AngularJS对这一实现原理进行了封装，将锚点的变化封装成路由（Route）,这是与后端路由的根本区别。
+
+
+####使用
+
+ 1、引入angular-route.js
+     ![](/assets/ag1.png)
+     
+ 2、实例化模块（App）时，当成依赖传进去（模块名称叫ngRoute）
+     ![](/assets/ag2.png)
+     
+ 3、配置路由模块
+     ![](/assets/ag3.png)
+ 4、布局模板
+ 
+  * 通过ng-view指令布局模板，路由匹配的视图会被加载渲染到些区域
+  
+  ![](/assets/ag4.png)
+  
+####路由参数
+
+ * 提供两个方法匹配路由，分别是when和otherwise，when方法需要两个参数，otherwise方法做为when方法的补充只需要一个参数，其中when方法可以被多次调用。
+
+ * 第1个参数是一个字符串，代表当前URL中的hash值。
+ 
+ * 第2个参数是一个对象，配置当前路由的参数，如视图、控制器等。
+ 
+	* template 字符串形式的视图模板
+	* templateUrl 引入外部视图模板
+	* controller 视图模板所属的控制器
+	* redirectTo跳转到其它路由
+
+* 获取参数，在控制中注入$routeParams可以获取传递的参数
+
+```html
+     <div class="wrapper">
+        <!-- 导航菜单 -->
+        <ul>
+            <li class="active">
+                <a href="#/index/5/page/7">Index</a>
+            </li>
+            <li>
+                <a href="#/introduce">Introduce</a>
+            </li>
+            <li>
+                <a href="#contact">Contact Us</a>
+            </li>
+            <li>
+                <a href="#/list">List</a>
+            </li>
+        </ul>
+        <!-- 内容 -->
+        <div class="content">
+            <!-- 占位符 -->
+            <div ng-view>
+            </div>
+        </div>
+    </div>
+
+```
+```js
+    <!-- AngularJS核心框架 -->
+    <script src="libs/angular.min.js"></script>
+    <!-- 路由模块理解成插件 -->
+    <script src="libs/angular-route.js"></script>
+    <script>
+    //依赖ngRoute
+    var App = angular.module('App', ['ngRoute']);
+
+    // 需要对路由模块进行配置, 使其正常工作
+    App.config(['$routeProvider', function($routeProvider) {
+        $routeProvider.when('/index/:id/page/:p', { //路由规则
+            templateUrl: 'abc.html',
+            controller: 'ListController'
+        }).when('/list', {
+            template: '<h1>This is List Page!</h1>'
+        }).otherwise({
+            redirectTo: '/index'
+        });
+
+    }])
+
+
+    //提供了一个专门负责获取参数的一个服务$routeParams
+
+    //列表控制器
+    App.controller('ListController', ['$scope', '$http', '$routeParams', function($scope, $routeParams) {
+        $scope.content = '路由功能';
+        //在控制器使用$routeParams获取参数
+        console.log($routeParams);
+    }])
+```
