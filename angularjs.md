@@ -371,7 +371,7 @@ var App=angular.module('App',{});
  ```html
   <body ng-app="MyApp">
     <div ng-controller="MyFilterController">
-        <h1>{{info|Capitalize}}{{name}}</h1>
+        <h1>{ { info|Capitalize } }{{name}}</h1>
     </div>
  </body>
  ```
