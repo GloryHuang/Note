@@ -1,6 +1,8 @@
 ### 转换成字符串类型
 
-##### 1.toString\(\)
+##### 1.toString() 简单类型转换成String
+ 
+ * Null和undefined无toString方法
 
 ```js
     var age = 18;
@@ -56,7 +58,8 @@ var str = "" + 18; //结果是"18"
 
 
 ### 转换成数值类型
-
+ 
+ * 此转换容易产生NaN，一旦被转换的变量中含有非数字字符，都容易出现NaN
 ```js
 三个把值转换成数值类型的函数：
 Number()、 parseInt()、 parseFloat()
