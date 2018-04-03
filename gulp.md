@@ -49,3 +49,134 @@
  ![](/assets/gulpdef.png)
  
 ####Gulp API 
+
+* Gulp是基于NodeJS的，通过require可以引入一个NodeJS的包（模块），其作用类似于浏览器中的script标签引入资源，被引入的包存放在node_modules目录下。
+
+* 引入gulp包（模块）后返回一个对象，习惯赋值给变量gulp，通过该对象提供的方法（API）完成任务的配置。
+
+
+ * gulp.task() 定义各种不同的任务，如下图有两个参数
+
+  ![](/assets/task1.png)
+  
+  * 不同任务间存在依赖关系时，可以指定依赖
+  
+  
+   ![](/assets/task3.png)
+   
+ * gulp.src() 需要构建资源的路径，字符串或数组（可以正则方式书写）
+ 
+   ![](/assets/task4.png)
+   
+ * gulp.pipe() 管道，将需要构建的资源“输送”给插件。
+  
+   ![](/assets/task5.png)
+   
+ * gulp.dest() 构建任务完成后资源存放的路径（会自动创建）
+ 
+   ![](/assets/task6.png)
+  
+ * gulp.watch() 
+ 
+ 
+####常用Gulp插件
+
+ * gulp-less 编译LESS文件
+ * gulp-autoprefixer 添加CSS私有前缀
+ * gulp-cssmin 压缩CSS
+ * gulp-rname重命名
+ * gulp-imagemin 图片压缩
+ * gulp-uglify 压缩Javascript
+ * gulp-concat 合并
+ * gulp-htmlmin 压缩HTML
+ * gulp-rev 添加版本号
+ * gulp-rev-collector 内容替换
+ * gulp-useref
+ * gulp-if
+ 
+ 
+####例
+```js
+   //引入本地安装的gulp
+var myGup = require('gulp');
+
+//引入解析less的插件
+var less = require('gulp-less');
+
+//引入压缩css的插件
+var cssmin = require('gulp-cssmin');
+
+//引入压缩image的插件
+var imgmin = require('gulp-imagemin');
+
+//引入压缩JS的插件
+var jsurg = require('gulp-uglify');
+
+//引入合并JS文件的插件
+var jscat = require('gulp-concat');
+
+
+//返回值gulp是一个对象,借助此对象可以实现任务清单的定制
+//通过一系列的方法实现
+
+
+//定义任务(将less转成css)
+myGup.task('less', function() {
+
+    //借助gulp.src来指定less文件位置
+    myGup.src('./public/less/*.less')
+
+
+        //借助于gulp的插件实现less转css的操作
+        .pipe(less())
+
+
+        .pipe(cssmin())
+        //通过gulp.dest进行存储
+        .pipe(myGup.dest('./release/public/css'));
+
+
+
+});
+
+
+//压缩CSS代码
+myGup.task('csmin', function() {
+
+    myGup.src('./release/public/*.css')
+
+        .pipe(cssmin())
+
+        .pipe(myGup.dest('./min/public/css'));
+
+});
+
+
+
+//处理图片(压缩图片)
+myGup.task('image', function() {
+    myGup.src('./public/images/*')
+
+        //myGup.src('./public/images/**')不管当前文件夹下有多少个文件夹都会被匹配
+
+        .pipe(imgmin())
+
+        .pipe(myGup.dest('./release/public/images'));
+});
+
+
+//丑化JS代码(压缩JS代码)
+myGup.task('jsug', function() {
+
+    myGup.src('./scripts/*.js')
+
+        .pipe(jscat('all.js'))
+
+        .pipe(jsurg())
+
+        .pipe(myGup.dest('./release/script'))
+
+});
+```
+
+
