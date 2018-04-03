@@ -97,7 +97,7 @@
  
 ####例
 ```js
-   //引入本地安装的gulp
+//引入本地安装的gulp
 var myGup = require('gulp');
 
 //引入解析less的插件
@@ -115,65 +115,44 @@ var jsurg = require('gulp-uglify');
 //引入合并JS文件的插件
 var jscat = require('gulp-concat');
 
-
 //返回值gulp是一个对象,借助此对象可以实现任务清单的定制
 //通过一系列的方法实现
-
 
 //定义任务(将less转成css)
 myGup.task('less', function() {
 
     //借助gulp.src来指定less文件位置
     myGup.src('./public/less/*.less')
-
-
+    
         //借助于gulp的插件实现less转css的操作
         .pipe(less())
-
-
         .pipe(cssmin())
+        
         //通过gulp.dest进行存储
         .pipe(myGup.dest('./release/public/css'));
-
-
-
 });
-
 
 //压缩CSS代码
 myGup.task('csmin', function() {
-
     myGup.src('./release/public/*.css')
-
         .pipe(cssmin())
-
         .pipe(myGup.dest('./min/public/css'));
 
 });
 
-
-
 //处理图片(压缩图片)
 myGup.task('image', function() {
     myGup.src('./public/images/*')
-
         //myGup.src('./public/images/**')不管当前文件夹下有多少个文件夹都会被匹配
-
         .pipe(imgmin())
-
         .pipe(myGup.dest('./release/public/images'));
 });
 
-
 //丑化JS代码(压缩JS代码)
 myGup.task('jsug', function() {
-
     myGup.src('./scripts/*.js')
-
         .pipe(jscat('all.js'))
-
         .pipe(jsurg())
-
         .pipe(myGup.dest('./release/script'))
 
 });
