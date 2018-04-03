@@ -30,4 +30,22 @@
   * 在gulpfile.js定义构建任务，如压缩、合并，Gulp自身并不执行任何任务，是通过调用具体插件来完成的。
   
   * 以编译LESS为例，安装npm install gulp-less，如下图定义任务
+ 
+  ![](/assets/task.png)
 
+
+ * 执行任务
+   
+   * 输入命令 gulp less LESS文件便会编译成CSS了
+   
+   
+   ![](/assets/gulps.png)
+  
+  
+####Gulp工作原理
+
+* 通过不同的插件实现构建任务，Gulp只是按着配置文件调用执行了这些插件。
+
+ ![](/assets/gulpdef.png)
+ 
+####Gulp API 
