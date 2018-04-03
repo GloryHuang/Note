@@ -95,7 +95,7 @@
  * gulp-if
  
  
-####例
+####实例
 ```js
 //引入本地安装的gulp
 var myGup = require('gulp');
