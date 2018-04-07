@@ -318,7 +318,7 @@ cnpm install node-sass sass-loader css-loader style-loader --save-dev
 
 ```js
 
-    1、在webpack.config.js中加入如下代码：
+    在webpack.config.js中加入如下代码：
         // 导入html-webpack-plugin 包,获取到插件对象
         var htmlwp = require('html-webpack-plugin');
         
