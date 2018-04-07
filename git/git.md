@@ -401,3 +401,13 @@
    * git pull origin 某个分支， 上操作相当于下面两步
    * git fetch 
    * git merge origin/某个分支
+   
+   
+ * 查看远程主机上总共有多少个分支
+ 
+   * git branch -a 便可以查看所有(本地+远程仓库)分支了
+   
+    ![](/assets/git32.png)
+
+* 删除远程分支git push origin --delete 分支名称
+* 删除远程分支git push origin :分支名称
