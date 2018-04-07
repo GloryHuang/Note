@@ -29,6 +29,7 @@
   * [Event事件模块](nodejsmo-kuai-hua-kai-fa/eventshi-jian-mo-kuai.md)
 * [Git](git.md)
   * [版本控制](git/gitde-fa-zhan-shi.md)
+  * [Git基本](git/git.md)
 * [兼容性问题](兼容性问题、.md)
   * [CSS兼容性问题](css兼容性问题.md)
   * [JAVASCRIPT兼容性问题](javascript兼容性问题.md)
