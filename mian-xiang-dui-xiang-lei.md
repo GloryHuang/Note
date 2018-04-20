@@ -89,7 +89,7 @@
      
      console.log(new Child2());
      
-     var s1=new Child1();
+     var s1=new Child2();
      var s2=new Child2();
      console.log(s1.play,s2.play);
      s1.play.push(4);//缺点：s1改变，s2也会跟着改变(原型链上的原型对象是共用的)
