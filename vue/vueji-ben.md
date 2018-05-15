@@ -388,10 +388,14 @@ Mustache 标签将会被替代为对应数据对象上 msg 属性（msg定义在
 ```js
 
      定义指令：
-    //定义一个 v-focus的属性自定义指令
-	Vue.directive('focus',function(){
-		this.el.focus(); //实现文本框的自动获取焦点
-	});
+    // 注册一个全局自定义指令 `v-focus`
+    Vue.directive('focus', {
+      // 当被绑定的元素插入到 DOM 中时……
+      inserted: function (el) {
+        // 聚焦元素
+        el.focus()
+  }
+})
 	
     使用指令：
     <input type="text" v-focus />
