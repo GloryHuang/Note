@@ -18,11 +18,10 @@
  
   * redis的key-value
   * hbase的单索引,二级索引需要自己实现
-  ```js
   
+  ```js
   单键索引,多键索引：{x:1,y:1}
   数组索引:["apple","lemon"]
   全文索引:"i am a little bird."(中文)
-  
-  
+  地理位置索引:2D
   ```
